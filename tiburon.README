@@ -1,0 +1,520 @@
+tiburon: a weighted tree automata toolkit
+
+The definition of an rtg or a transducer is beyond the scope of this readme, as is
+the format of an rtg or transducer file. However, sample rtgs are in
+samples/even.rtg and samples/three.rtg and a sample transducer is in samples/gk.trans
+
+Overall functionality: several input rtgs are read and
+intersected, or a tree is applied to a transducer to result in an
+rtg. Either the intersection or result rtg (possibly normalized) is 
+output, or trees, either a stochastic set or an ordered set, are
+output, or statistics about the rtg are output. Additionally, a tree
+pair training file and transducer can be read and em training
+performed to set the weights of the transducer. And an input and
+output pair can be combined with a transducer to form a derivation
+rtg, with labels referencing transducer rules.
+
+
+
+The usage is:
+Usage: tiburon 
+             [-h|--help] (-e|--encoding) <encoding> (-m|--semiring) <srtype> [--lookahead <lookahead>] [(-a|--align) <align>] [-l|--left] [-r|--right] [-n|--normalizeweight] [--no-normalize] [--normform] [(-b|--beam) <beam>] [(-p|--prune) <prune>] [(-d|--determinize) <determ>] [(-t|--train) <train>] [(-x|--xform) <xform>] [--training-deriv-location <trainderivloc>] [--conditional] [--no-deriv] [--overwrite] [--randomize] [--timedebug <time>] [-y|--print-yields] [(-k|--kbest) <kbest>] [(-g|--generate) <krandom>] [--glimit <randomlimit>] [-c|--check] [(-o|--outputfile) <outfile>] infiles1 infiles2 ... infilesN
+
+  [-h|--help]
+        print this help message
+
+  (-e|--encoding) <encoding>
+        encoding of input and output files, if other than utf-8. Use the same
+        naming you would use if specifying this charset in a java program
+        (default: utf-8)
+
+  (-m|--semiring) <srtype>
+        type of weights: can be real (probabilities), truereal (probabilities
+        with underflow), tropical (max log weights), or tropicalaccumulative
+        (summed log weights) (default: real)
+
+  [--lookahead <lookahead>]
+        Sets the lookahead bytes for file type detection to <lookahead> (default
+        is 10480)
+
+  [(-a|--align) <align>]
+        given sentence pairs and a trained transducer, return the <align> best
+        alignments.
+
+  [-l|--left]
+        left associative composition/application of transducers/automata:
+        (file1*file2) * file3 ... * fileN This is the default unless the
+        rightmost automaton is a grammar
+
+  [-r|--right]
+        right associative composition/application of transducers/automata:
+        file1* ... * (fileN-1 * fileN)This is the default if the rightmost
+        automaton is a grammar
+
+  [-n|--normalizeweight]
+        normalize weights of RTG/CFG. This option is only relevant to the real
+        semiring.
+
+  [--no-normalize]
+        Don't normalize weights, even when they would be by default. This option
+        is only relevant to the real semiring. It cannot be used with -n
+        (obviously)
+
+  [--normform]
+        convert RTG/CFG to chomsky normal form. can't be used with -t
+
+  [(-b|--beam) <beam>]
+        allow a maximum of <beam> rules per state to be formed when composing,
+        intersecting, or applying. (default: 0)
+
+  [(-p|--prune) <prune>]
+        Prune rules that must exist in a tree with score <prune> greater than
+        the score of the best tree. Pruning occurs before determinization (-d)
+        when both options are included. It cannot be used with -t.
+
+  [(-d|--determinize) <determ>]
+        Determinize the input RTG for <determ> minutes. Determinization requires
+        normal form (done implicitly) and no loops. It cannot be used with -t.
+
+  [(-t|--train) <train>]
+        perform EM training of a transducer given (input, output) training
+        pairs, or a grammar given trees/strings. Train for up to <train>
+        iterations. The only acceptable output is the weighted transducer or
+        weighted grammar , thus -k and -g and -c options aren't valid. -p, -d,
+        --normform, --removeloops, -n, -l, -s are similarly disallowed. There
+        must be at least 2 files in the input list - the first is assumed to be
+        a set of training pairs or triples. The remaining are the transducer(s)
+        or grammar(s). 
+
+  [(-x|--xform) <xform>]
+        transform the input automaton, string file, or tree file into <xform>.
+        Possible values are NONE CFG RTG XR XRS . Some information may be lost
+        by virtue of the type of transformation performed. This operation is
+        performed after any intersection or composition, but before -d, -p, -k,
+        -g, -l, -r. Transformation of transducers to grammars is domain
+        projection.
+
+  [--training-deriv-location <trainderivloc>]
+        Only valid if -t is used. <trainderivloc> is the file to hold binary
+        representation of the calculated derivation forests. if not specified,
+        they are written to and read from a temporary file and deleted
+        afterward.
+
+  [--conditional]
+        Train transducers conditionally; i.e. all rules with the same LHS have
+        probability summing to 1. If not set, training is joint; i.e. all rules
+        with the same LHS root have probability summing to 1. Eventually this
+        will be for normalization as well.
+
+  [--no-deriv]
+        Only valid if -t is used. If present, do not calculate derivation
+        forests. Instead, assume they have already been built
+        (training-deriv-location flag must also be used). Derivation forests are
+        typically time consuming, but once built don't change.
+
+  [--overwrite]
+        Only valid if -t is used and only meaningful if training-deriv-location
+        is used. This flag allows the deriv file to be overwritten. It overrides
+        the safety measure that prohibits this.
+
+  [--randomize]
+        Randomize the weights of the input structure (grammar or transducer) to
+        be equivalent to a probability between 0.2 and 0.8. This is mostly
+        useful for EM training.
+
+  [--timedebug <time>]
+        Print timing information to stderr at a variety of levels: 0+ for total
+        operation, 1+ for each processing stage, 2+ for small info
+
+  [-y|--print-yields]
+        print yield of trees instead of trees. no meaning unless -g or -k is
+        used on an RTG.
+
+  [(-k|--kbest) <kbest>]
+        return the <kbest> highest ranked items in a grammar. This option cannot
+        be used with -g or -c or -t
+
+  [(-g|--generate) <krandom>]
+        generate <krandom> trees from an RTG or strings from a CFG
+        stochastically. Subject to --glimit (see below). This option cannot be
+        used with -k or -c or -t
+
+  [--glimit <randomlimit>]
+        Stop randomly generating after <glimit> internal expansions. 0 = no
+        limit. Default is 20 (default: 20)
+
+  [-c|--check]
+        check the number of rules, states, and derivations of the grammar or
+        transducer 
+
+  [(-o|--outputfile) <outfile>]
+        file to write output grammar or tree list or summary. If absent, writing
+        is done to stdout
+
+  infiles1 infiles2 ... infilesN
+        list of input files. If using training mode (-t) the first file must be
+        a list of training items. Subsequent files are transducers, grammars,
+        trees, or strings that will be composed in the 'obvious' way if
+        possible, using either the default associativity (right if the rightmost
+        file is a grammar or tree, left otherwise) or that set by -l/-r. The
+        special symbol '-'(no quote) may be specified up to one time in the file
+        sequence to indicate reading from STDIN. Illegal composition sequences,
+        such as intersection of two CFGs, a grammar followed by a copying
+        transducer, or attempted composition of two extended transducers will
+        result in an error message.
+
+java 1.5 (J2SE 5.0) or later required.
+
+Get it from: http://java.sun.com/j2se/1.5.0/
+
+Or if you can get to strontium you can find it at /usr/java/jdk1.5.0_14/bin
+version 0.5.4 - checked in 3/11/09
+	updated CFG reading to not use old streamtokenizer code
+	removed old -b batch flag (currently deprecated anyway)
+	-b beam for tree transducer composition and application limits the number of transitions per state
+	fixed bug that caused confusions with textual states q\d+
+	fixed bug that prevented big-lhs composition from working (when it is possible)
+	first incorporation of multi-transducer code
+	added beaming
+	improved -c reporting, added -c for trees
+	trees not automatically turned into rtgs
+	added memoization in parse chart expansion
+	fixed bug in kbest that appears in java 1.6+
+	composition of transducer cascades done all at once
+	xrs to cfg conversion now allowed
+	bug in rtg to transducer conversion that reversed variables fixed.
+	bug causing crashing in epsilon rule composition fixed.
+	bug causing crazy weight settings when ties in training force rule weight to 0 fixed
+	added --glimit to vary or turn off the internal random expansion limit in k-random generation
+	fixed bug that won't allow cfg/rtg to have spaces at end of weightless lines
+	TREE, STRING, TREEBATCH, STRINGBATCH type specifiers added
+	pruning can now use real semiring
+	--overwrite flag needed when saving derivation rule sets to an extant file
+	better handling of single symbol lookahead by converting to equivalent non-lookahead internally
+	tagger as r0_5_4
+version 0.5.3 - checked in 12/16/08
+	preview of 0.6 release (not all batch has been checked)
+	batch mode integrated into regular run semantics
+	trees with weights can be read
+	weighted item syntax changed from ":" to "#" to be more consistent
+	improved speed of CFG training by using Earley Parsing
+	backward application of strings onto XRS
+	fixed a bug in CFG/RTG training that caused death when training items are not derivable.
+	tarjan algorithm checks for finiteness
+	remloop switch and functionality removed. determinization complains if rtg is not finite.
+	--lookahead option to specify bytes to read ahead for filetype problems
+version 0.5.2
+	fixed tree reading corner case (trees with no spaces)
+	added >10k rule timing note
+	fixed xrs reading corner case
+	made xrs/xr reading more like rtg/grammar reading
+	cfg+string intersection
+	fixed major bug in -k generation to have speeds roughly in line with the implemented algorithm
+	more regex-style reading (ruleSets, filetype code, etc.)
+version 0.5.1
+	can now do forward application of tree onto xR(s) without using batch mode
+	fixed bug in normalization-before-determinization sequence in batch mode
+	migrated IDE to eclipse
+	regex-style TreeItem reading
+	TYPE RTG and TYPE CFG headers skip type checking
+	more robust wrapper script
+version 0.5.0 - checked in 8/12/08
+	union mode eliminated
+	transformation before training allowed
+	domain projection of xR(s) to RTG
+	range projection of RL (not yet publicly accessible)
+	composition of R and RLNs
+	right associativity
+	replaced stdin switch with use of - on command line
+	backward application of rtg to xR
+	batch backward application
+	training of composed/intersected items allowed
+	newline not needed at end of files
+	application now done by sequence of files (i.e. tree at
+	beginning, etc.) instead of -l, -r
+	-l and -r now used for associativity control
+	batch mode for transducers; so far just left, right, deriv
+	application (no operations on result yet)
+	TLT and TRT read via faster regex code
+version 0.4.9 - checked in 1/31 or so
+	supports -k, -g, -t, -c of CFGs.
+	should allow triple quote and better stuff on read in.
+	doesn't print zero-weight rules
+	forward application of tree to xrs is CFG
+	coercion of RTG to CFG, CFG to RTG, CFG and RTG to XR and XRS
+	composition of R and RLN fixed. Other types banned
+	domain projection of R and Rs to RTG (note: not xR yet)
+	tagged as r0_4_9
+version 0.4.8 - checked in 12/3
+	began writing cfg support stuff (though it's not apparent yet)
+	first version that is verified on qa system, which is also
+	included
+	batch mode bugs fixed
+	corpus prob printed next to cross-entropy in training
+	tagged as r0_4_8
+version 0.4.7.1 - checked in 11/26
+        fixed a bug in the cs562 homework batch mode that really
+	messed up cross-entropy calculation
+version 0.4.7 - checked in 10/4
+	some nomenclature; probs mostly now weights. subtract from
+	zero warning eliminated. Improved cross-entropy
+	reporting. Tree sizes calculated once, speeding up training. Tie
+	printing in transducer rule sets.
+	tagged as r0_4_7
+version 0.4.6 - checked in 9/17
+	general better hash codes for objects
+	Debug prints in the same code system as specified by -m
+	debugging convenience with time intervals.
+	derivation rule sets can be saved, loaded in, and can use
+	different semirings
+	Proper k-best derivation implemented (bug fix)
+	continue to disallow trickle-down printf debugs in favor of
+	method-level printf debugs
+	subtraction added to RealSemiring for tied training.
+	tied rules allowed for StringTransducerRule training. (Note: ties currently don't
+	appear on printout, which is a bug)
+	truereal semiring added
+	union function for making union of derivative rtgs 
+	timedebug times certain actions
+	different prunings added when appropriate
+	ability to get k-best alignments during training
+	conditional training enabled
+
+version 0.4.5 - checked in 10/24
+	* allowed in rules
+	hashing in StateTreePair, StateTreeString,
+	StringTransducerRule, TrainingString, TransducerLeftTree,
+	TransducerRightString, Tree, VariableCluster changed to be
+	efficient. In some cases, prior hashing was based on
+	stringification, in others it was just plain poor. This makes
+	derivation calculation much quicker.
+	Symbols are now back to being created in a factory and stored
+	in a table - this cuts down on string creation
+	batch mode somewhat more efficient in that some preprocessing
+	takes place for intersection purposes.
+	Cross entropy display in special batch mode is back
+	Output buffers are reset to avoid memory explosion when
+	writing
+	trick in training to make clusters look like state tree
+	strings now implemented by keying on hash instead of symbol
+	tagged as r0_4_5
+version 0.4.4 - checked in 10/4
+	started to work on deep composition bug fix - not finished
+	this causes changes in Compose, Intersect, KBest,
+	TransducerRight and Left tree, with additional
+	methods and conditions added
+	initial version of toForest for DRS - to allow forest-em to
+	run output from tiburon
+	batch mode extended to most operations of application
+	normalization of weights for transducers
+	cross entropy in transducer training now reported
+	tagged as r0_4_4
+version 0.4.3 - checked in 9/14
+	composition bug - pruning done now
+	right composition with x probably a bad idea
+	mechanism in place to allow composition with Rs but not
+	running yet
+	fix of cross-entropy calculation
+	tagged as r0_4_3
+version 0.4.2 - checked in 8/31 and updated 9/6
+	version number prints to stderr from java
+	training of rtgs allowed
+	normalization based on left side ROOT not left side
+	tagged as r0_4_2
+	afterward: create empty DRS in transducer training to prevent
+	null pointers when doing -l, -r and unable to get a derivation
+version 0.4.1 - checked in 8/30
+changes from 0.4.0
+	-b mode made correct
+	changes in debug calls to allow compiler to skip when not
+	debugging
+	added randomize ability
+	added some more time debugging
+	tagged as r0_4_1
+version 0.4.0  - checked in 8/10
+changes from 0.3.11
+	-c only checks; doesn't perform other operations (like listing
+	the file, etc.
+	moved hierarchy to edu.isi.tiburon from
+	edu.isi.rewrite.tiburon...users shouldn't notice
+	support for training rtgs added, but not public
+	batch mode (-b) begun
+	training makes use of external file writing in a one-file way,
+	now. derivloc specifies the name of the derivation file, if it
+	is to be saved.
+	Some more exception improvements
+	Real Semiring operates as log under the hood
+	
+version 0.3.11 - checked in 7/19
+changes from 0.3.10
+	if not specifying DRS location, they are written to tmp files
+	and discarded. Multiple sessions on the same pc can operate
+	simultaneously.
+	Deriv algorithm changed to better memoize and do pruning of
+	incomplete derivations after initial algorithm, allowing a
+	speed-up.
+	Some debug code further standardized.
+	javadoc comments added to Tree.java
+	memory allocated assumed to be 1mb but settable.
+	tagged as r0_3_11
+version 0.3.10 - checked in 7/10
+changes from 0.3.9
+	fixed a bug that prevented training with weights on tropical
+	accumulative from working properly
+	fixed a bug introduced in the last release that made training
+	and piping to stdout crash.
+	changed some usage messages.
+	tagged as r0_3_10 using cvs rtag
+version 0.3.9 - checked in 7/7
+changes from 0.3.8
+	-c works for standalone transducers and provides information
+	about intermediate structures. thus, there's more detecting 
+	of file types.
+	detecting transducer types is much faster
+	fixed a bug for getting info of empty rtgs
+	tagged as r0_3_9 using cvs rtag.
+version 0.3.8 - checked in 6/27
+changes from 0.3.7
+	general traps for CR as well as newline to accomodate windows
+	Intersection: iterative removal of nonterminals
+	trap for unquoted parens in xRs
+	when getting deriv forests, memoize to prevent recursion from
+	copying
+	tagged as 0.3.8 using cvs rtag after weirdness with update
+version 0.3.7 - checked in 5/18
+changes from 0.3.6
+	trap to prevent stack overflow when getting k-best lists of
+	unweighted RTGs. yield doesn't print epsilons. rule sets made
+	normal before intersection. some additional alignment calculation?
+version 0.3.6 - checked in 4/20
+changes from 0.3.5
+	moved differentiation of training files to FileDifferentiation
+	(you won't see that)
+	some fixes on transducer reading format
+	copying transducers now allowed (it was a bug that they
+	weren't before)
+	--print-alignments enabled for xRs, also for training
+version 0.3.5 - checked in 2/15
+changes from 0.3.4
+	composition of tree transducers is just barely allowed. only
+	for application. and probably very buggy. only tested on
+	monadic trees, so BEWARE
+version 0.3.4 - checked in 2/8
+changes from 0.3.3
+	KBest.java used instead of Knuth.java - a faster k-best
+	algorithm that doesn't mess up with negative arcs the way
+	knuth could. Slightly faster reading of transducers due to a
+	different hashing function, but this will have to be greatly
+	improved. 
+version 0.3.3 - checked in 2/1
+changes from 0.3.2
+	location of offline file storage now usable with
+	--training-deriv-location. If derivation already performed, it
+	can be skipped (and simply read) with --no-deriv. Small bug
+	fixed in tree reading. Tolerance of state, residual pairs
+	reduced to 1e-6 from 1e-8. forward application of xrs
+	implemented with a simulated cfg.
+version 0.3.2 - checked in 1/25
+changes from 0.3.1
+	training now uses offline file storage and more efficient
+	derivation rules to allow large sets to be trained. Currently,
+	derivations of training pairs are written to /tmp in
+	machine-readable format and are stored in numerical
+	order of their appearance in the training file. Eventually
+	this will be user-customizable, as will an option to keep
+	derivations in memory. Derivation is also more efficient, as
+	the memoization is just for boolean decisions, and is not
+	content-based. 
+	Transducers now print sorted by state (though it would be nice
+	to have them print sorted by full LHS). Rules with a score of
+	0 (Infinity in tropical semirings) are not printed. There is
+	currently no option to print them.
+	It is now possible to do dual-sided application, which results
+	in the derivation RTG being returned. Transducer Rules are represented by
+	Rx where x means the xth rule in the transducer file.
+
+version 0.3.1 - checked in 1/16
+changes from 0.3.0
+	training now supports xRs transducers and thus two more file
+	formats for training. some minor fixes to tree reading code
+	mostly geared to supporting string reading better.
+
+version 0.3.0 - checked in as revision 2.0 under cvs on 1/9
+changes from 0.2.8
+	training allowed with -t flag. recognizes two forms of
+	training file (see above). tropical and real semirings
+	supported. 
+	fix to tropicalaccumulative add function to behave properly
+	when seeing 0 and infinity values. fix to tree reading code to
+	not let tokenizer get too sloppy.
+
+version 0.2.8 - checked in 1/2
+changes from 0.2.7
+	kbest does not automatically put rtgs in cnf - this means
+	faster k-best
+	removes epsilons before intersecting
+	improved some exception reporting
+	allow """ to mean a quoted double quote in symbols
+	fixed rounding bug associated with tropicalaccumulative
+
+version 0.2.7 - checked in 12/25
+changes from 0.2.6
+	-c (check) option allows output to be statistics about the
+	result rtg.
+	-e (encoding) option allows input/output of different
+	encodings
+	syntactically identical transducer rules ignored
+	stochastic gen minor bug fixed
+version 0.2.6 - checked in 12/22
+changed from 0.2.5
+	changed the way symbols are represented - using intern now
+		will probably change this further
+	fixed some tokenization issues
+	fixed bugs that caused state-state transitions in rtgs to not
+	be properly recognized with knuth
+	identified bug with state-state transitions in determinization
+	- beware!
+
+version 0.2.5 - checked in 12/21
+changes from 0.2.4
+	changed -s for semiring to -m
+	added -s to indicate stdin input of tree for application
+	bugs fixed that prevented multi-state transducers and
+	arbitrary semiring default values
+version 0.2.4 - checked in 12/19
+changes from 0.2.3
+	added -l: allows left application of tree onto trsnsducer
+
+version 0.2.3 - older but checked in 12/14
+changes from 0.2.2:
+	added --timedebug
+	no re-finite after normalization saves time
+	finally in cvs
+
+version: 0.2.2 (currently unmaintained as such): 11/15/05
+changes from 0.2.1:
+	added --prune
+	added --determinize
+	known bug: prune also makes normal form
+
+changes from 0.2:
+	epsilon transitions okay (this is true for 0.2 but wasn't identified)
+	added --removeloops
+	added --normform
+	added --print-yields
+	known bug: -g doesn't work properly unless weights are
+	   normalized
+	known bug: escaped double quotes and backslashes are not
+	   written (i.e. they are resolved) in printouts.
+   
+
+changes from 0.1: 
+	combined intersect.jar and nbest.jar functionality. 
+	added stochastic generation capability. 
+	Weights are now rounded to 4 places for trees and rules (4 scientific places for small
+            numbers). 
+	Warning but no error when more trees are requested from k best
+	    than are available. 
+	Default semiring is real
+
+Jonathan May

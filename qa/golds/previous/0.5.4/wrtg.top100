@@ -1,0 +1,100 @@
+B(C) # 0.010000
+A(C B(C)) # 0.000800
+B(A(C C)) # 0.000600
+B(B(B(C))) # 0.000100
+A(B(C) C) # 0.000100
+A(C A(C B(C))) # 0.000064
+A(A(C C) B(C)) # 0.000048
+A(C B(A(C C))) # 0.000048
+B(A(A(C C) C)) # 0.000036
+B(A(C A(C C))) # 0.000036
+B(B(A(C B(C)))) # 0.000008
+A(A(C B(C)) C) # 0.000008
+A(C B(B(B(C)))) # 0.000008
+A(B(B(C)) B(C)) # 0.000008
+A(C A(B(C) C)) # 0.000008
+A(B(A(C C)) C) # 0.000006
+B(B(B(A(C C)))) # 0.000006
+B(A(B(B(C)) C)) # 0.000006
+B(A(C B(B(C)))) # 0.000006
+A(B(C) A(C C)) # 0.000006
+A(C A(C A(C B(C)))) # 0.000005
+A(A(C C) A(C B(C))) # 0.000004
+A(C A(A(C C) B(C))) # 0.000004
+A(C A(C B(A(C C)))) # 0.000004
+A(A(A(C C) C) B(C)) # 0.000003
+A(C B(A(A(C C) C))) # 0.000003
+A(A(C C) B(A(C C))) # 0.000003
+A(C B(A(C A(C C)))) # 0.000003
+A(A(C A(C C)) B(C)) # 0.000003
+B(A(A(A(C C) C) C)) # 0.000002
+B(A(C A(A(C C) C))) # 0.000002
+B(A(A(C C) A(C C))) # 0.000002
+B(A(C A(C A(C C)))) # 0.000002
+B(A(A(C A(C C)) C)) # 0.000002
+B(A(B(C) B(C))) # 0.000002
+B(B(B(B(B(C))))) # 0.000001
+B(B(A(B(C) C))) # 0.000001
+A(B(B(B(C))) C) # 0.000001
+A(A(B(C) C) C) # 0.000001
+A(B(C) B(B(C))) # 0.000001
+A(C B(B(A(C B(C))))) # 6.4E-7
+A(B(A(C B(C))) B(C)) # 6.4E-7
+B(B(A(C A(C B(C))))) # 6.4E-7
+A(B(B(C)) A(C B(C))) # 6.4E-7
+A(A(C A(C B(C))) C) # 6.4E-7
+A(C A(A(C B(C)) C)) # 6.4E-7
+A(C A(C B(B(B(C))))) # 6.4E-7
+A(C A(B(B(C)) B(C))) # 6.4E-7
+A(C A(C A(B(C) C))) # 6.4E-7
+A(B(B(A(C C))) B(C)) # 4.8E-7
+B(A(B(A(C B(C))) C)) # 4.8E-7
+A(A(B(B(C)) C) B(C)) # 4.8E-7
+A(A(C B(B(C))) B(C)) # 4.8E-7
+A(A(A(C C) B(C)) C) # 4.8E-7
+A(C A(B(A(C C)) C)) # 4.8E-7
+B(B(A(A(C C) B(C)))) # 4.8E-7
+B(B(A(C B(A(C C))))) # 4.8E-7
+B(A(C B(A(C B(C))))) # 4.8E-7
+A(C B(B(B(A(C C))))) # 4.8E-7
+A(A(C B(C)) A(C C)) # 4.8E-7
+A(C B(A(B(B(C)) C))) # 4.8E-7
+A(A(C B(A(C C))) C) # 4.8E-7
+A(C B(A(C B(B(C))))) # 4.8E-7
+A(A(C C) A(B(C) C)) # 4.8E-7
+A(C A(B(C) A(C C))) # 4.8E-7
+A(B(B(C)) B(A(C C))) # 4.8E-7
+A(A(C C) B(B(B(C)))) # 4.8E-7
+A(C A(C A(C A(C B(C))))) # 4.096E-7
+B(A(B(B(A(C C))) C)) # 3.6E-7
+B(B(B(A(A(C C) C)))) # 3.6E-7
+B(A(C B(B(A(C C))))) # 3.6E-7
+B(A(A(B(B(C)) C) C)) # 3.6E-7
+B(A(C A(B(B(C)) C))) # 3.6E-7
+B(A(A(C B(B(C))) C)) # 3.6E-7
+B(A(C A(C B(B(C))))) # 3.6E-7
+A(B(A(A(C C) C)) C) # 3.6E-7
+B(A(B(B(C)) A(C C))) # 3.6E-7
+B(A(A(C C) B(B(C)))) # 3.6E-7
+B(B(B(A(C A(C C))))) # 3.6E-7
+A(B(A(C C)) A(C C)) # 3.6E-7
+A(B(A(C A(C C))) C) # 3.6E-7
+A(B(C) A(A(C C) C)) # 3.6E-7
+A(B(C) A(C A(C C))) # 3.6E-7
+A(A(C C) A(C A(C B(C)))) # 3.072E-7
+A(C A(A(C C) A(C B(C)))) # 3.072E-7
+A(C A(C A(A(C C) B(C)))) # 3.072E-7
+A(C A(C A(C B(A(C C))))) # 3.072E-7
+A(A(A(C C) C) A(C B(C))) # 2.304E-7
+A(C A(A(A(C C) C) B(C))) # 2.304E-7
+A(A(C A(C C)) A(C B(C))) # 2.304E-7
+A(C A(C B(A(A(C C) C)))) # 2.304E-7
+A(A(C C) A(C B(A(C C)))) # 2.304E-7
+A(C A(A(C C) B(A(C C)))) # 2.304E-7
+A(A(C C) A(A(C C) B(C))) # 2.304E-7
+A(C A(C B(A(C A(C C))))) # 2.304E-7
+A(C A(A(C A(C C)) B(C))) # 2.304E-7
+A(A(A(A(C C) C) C) B(C)) # 1.728E-7
+A(A(C A(A(C C) C)) B(C)) # 1.728E-7
+A(A(A(C C) C) B(A(C C))) # 1.728E-7
+A(C B(A(A(A(C C) C) C))) # 1.728E-7

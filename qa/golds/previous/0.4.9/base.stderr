@@ -1,0 +1,9 @@
+# this is an awk script to verify the lines of a file. If a line is
+#  incorrect its number is printed, and if the wrong number of lines
+# is found this too is printed
+NR==1 && $0 !~ /^This is Tiburon, version [0-9.]+/ {print NR}
+NR==2 && $0 != "Error: Parameter 'infiles' is required." {print NR}
+NR==3 && $0 != "Usage: tiburon " {print NR}
+NR==4 && $0 != "             [-h|--help] [-s|--stdin] (-e|--encoding) <encoding> (-m|--semiring) <srtype> [(-l|--leftapply)[:<leftapply>]] [(-r|--rightapply)[:<rightapply>]] [-b|--batch] [--print-alignments] [-n|--normalizeweight] [--no-normalize] [--removeloops] [--normform] [(-p|--prune) <prune>] [(-d|--determinize) <determ>] [(-t|--train) <train>] [(-x|--xform) <xform>] [--training-deriv-location <trainderivloc>] [--conditional] [--no-deriv] [--randomize] [--union] [--timedebug <time>] [-y|--print-yields] [(-k|--kbest) <kbest>] [(-g|--generate) <krandom>] [-c|--check] [(-o|--outputfile) <outfile>] infiles1 infiles2 ... infilesN" {print NR}
+{records++}
+END{if (records != 4) {printf("%s lines\n", records)}}

@@ -1,0 +1,10 @@
+CFG info for input cfg parse.cfg:
+	7 states
+	9 rules
+	3 unique terminal symbols
+	4 derivations
+CFG info for CFG composed with string:
+	9 states
+	10 rules
+	3 unique terminal symbols
+	2 derivations

@@ -1,0 +1,9 @@
+%% file: ftst1 %%
+q
+q.NP(x1:JJ x2:) -> q.x2 q.x1
+q.JJ(x1:) -> with adj.x1
+q.NN(x1:) -> n.x1
+n.dogs -> dogs
+n.cats -> cats
+adj.blue -> blueness
+adj.yellow -> yellowness

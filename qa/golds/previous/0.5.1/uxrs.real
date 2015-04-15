@@ -1,0 +1,731 @@
+qTOP
+qTOP.x0:MD -> r.x0 # 1.000000
+qTOP.x0:VB -> r.x0 i.x0 # 1.000000
+qTOP.x0:VB -> r.x0 # 1.000000
+qTOP.x0:VB -> i.x0 r.x0 # 1.000000
+qTOP.x0:MD -> i.x0 r.x0 # 1.000000
+qTOP.x0:MD -> r.x0 i.x0 # 1.000000
+qVB.x0:JJ -> r.x0 # 1.000000
+qVB.x0:RB -> r.x0 i.x0 # 1.000000
+qVB.x0:RB -> r.x0 # 1.000000
+qVB.x0:VB -> r.x0 i.x0 # 1.000000
+qVB.x0:IN -> r.x0 # 1.000000
+qVB.x0:PRP -> r.x0 # 1.000000
+qVB.x0:VB -> r.x0 # 1.000000
+qVB.x0:PRP -> i.x0 r.x0 # 1.000000
+qVB.x0:IN -> i.x0 r.x0 # 1.000000
+qVB.x0:RB -> i.x0 r.x0 # 1.000000
+qVB.x0:NN -> r.x0 i.x0 # 1.000000
+qVB.x0:VB -> i.x0 r.x0 # 1.000000
+qVB.x0:PRP -> r.x0 i.x0 # 1.000000
+qVB.x0:NN -> r.x0 # 1.000000
+qVB.x0:IN -> r.x0 i.x0 # 1.000000
+qVB.x0:JJ -> r.x0 i.x0 # 1.000000
+qVB.x0:JJ -> i.x0 r.x0 # 1.000000
+qVB.x0:NN -> i.x0 r.x0 # 1.000000
+qIN.x0:NN -> r.x0 i.x0 # 1.000000
+qIN.x0:IN -> r.x0 i.x0 # 1.000000
+qIN.x0:IN -> i.x0 r.x0 # 1.000000
+qIN.x0:NN -> i.x0 r.x0 # 1.000000
+qIN.x0:IN -> r.x0 # 1.000000
+qIN.x0:NN -> r.x0 # 1.000000
+i.x0: -> "者" # 1.000000
+i.x0: -> "情報" # 1.000000
+i.x0: -> "学校" # 1.000000
+i.x0: -> "た" # 1.000000
+i.x0: -> "が" # 1.000000
+i.x0: -> "こと" # 1.000000
+i.x0: -> "を" # 1.000000
+i.x0: -> "ない" # 1.000000
+i.x0: -> "軒先" # 1.000000
+i.x0: -> "裏切る" # 1.000000
+i.x0: -> "呼ぶ" # 1.000000
+i.x0: -> "５" # 1.000000
+i.x0: -> "まっ" # 1.000000
+i.x0: -> "の" # 1.000000
+i.x0: -> "ダンス" # 1.000000
+i.x0: -> "赤" # 1.000000
+i.x0: -> "才能" # 1.000000
+i.x0: -> "彼" # 1.000000
+i.x0: -> "信頼" # 1.000000
+i.x0: -> "から" # 1.000000
+i.x0: -> "おこっ" # 1.000000
+i.x0: -> "ヘビ" # 1.000000
+i.x0: -> "大嫌い" # 1.000000
+i.x0: -> "私" # 1.000000
+i.x0: -> "で" # 1.000000
+i.x0: -> "偽善" # 1.000000
+i.x0: -> "狂信" # 1.000000
+i.x0: -> "広まっ" # 1.000000
+i.x0: -> "英語" # 1.000000
+i.x0: -> "でき" # 1.000000
+i.x0: -> "彼ら" # 1.000000
+i.x0: -> "は" # 1.000000
+i.x0: -> "だ" # 1.000000
+i.x0: -> "ずばぬけ" # 1.000000
+i.x0: -> "い" # 1.000000
+i.x0: -> "なっ" # 1.000000
+i.x0: -> "そびえ" # 1.000000
+i.x0: -> "ばかげ" # 1.000000
+i.x0: -> "雲の上" # 1.000000
+i.x0: -> "持っ" # 1.000000
+i.x0: -> "に" # 1.000000
+i.x0: -> "いる" # 1.000000
+i.x0: -> "と" # 1.000000
+i.x0: -> "その" # 1.000000
+i.x0: -> "住ん" # 1.000000
+i.x0: -> "て" # 1.000000
+i.x0: -> "峰" # 1.000000
+qNN.x0:CD -> r.x0 i.x0 # 1.000000
+qNN.x0:NN -> i.x0 r.x0 # 1.000000
+qNN.x0:DT -> i.x0 r.x0 # 1.000000
+qNN.x0:CD -> i.x0 r.x0 # 1.000000
+qNN.x0:JJ -> i.x0 r.x0 # 1.000000
+qNN.x0:DT -> r.x0 # 1.000000
+qNN.x0:JJ -> r.x0 # 1.000000
+qNN.x0:PRP -> r.x0 # 1.000000
+qNN.x0:NN -> r.x0 # 1.000000
+qNN.x0:PRP -> r.x0 i.x0 # 1.000000
+qNN.x0:NN -> r.x0 i.x0 # 1.000000
+qNN.x0:JJ -> r.x0 i.x0 # 1.000000
+qNN.x0:PRP -> i.x0 r.x0 # 1.000000
+qNN.x0:DT -> r.x0 i.x0 # 1.000000
+qNN.x0:CD -> r.x0 # 1.000000
+t."fanatic" -> "の" # 1.000000
+t."above" -> "は" # 1.000000
+t."english" -> "彼" # 1.000000
+t."i" -> "私" # 1.000000
+t."it" -> "彼" # 1.000000
+t."anger" -> "た" # 1.000000
+t."i" -> "彼ら" # 1.000000
+t."i" -> "ダンス" # 1.000000
+t."i" -> "ない" # 1.000000
+t."ability" -> "は" # 1.000000
+t."the" -> "彼" # 1.000000
+t."in" -> "を" # 1.000000
+t."a" -> "呼ぶ" # 1.000000
+t."ablaze" -> "おこっ" # 1.000000
+t."ablaze" -> "は" # 1.000000
+t."absurd" -> "いる" # 1.000000
+t."clouds" -> "峰" # 1.000000
+t."english" -> "ずばぬけ" # 1.000000
+t."he" -> "から" # 1.000000
+t."above" -> "て" # 1.000000
+t."in" -> "いる" # 1.000000
+t."five" -> "住ん" # 1.000000
+t."english" -> "英語" # 1.000000
+t."doors" -> "５" # 1.000000
+t."trust" -> *e* # 1.000000
+t."rises" -> "その" # 1.000000
+t."their" -> "でき" # 1.000000
+t."abuse" -> "私" # 1.000000
+t."clouds" -> "そびえ" # 1.000000
+t."abhorrent" -> "偽善" # 1.000000
+t."five" -> "５" # 1.000000
+t."their" -> "裏切る" # 1.000000
+t."rises" -> "いる" # 1.000000
+t."call" -> *e* # 1.000000
+t."clouds" -> *e* # 1.000000
+t."school" -> "で" # 1.000000
+t."above" -> "彼" # 1.000000
+t."has" -> "いる" # 1.000000
+t."them" -> "大嫌い" # 1.000000
+t."has" -> "彼" # 1.000000
+t."has" -> "持っ" # 1.000000
+t."to" -> "大嫌い" # 1.000000
+t."i" -> *e* # 1.000000
+t."it" -> *e* # 1.000000
+t."lives" -> "に" # 1.000000
+t."trust" -> "の" # 1.000000
+t."call" -> "いる" # 1.000000
+t."ability" -> "を" # 1.000000
+t."abuse" -> "を" # 1.000000
+t."unusual" -> "た" # 1.000000
+t."their" -> "私" # 1.000000
+t."fanatic" -> "は" # 1.000000
+t."rises" -> "峰" # 1.000000
+t."to" -> "ばかげ" # 1.000000
+t."abhorrent" -> "が" # 1.000000
+t."english" -> "は" # 1.000000
+t."abominate" -> "ヘビ" # 1.000000
+t."abhorrent" -> "は" # 1.000000
+t."was" -> "た" # 1.000000
+t."lives" -> "学校" # 1.000000
+t."has" -> "英語" # 1.000000
+t."rises" -> *e* # 1.000000
+t."anger" -> "おこっ" # 1.000000
+t."ablaze" -> "い" # 1.000000
+t."a" -> "て" # 1.000000
+t."absurd" -> "て" # 1.000000
+t."abroad" -> "た" # 1.000000
+t."five" -> "いる" # 1.000000
+t."five" -> "から" # 1.000000
+t."i" -> "裏切る" # 1.000000
+t."rises" -> "そびえ" # 1.000000
+t."news" -> *e* # 1.000000
+t."abominate" -> *e* # 1.000000
+t."anger" -> "赤" # 1.000000
+t."i" -> "が" # 1.000000
+t."news" -> "その" # 1.000000
+t."is" -> "ばかげ" # 1.000000
+t."him" -> "呼ぶ" # 1.000000
+t."hypocrisy" -> "が" # 1.000000
+t."the" -> "雲の上" # 1.000000
+t."anger" -> "に" # 1.000000
+t."has" -> "に" # 1.000000
+t."a" -> "ばかげ" # 1.000000
+t."ablaze" -> "赤" # 1.000000
+t."ability" -> "いる" # 1.000000
+t."school" -> "住ん" # 1.000000
+t."doors" -> "軒先" # 1.000000
+t."the" -> *e* # 1.000000
+t."him" -> "狂信" # 1.000000
+t."him" -> "者" # 1.000000
+t."abuse" -> "に" # 1.000000
+t."with" -> *e* # 1.000000
+t."doors" -> "に" # 1.000000
+t."abominate" -> "大嫌い" # 1.000000
+t."abhorrent" -> "彼ら" # 1.000000
+t."fanatic" -> "呼ぶ" # 1.000000
+t."doors" -> "彼" # 1.000000
+t."cannot" -> "裏切る" # 1.000000
+t."them" -> "偽善" # 1.000000
+t."snakes" -> "ヘビ" # 1.000000
+t."to" -> "が" # 1.000000
+t."ability" -> "英語" # 1.000000
+t."above" -> "そびえ" # 1.000000
+t."him" -> *e* # 1.000000
+t."anger" -> *e* # 1.000000
+t."cannot" -> "を" # 1.000000
+t."trust" -> "彼ら" # 1.000000
+t."trust" -> "に" # 1.000000
+t."abroad" -> *e* # 1.000000
+t."he" -> "で" # 1.000000
+t."cannot" -> *e* # 1.000000
+t."i" -> "こと" # 1.000000
+t."above" -> "軒先" # 1.000000
+t."got" -> "情報" # 1.000000
+t."was" -> "まっ" # 1.000000
+t."he" -> "た" # 1.000000
+t."in" -> "持っ" # 1.000000
+t."is" -> "を" # 1.000000
+t."with" -> "赤" # 1.000000
+t."peak" -> "て" # 1.000000
+t."trust" -> "私" # 1.000000
+t."absurd" -> *e* # 1.000000
+t."the" -> "軒先" # 1.000000
+t."a" -> "者" # 1.000000
+t."rises" -> "雲の上" # 1.000000
+t."he" -> "なっ" # 1.000000
+t."the" -> "そびえ" # 1.000000
+t."above" -> "で" # 1.000000
+t."it" -> "の" # 1.000000
+t."with" -> "彼" # 1.000000
+t."above" -> "学校" # 1.000000
+t."lives" -> "住ん" # 1.000000
+t."a" -> "を" # 1.000000
+t."he" -> "持っ" # 1.000000
+t."with" -> "い" # 1.000000
+t."a" -> *e* # 1.000000
+t."them" -> "彼ら" # 1.000000
+t."english" -> "を" # 1.000000
+t."he" -> "は" # 1.000000
+t."unusual" -> *e* # 1.000000
+t."is" -> "は" # 1.000000
+t."lives" -> "いる" # 1.000000
+t."abuse" -> "彼ら" # 1.000000
+t."above" -> "５" # 1.000000
+t."in" -> "彼" # 1.000000
+t."got" -> "広まっ" # 1.000000
+t."their" -> "信頼" # 1.000000
+t."them" -> *e* # 1.000000
+t."it" -> "ばかげ" # 1.000000
+t."ability" -> *e* # 1.000000
+t."news" -> "広まっ" # 1.000000
+t."clouds" -> "その" # 1.000000
+t."the" -> "て" # 1.000000
+t."five" -> "は" # 1.000000
+t."abominate" -> "だ" # 1.000000
+t."peak" -> "は" # 1.000000
+t."call" -> "を" # 1.000000
+t."english" -> "た" # 1.000000
+t."snakes" -> "だ" # 1.000000
+t."trust" -> "は" # 1.000000
+t."i" -> "信頼" # 1.000000
+t."unusual" -> "に" # 1.000000
+t."was" -> "なっ" # 1.000000
+t."absurd" -> "者" # 1.000000
+t."ability" -> "ずばぬけ" # 1.000000
+t."news" -> "情報" # 1.000000
+t."abominate" -> "は" # 1.000000
+t."absurd" -> "呼ぶ" # 1.000000
+t."has" -> "才能" # 1.000000
+t."was" -> "彼" # 1.000000
+t."their" -> *e* # 1.000000
+t."snakes" -> "が" # 1.000000
+t."is" -> "だ" # 1.000000
+t."to" -> "の" # 1.000000
+t."to" -> "狂信" # 1.000000
+t."hypocrisy" -> "大嫌い" # 1.000000
+t."dancing" -> *e* # 1.000000
+t."school" -> "学校" # 1.000000
+t."is" -> "と" # 1.000000
+t."the" -> "は" # 1.000000
+t."in" -> "に" # 1.000000
+t."doors" -> "いる" # 1.000000
+t."anger" -> "い" # 1.000000
+t."abhorrent" -> *e* # 1.000000
+t."with" -> "まっ" # 1.000000
+t."call" -> "彼" # 1.000000
+t."hypocrisy" -> *e* # 1.000000
+t."peak" -> "いる" # 1.000000
+t."absurd" -> "彼" # 1.000000
+t."absurd" -> "は" # 1.000000
+t."peak" -> "峰" # 1.000000
+t."school" -> "は" # 1.000000
+t."is" -> "の" # 1.000000
+t."clouds" -> "は" # 1.000000
+t."hypocrisy" -> "偽善" # 1.000000
+t."call" -> "て" # 1.000000
+t."ablaze" -> "なっ" # 1.000000
+t."call" -> "の" # 1.000000
+t."hypocrisy" -> "だ" # 1.000000
+t."cannot" -> "彼ら" # 1.000000
+t."unusual" -> "て" # 1.000000
+t."rises" -> "に" # 1.000000
+t."unusual" -> "才能" # 1.000000
+t."unusual" -> "ずばぬけ" # 1.000000
+t."to" -> "者" # 1.000000
+t."fanatic" -> *e* # 1.000000
+t."him" -> "は" # 1.000000
+t."a" -> "彼" # 1.000000
+t."he" -> "を" # 1.000000
+t."peak" -> "に" # 1.000000
+t."in" -> *e* # 1.000000
+t."a" -> "と" # 1.000000
+t."abhorrent" -> "大嫌い" # 1.000000
+t."it" -> "者" # 1.000000
+t."school" -> "から" # 1.000000
+t."doors" -> "は" # 1.000000
+t."above" -> "峰" # 1.000000
+t."above" -> *e* # 1.000000
+t."doors" -> "から" # 1.000000
+t."he" -> "英語" # 1.000000
+t."with" -> "に" # 1.000000
+t."was" -> "は" # 1.000000
+t."i" -> "でき" # 1.000000
+t."it" -> "いる" # 1.000000
+t."ablaze" -> "て" # 1.000000
+t."him" -> "ばかげ" # 1.000000
+t."five" -> "に" # 1.000000
+t."has" -> "て" # 1.000000
+t."above" -> "雲の上" # 1.000000
+t."fanatic" -> "を" # 1.000000
+t."above" -> "その" # 1.000000
+t."is" -> "いる" # 1.000000
+t."he" -> "学校" # 1.000000
+t."english" -> "持っ" # 1.000000
+t."their" -> "こと" # 1.000000
+t."was" -> "赤" # 1.000000
+t."to" -> "を" # 1.000000
+t."the" -> "学校" # 1.000000
+t."has" -> "ずばぬけ" # 1.000000
+t."doors" -> "で" # 1.000000
+t."he" -> "に" # 1.000000
+t."school" -> *e* # 1.000000
+t."above" -> "に" # 1.000000
+t."cannot" -> "は" # 1.000000
+t."got" -> *e* # 1.000000
+t."trust" -> "を" # 1.000000
+t."abuse" -> "は" # 1.000000
+t."it" -> "は" # 1.000000
+t."ability" -> "に" # 1.000000
+t."cannot" -> "でき" # 1.000000
+t."doors" -> "学校" # 1.000000
+t."doors" -> "住ん" # 1.000000
+t."a" -> "狂信" # 1.000000
+t."call" -> "狂信" # 1.000000
+t."hypocrisy" -> "は" # 1.000000
+t."with" -> "て" # 1.000000
+t."lives" -> "は" # 1.000000
+t."absurd" -> "の" # 1.000000
+t."dancing" -> "は" # 1.000000
+t."him" -> "の" # 1.000000
+t."english" -> "才能" # 1.000000
+t."it" -> "て" # 1.000000
+t."unusual" -> "いる" # 1.000000
+t."cannot" -> "信頼" # 1.000000
+t."with" -> "た" # 1.000000
+t."i" -> "の" # 1.000000
+t."with" -> "おこっ" # 1.000000
+t."anger" -> "まっ" # 1.000000
+t."abroad" -> "広まっ" # 1.000000
+t."absurd" -> "を" # 1.000000
+t."i" -> "を" # 1.000000
+t."above" -> "住ん" # 1.000000
+t."english" -> "いる" # 1.000000
+t."it" -> "と" # 1.000000
+t."trust" -> "でき" # 1.000000
+t."he" -> "赤" # 1.000000
+t."fanatic" -> "て" # 1.000000
+t."trust" -> "裏切る" # 1.000000
+t."the" -> "広まっ" # 1.000000
+t."cannot" -> "こと" # 1.000000
+t."english" -> "に" # 1.000000
+t."lives" -> *e* # 1.000000
+t."the" -> "いる" # 1.000000
+t."the" -> "に" # 1.000000
+t."abroad" -> "情報" # 1.000000
+t."english" -> *e* # 1.000000
+t."to" -> "いる" # 1.000000
+t."cannot" -> "私" # 1.000000
+t."peak" -> "雲の上" # 1.000000
+t."i" -> "は" # 1.000000
+t."fanatic" -> "彼" # 1.000000
+t."he" -> "彼" # 1.000000
+t."the" -> "情報" # 1.000000
+t."anger" -> "なっ" # 1.000000
+t."unusual" -> "英語" # 1.000000
+t."he" -> "才能" # 1.000000
+t."them" -> "は" # 1.000000
+t."to" -> "偽善" # 1.000000
+t."ablaze" -> "まっ" # 1.000000
+t."him" -> "て" # 1.000000
+t."trust" -> "信頼" # 1.000000
+t."he" -> "５" # 1.000000
+t."five" -> "で" # 1.000000
+t."lives" -> "５" # 1.000000
+t."to" -> "て" # 1.000000
+t."five" -> "軒先" # 1.000000
+t."dancing" -> "ダンス" # 1.000000
+t."abominate" -> "が" # 1.000000
+t."abroad" -> "その" # 1.000000
+t."it" -> "狂信" # 1.000000
+t."absurd" -> "と" # 1.000000
+t."him" -> "を" # 1.000000
+t."trust" -> "こと" # 1.000000
+t."school" -> "に" # 1.000000
+t."got" -> "た" # 1.000000
+t."anger" -> "彼" # 1.000000
+t."them" -> "だ" # 1.000000
+t."their" -> "を" # 1.000000
+t."five" -> "学校" # 1.000000
+t."was" -> "に" # 1.000000
+t."he" -> "おこっ" # 1.000000
+t."the" -> "その" # 1.000000
+t."their" -> "に" # 1.000000
+t."news" -> "は" # 1.000000
+t."anger" -> "は" # 1.000000
+t."abuse" -> "ない" # 1.000000
+t."ability" -> "彼" # 1.000000
+t."abuse" -> "信頼" # 1.000000
+t."him" -> "と" # 1.000000
+t."anger" -> "て" # 1.000000
+t."unusual" -> "持っ" # 1.000000
+t."to" -> "彼ら" # 1.000000
+t."abuse" -> "の" # 1.000000
+t."to" -> "呼ぶ" # 1.000000
+t."ablaze" -> "彼" # 1.000000
+t."abuse" -> "こと" # 1.000000
+t."fanatic" -> "ばかげ" # 1.000000
+t."has" -> *e* # 1.000000
+t."the" -> "峰" # 1.000000
+t."cannot" -> "ない" # 1.000000
+t."abhorrent" -> "だ" # 1.000000
+t."doors" -> *e* # 1.000000
+t."snakes" -> *e* # 1.000000
+t."is" -> "彼ら" # 1.000000
+t."the" -> "５" # 1.000000
+t."school" -> "軒先" # 1.000000
+t."school" -> "彼" # 1.000000
+t."he" -> "い" # 1.000000
+t."lives" -> "彼" # 1.000000
+t."it" -> "呼ぶ" # 1.000000
+t."is" -> "彼" # 1.000000
+t."to" -> "は" # 1.000000
+t."cannot" -> "の" # 1.000000
+t."lives" -> "で" # 1.000000
+t."has" -> "を" # 1.000000
+t."was" -> "い" # 1.000000
+t."rises" -> "て" # 1.000000
+t."absurd" -> "ばかげ" # 1.000000
+t."peak" -> *e* # 1.000000
+t."their" -> "の" # 1.000000
+t."is" -> "て" # 1.000000
+t."school" -> "５" # 1.000000
+t."rises" -> "は" # 1.000000
+t."a" -> "の" # 1.000000
+t."in" -> "才能" # 1.000000
+t."fanatic" -> "者" # 1.000000
+t."in" -> "て" # 1.000000
+t."abroad" -> "は" # 1.000000
+t."is" -> "偽善" # 1.000000
+t."he" -> "まっ" # 1.000000
+t."i" -> "ヘビ" # 1.000000
+t."absurd" -> "狂信" # 1.000000
+t."i" -> "に" # 1.000000
+t."clouds" -> "て" # 1.000000
+t."clouds" -> "に" # 1.000000
+t."abuse" -> *e* # 1.000000
+t."is" -> "者" # 1.000000
+t."dancing" -> "だ" # 1.000000
+t."lives" -> "から" # 1.000000
+t."unusual" -> "彼" # 1.000000
+t."the" -> "から" # 1.000000
+t."with" -> "なっ" # 1.000000
+t."got" -> "その" # 1.000000
+t."i" -> "大嫌い" # 1.000000
+t."trust" -> "ない" # 1.000000
+t."abuse" -> "でき" # 1.000000
+t."is" -> *e* # 1.000000
+t."has" -> "た" # 1.000000
+t."is" -> "呼ぶ" # 1.000000
+t."ablaze" -> "に" # 1.000000
+t."call" -> "呼ぶ" # 1.000000
+t."call" -> "は" # 1.000000
+t."ability" -> "才能" # 1.000000
+t."ability" -> "た" # 1.000000
+t."him" -> "いる" # 1.000000
+t."clouds" -> "いる" # 1.000000
+t."abominate" -> "ダンス" # 1.000000
+t."them" -> "が" # 1.000000
+t."him" -> "彼" # 1.000000
+t."snakes" -> "大嫌い" # 1.000000
+t."to" -> "彼" # 1.000000
+t."he" -> *e* # 1.000000
+t."the" -> "で" # 1.000000
+t."hypocrisy" -> "彼ら" # 1.000000
+t."peak" -> "そびえ" # 1.000000
+t."a" -> "は" # 1.000000
+t."ability" -> "持っ" # 1.000000
+t."has" -> "は" # 1.000000
+t."fanatic" -> "狂信" # 1.000000
+t."news" -> "た" # 1.000000
+t."cannot" -> "に" # 1.000000
+t."school" -> "いる" # 1.000000
+t."was" -> *e* # 1.000000
+t."with" -> "は" # 1.000000
+t."their" -> "は" # 1.000000
+t."english" -> "て" # 1.000000
+t."fanatic" -> "いる" # 1.000000
+t."in" -> "ずばぬけ" # 1.000000
+t."he" -> "住ん" # 1.000000
+t."above" -> "から" # 1.000000
+t."to" -> "と" # 1.000000
+t."call" -> "ばかげ" # 1.000000
+t."abuse" -> "裏切る" # 1.000000
+t."to" -> *e* # 1.000000
+t."lives" -> "軒先" # 1.000000
+t."got" -> "は" # 1.000000
+t."in" -> "は" # 1.000000
+t."ability" -> "て" # 1.000000
+t."unusual" -> "は" # 1.000000
+t."their" -> "彼ら" # 1.000000
+t."clouds" -> "雲の上" # 1.000000
+t."is" -> "が" # 1.000000
+t."five" -> *e* # 1.000000
+t."he" -> "て" # 1.000000
+t."he" -> "いる" # 1.000000
+t."dancing" -> "大嫌い" # 1.000000
+t."to" -> "だ" # 1.000000
+t."above" -> "いる" # 1.000000
+t."is" -> "狂信" # 1.000000
+t."peak" -> "その" # 1.000000
+t."unusual" -> "を" # 1.000000
+t."was" -> "おこっ" # 1.000000
+t."call" -> "と" # 1.000000
+t."was" -> "て" # 1.000000
+t."five" -> "彼" # 1.000000
+t."he" -> "軒先" # 1.000000
+t."the" -> "住ん" # 1.000000
+t."fanatic" -> "と" # 1.000000
+t."a" -> "いる" # 1.000000
+t."the" -> "た" # 1.000000
+t."he" -> "ずばぬけ" # 1.000000
+t."i" -> "だ" # 1.000000
+t."their" -> "ない" # 1.000000
+t."it" -> "を" # 1.000000
+t."ablaze" -> *e* # 1.000000
+t."call" -> "者" # 1.000000
+t."in" -> "英語" # 1.000000
+t."is" -> "大嫌い" # 1.000000
+t."ablaze" -> "た" # 1.000000
+t."in" -> "た" # 1.000000
+qPRP.x0:NN -> i.x0 r.x0 # 1.000000
+qPRP.x0:PRP -> i.x0 r.x0 # 1.000000
+qPRP.x0:NN -> r.x0 # 1.000000
+qPRP.x0:PRP -> r.x0 i.x0 # 1.000000
+qPRP.x0:NN -> r.x0 i.x0 # 1.000000
+qPRP.x0:PRP -> r.x0 # 1.000000
+qJJ.x0:TO -> i.x0 r.x0 # 1.000000
+qJJ.x0:JJ -> i.x0 r.x0 # 1.000000
+qJJ.x0:TO -> r.x0 # 1.000000
+qJJ.x0:JJ -> r.x0 i.x0 # 1.000000
+qJJ.x0:IN -> r.x0 i.x0 # 1.000000
+qJJ.x0:IN -> i.x0 r.x0 # 1.000000
+qJJ.x0:IN -> r.x0 # 1.000000
+qJJ.x0:TO -> r.x0 i.x0 # 1.000000
+qJJ.x0:JJ -> r.x0 # 1.000000
+qMD.x0:VB -> i.x0 r.x0 # 1.000000
+qMD.x0:MD -> r.x0 i.x0 # 1.000000
+qMD.x0:VB -> r.x0 # 1.000000
+qMD.x0:PRP -> i.x0 r.x0 # 1.000000
+qMD.x0:PRP -> r.x0 i.x0 # 1.000000
+qMD.x0:MD -> i.x0 r.x0 # 1.000000
+qMD.x0:VB -> r.x0 i.x0 # 1.000000
+qMD.x0:PRP -> r.x0 # 1.000000
+qMD.x0:MD -> r.x0 # 1.000000
+qTO.x0:PRP -> r.x0 i.x0 # 1.000000
+qTO.x0:TO -> i.x0 r.x0 # 1.000000
+qTO.x0:VB -> r.x0 # 1.000000
+qTO.x0:PRP -> r.x0 # 1.000000
+qTO.x0:VB -> r.x0 i.x0 # 1.000000
+qTO.x0:TO -> r.x0 i.x0 # 1.000000
+qTO.x0:PRP -> i.x0 r.x0 # 1.000000
+qTO.x0:VB -> i.x0 r.x0 # 1.000000
+qTO.x0:TO -> r.x0 # 1.000000
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x2 qVB.x3 qVB.x1 qVB.x0 # 1.000000
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x0 qVB.x3 qVB.x2 qVB.x1 # 1.000000
+r.MD(x0:PRP x1:MD x2:VB) -> qMD.x2 qMD.x1 qMD.x0 # 1.000000
+r.JJ(x0:JJ x1:IN) -> qJJ.x0 qJJ.x1 # 1.000000
+r.PRP(x0:"i") -> t.x0 # 1.000000
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x1 qVB.x3 qVB.x0 qVB.x2 # 1.000000
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x2 qVB.x0 qVB.x3 qVB.x1 # 1.000000
+r.VB(x0:"rises") -> t.x0 # 1.000000
+r.PRP(x0:"he") -> t.x0 # 1.000000
+r.NN(x0:"ability") -> t.x0 # 1.000000
+r.TOP(x0:MD) -> qTOP.x0 # 1.000000
+r.NN(x0:PRP x1:NN) -> qNN.x1 qNN.x0 # 1.000000 @ 1
+r.VB(x0:NN x1:VB x2:JJ) -> qVB.x2 qVB.x1 qVB.x0 # 1.000000
+r.VB(x0:PRP x1:VB x2:NN) -> qVB.x0 qVB.x2 qVB.x1 # 1.000000
+r.MD(x0:PRP x1:MD x2:VB) -> qMD.x1 qMD.x0 qMD.x2 # 1.000000
+r.JJ(x0:JJ x1:IN) -> qJJ.x1 qJJ.x0 # 1.000000
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x2 qVB.x1 qVB.x0 qVB.x3 # 1.000000
+r.NN(x0:"peak") -> t.x0 # 1.000000
+r.VB(x0:PRP x1:VB x2:NN) -> qVB.x1 qVB.x0 qVB.x2 # 1.000000
+r.VB(x0:NN x1:VB x2:RB) -> qVB.x0 qVB.x1 qVB.x2 # 1.000000
+r.TO(x0:TO x1:PRP) -> qTO.x1 qTO.x0 # 1.000000
+r.VB(x0:NN x1:VB x2:JJ) -> qVB.x2 qVB.x0 qVB.x1 # 1.000000
+r.NN(x0:"trust") -> t.x0 # 1.000000
+r.VB(x0:PRP x1:VB x2:VB) -> qVB.x0 qVB.x2 qVB.x1 # 1.000000
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x1 qVB.x3 qVB.x2 qVB.x0 # 1.000000
+r.VB(x0:PRP x1:VB x2:IN) -> qVB.x2 qVB.x1 qVB.x0 # 1.000000
+r.VB(x0:NN x1:VB x2:RB) -> qVB.x2 qVB.x0 qVB.x1 # 1.000000
+r.MD(x0:PRP x1:MD x2:VB) -> qMD.x1 qMD.x2 qMD.x0 # 1.000000
+r.VB(x0:VB x1:PRP) -> qVB.x0 qVB.x1 # 1.000000
+r.NN(x0:"doors") -> t.x0 # 1.000000
+r.PRP(x0:"their") -> t.x0 # 1.000000
+r.NN(x0:"fanatic") -> t.x0 # 1.000000
+r.VB(x0:NN x1:VB x2:RB) -> qVB.x1 qVB.x0 qVB.x2 # 1.000000
+r.VB(x0:PRP x1:VB x2:JJ) -> qVB.x0 qVB.x2 qVB.x1 # 1.000000
+r.NN(x0:"english") -> t.x0 # 1.000000
+r.VB(x0:"dancing") -> t.x0 # 1.000000
+r.NN(x0:"clouds") -> t.x0 # 1.000000
+r.IN(x0:NN x1:IN x2:NN) -> qIN.x0 qIN.x1 qIN.x2 # 1.000000
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x3 qVB.x0 qVB.x2 qVB.x1 # 1.000000
+r.VB(x0:NN x1:VB x2:JJ) -> qVB.x1 qVB.x0 qVB.x2 # 1.000000
+r.VB(x0:PRP x1:VB x2:IN) -> qVB.x1 qVB.x0 qVB.x2 # 1.000000
+r.VB(x0:"lives") -> t.x0 # 1.000000
+r.DT(x0:"a") -> t.x0 # 1.000000
+r.NN(x0:"hypocrisy") -> t.x0 # 1.000000
+r.VB(x0:NN x1:VB x2:RB) -> qVB.x2 qVB.x1 qVB.x0 # 1.000000
+r.PRP(x0:"it") -> t.x0 # 1.000000
+r.DT(x0:"the") -> t.x0 # 1.000000
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x2 qVB.x1 qVB.x3 qVB.x0 # 1.000000
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x1 qVB.x0 qVB.x2 qVB.x3 # 1.000000
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x2 qVB.x3 qVB.x0 qVB.x1 # 1.000000
+r.VB(x0:NN x1:VB x2:IN) -> qVB.x0 qVB.x2 qVB.x1 # 1.000000
+r.NN(x0:DT x1:NN) -> qNN.x0 qNN.x1 # 1.000000
+r.VB(x0:NN x1:VB x2:IN) -> qVB.x2 qVB.x1 qVB.x0 # 1.000000
+r.VB(x0:"has") -> t.x0 # 1.000000
+r.NN(x0:CD x1:NN) -> qNN.x1 qNN.x0 # 1.000000
+r.VB(x0:"abuse") -> t.x0 # 1.000000
+r.VB(x0:VB x1:PRP) -> qVB.x1 qVB.x0 # 1.000000
+r.VB(x0:PRP x1:VB x2:VB) -> qVB.x0 qVB.x1 qVB.x2 # 1.000000
+r.IN(x0:NN x1:IN x2:NN) -> qIN.x1 qIN.x2 qIN.x0 # 1.000000
+r.VB(x0:PRP x1:VB x2:NN) -> qVB.x0 qVB.x1 qVB.x2 # 1.000000
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x0 qVB.x2 qVB.x1 qVB.x3 # 1.000000
+r.VB(x0:"is") -> t.x0 # 1.000000
+r.IN(x0:IN x1:NN) -> qIN.x1 qIN.x0 # 1.000000
+r.JJ(x0:JJ x1:TO) -> qJJ.x0 qJJ.x1 # 1.000000
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x3 qVB.x1 qVB.x0 qVB.x2 # 1.000000
+r.VB(x0:NN x1:VB x2:JJ) -> qVB.x0 qVB.x1 qVB.x2 # 1.000000
+r.TO(x0:TO x1:PRP) -> qTO.x0 qTO.x1 # 1.000000
+r.IN(x0:"above") -> t.x0 # 1.000000
+r.VB(x0:PRP x1:VB x2:IN) -> qVB.x0 qVB.x2 qVB.x1 # 1.000000
+r.RB(x0:"abroad") -> t.x0 # 1.000000
+r.VB(x0:PRP x1:VB x2:JJ) -> qVB.x0 qVB.x1 qVB.x2 # 1.000000
+r.VB(x0:PRP x1:VB x2:VB) -> qVB.x1 qVB.x2 qVB.x0 # 1.000000
+r.VB(x0:VB x1:NN) -> qVB.x1 qVB.x0 # 1.000000
+r.IN(x0:"in") -> t.x0 # 1.000000
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x3 qVB.x1 qVB.x2 qVB.x0 # 1.000000
+r.VB(x0:PRP x1:VB x2:IN) -> qVB.x0 qVB.x1 qVB.x2 # 1.000000
+r.MD(x0:PRP x1:MD x2:VB) -> qMD.x0 qMD.x1 qMD.x2 # 1.000000
+r.VB(x0:NN x1:VB x2:IN) -> qVB.x2 qVB.x0 qVB.x1 # 1.000000
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x0 qVB.x1 qVB.x3 qVB.x2 # 1.000000
+r.VB(x0:NN x1:VB x2:JJ) -> qVB.x0 qVB.x2 qVB.x1 # 1.000000
+r.VB(x0:PRP x1:VB x2:VB) -> qVB.x1 qVB.x0 qVB.x2 # 1.000000
+r.NN(x0:PRP x1:NN) -> qNN.x0 qNN.x1 # 1.000000 @ 2
+r.VB(x0:"got") -> t.x0 # 1.000000
+r.JJ(x0:JJ x1:TO) -> qJJ.x1 qJJ.x0 # 1.000000
+r.NN(x0:DT x1:NN) -> qNN.x1 qNN.x0 # 1.000000
+r.PRP(x0:"them") -> t.x0 # 1.000000
+r.VB(x0:PRP x1:VB x2:IN) -> qVB.x1 qVB.x2 qVB.x0 # 1.000000
+r.CD(x0:"five") -> t.x0 # 1.000000
+r.NN(x0:"snakes") -> t.x0 # 1.000000
+r.VB(x0:PRP x1:VB x2:VB) -> qVB.x2 qVB.x1 qVB.x0 # 1.000000
+r.IN(x0:NN x1:IN x2:NN) -> qIN.x1 qIN.x0 qIN.x2 # 1.000000
+r.VB(x0:NN x1:VB x2:IN) -> qVB.x1 qVB.x2 qVB.x0 # 1.000000
+r.VB(x0:PRP x1:VB x2:NN) -> qVB.x2 qVB.x0 qVB.x1 # 1.000000
+r.MD(x0:"cannot") -> t.x0 # 1.000000
+r.IN(x0:"with") -> t.x0 # 1.000000
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x1 qVB.x2 qVB.x0 qVB.x3 # 1.000000
+r.JJ(x0:"absurd") -> t.x0 # 1.000000
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x3 qVB.x2 qVB.x0 qVB.x1 # 1.000000
+r.VB(x0:VB x1:NN) -> qVB.x0 qVB.x1 # 1.000000
+r.PRP(x0:PRP x1:NN) -> qPRP.x1 qPRP.x0 # 1.000000 @ 1
+r.IN(x0:NN x1:IN x2:NN) -> qIN.x0 qIN.x2 qIN.x1 # 1.000000
+r.VB(x0:NN x1:VB x2:IN) -> qVB.x1 qVB.x0 qVB.x2 # 1.000000
+r.VB(x0:"abominate") -> t.x0 # 1.000000
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x3 qVB.x0 qVB.x1 qVB.x2 # 1.000000
+r.TOP(x0:VB) -> qTOP.x0 # 1.000000
+r.PRP(x0:"him") -> t.x0 # 1.000000
+r.VB(x0:NN x1:VB x2:RB) -> qVB.x1 qVB.x2 qVB.x0 # 1.000000
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x3 qVB.x2 qVB.x1 qVB.x0 # 1.000000
+r.VB(x0:NN x1:VB x2:RB) -> qVB.x0 qVB.x2 qVB.x1 # 1.000000
+r.VB(x0:PRP x1:VB x2:JJ) -> qVB.x1 qVB.x2 qVB.x0 # 1.000000
+r.IN(x0:NN x1:IN x2:NN) -> qIN.x2 qIN.x1 qIN.x0 # 1.000000
+r.NN(x0:JJ x1:NN) -> qNN.x0 qNN.x1 # 1.000000
+r.VB(x0:PRP x1:VB x2:JJ) -> qVB.x1 qVB.x0 qVB.x2 # 1.000000
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x0 qVB.x3 qVB.x1 qVB.x2 # 1.000000
+r.VB(x0:"was") -> t.x0 # 1.000000
+r.IN(x0:IN x1:NN) -> qIN.x0 qIN.x1 # 1.000000
+r.VB(x0:PRP x1:VB x2:JJ) -> qVB.x2 qVB.x0 qVB.x1 # 1.000000
+r.NN(x0:"anger") -> t.x0 # 1.000000
+r.MD(x0:PRP x1:MD x2:VB) -> qMD.x0 qMD.x2 qMD.x1 # 1.000000
+r.PRP(x0:PRP x1:NN) -> qPRP.x0 qPRP.x1 # 1.000000 @ 2
+r.NN(x0:CD x1:NN) -> qNN.x0 qNN.x1 # 1.000000
+r.JJ(x0:"unusual") -> t.x0 # 1.000000
+r.VB(x0:NN x1:VB x2:IN) -> qVB.x0 qVB.x1 qVB.x2 # 1.000000
+r.TO(x0:"to") -> t.x0 # 1.000000
+r.MD(x0:PRP x1:MD x2:VB) -> qMD.x2 qMD.x0 qMD.x1 # 1.000000
+r.VB(x0:PRP x1:VB x2:VB) -> qVB.x2 qVB.x0 qVB.x1 # 1.000000
+r.VB(x0:PRP x1:VB x2:NN) -> qVB.x2 qVB.x1 qVB.x0 # 1.000000
+r.JJ(x0:"ablaze") -> t.x0 # 1.000000
+r.NN(x0:JJ x1:NN) -> qNN.x1 qNN.x0 # 1.000000
+r.NN(x0:"school") -> t.x0 # 1.000000
+r.VB(x0:NN x1:VB x2:JJ) -> qVB.x1 qVB.x2 qVB.x0 # 1.000000
+r.IN(x0:NN x1:IN x2:NN) -> qIN.x2 qIN.x0 qIN.x1 # 1.000000
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x2 qVB.x0 qVB.x1 qVB.x3 # 1.000000
+r.NN(x0:"news") -> t.x0 # 1.000000
+r.JJ(x0:"abhorrent") -> t.x0 # 1.000000
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x0 qVB.x1 qVB.x2 qVB.x3 # 1.000000
+r.TO(x0:TO x1:VB) -> qTO.x0 qTO.x1 # 1.000000
+r.VB(x0:PRP x1:VB x2:NN) -> qVB.x1 qVB.x2 qVB.x0 # 1.000000
+r.VB(x0:PRP x1:VB x2:IN) -> qVB.x2 qVB.x0 qVB.x1 # 1.000000
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x1 qVB.x2 qVB.x3 qVB.x0 # 1.000000
+r.VB(x0:PRP x1:VB x2:JJ) -> qVB.x2 qVB.x1 qVB.x0 # 1.000000
+r.VB(x0:"call") -> t.x0 # 1.000000
+r.TO(x0:TO x1:VB) -> qTO.x1 qTO.x0 # 1.000000
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x0 qVB.x2 qVB.x3 qVB.x1 # 1.000000
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x1 qVB.x0 qVB.x3 qVB.x2 # 1.000000

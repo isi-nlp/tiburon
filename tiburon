@@ -1,0 +1,39 @@
+#!/bin/bash
+CURRDIR=`dirname $0`;
+if [[ -z $JAVA_HOME ]]
+then 
+    WJAVA=`which java`;
+    if [[ -n $WJAVA ]];
+	then
+	JAVA_HOME=$WJAVA;
+    else
+	echo "Tiburon requires java and can't find your distribution."
+	echo "If you know the path to your java binaries, set the \$JAVA_HOME environment variable to the path"
+	echo "(usually by typing \"export JAVA_HOME=<path-to-binaries>\" or \"setenv JAVA_HOME <path-to-binaries>\""
+	echo "where <path-to-binaries> is the actual path) or to set the variable temporarily execute tiburon as"
+	echo "JAVA_HOME=<path-to-binaries> tiburon ..."
+	exit 1
+    fi
+fi
+if [[ -z $MEM ]]
+then MEM='-Xmx1000m'
+fi
+# can we find bin/java under this?
+if [[ -d $JAVA_HOME ]]
+then 
+    if [[ -x $JAVA_HOME/bin/java ]]
+    then 
+	JAVA=$JAVA_HOME/bin/java;
+    elif  [[ -x $JAVA_HOME/java ]]
+    then
+	JAVA=$JAVA_HOME/java;
+    fi
+elif [[ -x $JAVA_HOME ]]
+then
+    JAVA=$JAVA_HOME;
+else
+    echo "Could not find java executable as $JAVA_HOME, $JAVA_HOME/java, or $JAVA_HOME/bin/java";
+    echo "Please adjust JAVA_HOME to point to a usable java path";
+    exit 1
+fi
+$JAVA $MEM -jar $CURRDIR/tiburon.jar $@;

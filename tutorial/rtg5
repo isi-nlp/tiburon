@@ -1,0 +1,6 @@
+%% filename: rtg5 %%
+q
+q -> S(w w w)
+w -> likes
+w -> John
+w -> candy

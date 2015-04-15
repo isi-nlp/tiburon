@@ -1,0 +1,12 @@
+%% filename: rtg6 %%
+q
+q -> S(subj verb obj)
+subj -> John
+subj -> Mary
+subj -> Bill
+verb -> likes
+verb -> loathes
+verb -> buys
+obj -> trucks
+obj -> candy
+obj -> life

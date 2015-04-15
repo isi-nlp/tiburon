@@ -1,0 +1,16 @@
+Tree info for input tree xrs_applicable.tree:
+	13 nodes
+	5 yield length
+Transducer info for input string transducer unweighted_tied_eucjp_trainable.xrs:
+	11 states
+	730 rules
+CFG info for forward application of tree:
+	29 states
+	470 rules
+	48 unique terminal symbols
+	15783090502173815625000 derivations
+CFG info for CFG composed with string:
+	369 states
+	858 rules
+	7 unique terminal symbols
+	648192 derivations

@@ -1,0 +1,10 @@
+How to build the jar file:
+[strontium 696] tiburonjava > /usr/java/j2sdk1.4.2_08/bin/jar -cmf tiburon.mf tiburon.jar `find mjr edu com gnu -name '*.class' -print`
+How to check in
+cvs commit
+How to set a revision tag (like mytag)
+cvs rtag 'mytag' tiburonjava
+if a tag is to be moved, use cvs rtag -F to force the move
+How to check out
+cvs checkout -P tiburonjava
+(the -P avoids empty directories)

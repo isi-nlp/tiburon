@@ -1,0 +1,10 @@
+# this is an awk script to verify the lines of a file. If a line is
+#  incorrect its number is printed, and if the wrong number of lines
+# is found this too is printed
+
+# look for 5 lines, each with a tree and score
+BEGIN { FS="#"; }
+$1 !~ /^[A-Z][\(\)A-Z ]+\)[ \t]*$/ || $2 !~ /^[ \t]*[0-9\.E\-]+[ \t\n\r]*$/ {print NR}
+{records++}
+END{if (records != 5) {printf("%s lines\n", records)}}
+

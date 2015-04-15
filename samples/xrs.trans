@@ -1,0 +1,13 @@
+q
+q.A(x0: x1:) -> q.x0 q.x1
+q.A(x0: x1: x2:) -> r.x1 q.x0
+q.B -> D 
+r.C -> E
+q.B -> E 
+q.B -> H 
+q.C -> D 
+q.C -> E 
+q.C -> H 
+q.G -> D 
+q.G -> E 
+q.G -> H 

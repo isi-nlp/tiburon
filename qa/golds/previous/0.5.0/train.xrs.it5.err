@@ -1,0 +1,11 @@
+# this is an awk script to verify the lines of a file. If a line is
+#  incorrect its number is printed, and if the wrong number of lines
+# is found this too is printed
+NR==1 && $0 !~ /^This is Tiburon, version [0-9.]+/ {print NR}
+NR==2 && $0 !~ "Cross entropy with normalized initial weights is 2.195868564999[0-9]+; corpus prob is e\\^-474.3076100399[0-9]+" {print NR}
+NR==3 && $0 !~ "Cross entropy after 1 iterations is 1.84992538[0-9]+; corpus prob is e\\^-399.583883[0-9]+" {print NR}
+NR==4 && $0 !~ "Cross entropy after 2 iterations is 1.7121259[0-9]+; corpus prob is e\\^-369.81919[0-9]+" {print NR}
+NR==5 && $0 !~ "Cross entropy after 3 iterations is 1.5436138[0-9]+; corpus prob is e\\^-333.42058[0-9]+" {print NR}
+NR==6 && $0 !~ "Cross entropy after 4 iterations is 1.4158798[0-9]+; corpus prob is e\\^-305.8300[0-9]+" {print NR}
+{records++}
+END{if (records != 6) {printf("%s lines\n", records)}}

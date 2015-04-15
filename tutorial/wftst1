@@ -1,0 +1,14 @@
+%% file: wftst1 %%
+q
+q.S(x0:NP x1:VP) -> q.x0 q.x1  # 1
+q.NP(x0: x1: x2:) -> t.x0 t.x1 t.x2 # 0.5
+q.NP(x0: x1: x2:) -> t.x0 t.x2 t.x1 # 0.5
+q.VP(x0: x1:) -> t.x0 t.x1 # 1
+t.the -> los # 1
+t.blue -> azules # 1
+t.bears -> osos # 1
+t.dogs -> perros # 1
+t.are -> son # 0.5
+t.are -> están # 0.5
+t.strong -> fuertes # 1
+t.happy -> felices # 1

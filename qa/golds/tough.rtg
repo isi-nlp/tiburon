@@ -1,0 +1,8 @@
+START
+START -> he(she it(blah blah) blah) # 1.000000
+START -> did(we get(through comments okay?) yes) # 1.000000
+she -> the(6(men and "shirley jackson")) # 1.000000 @ 3
+10 -> comments(at the end) # 4.000000
+10 -> "()"("{"("{}" "'" ') blah("   " "a" "b")) # 0.600000
+men -> many(irregular(spaces here) aren't there?) # 1.000000
+"shirley jackson" -> 6(7(8(9.39094 10 10 10) 12.22)) # 0.400000 @ 3

@@ -1,0 +1,20 @@
+# this is an awk script to verify an rtg that may have slight state
+# name variance
+
+# look for:
+# 1) a start state on line 1
+# 2) 9 total lines
+# 3) each rule line having 1.000000 as the weight
+# 4) 2 lines with C, 1 with A, 2 with E, 1 with Y, 1 with B
+#    and 1 with another state in the rhs
+BEGIN { FS=" # "; cs=0; es=0; as=0; ys=0; bs=0 sts=0; }
+# start state is line 1
+NR==1 && $0 !~ /^q[^ ]+[ \t\n\r]*$/ {print NR}
+# other lines are well-formed rules with 1.000000 endings
+NR>1 && ($1 !~ /^[^ ]+ -> / || $2 != 1.000000) {print NR}
+# count number of records
+{records++}
+END{
+  # check record total
+  if (records != 9) {printf("%s lines\n", records)}
+}

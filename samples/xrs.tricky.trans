@@ -1,0 +1,30 @@
+q
+q.A(x0:A x1: x2:) -> x y q.x2 q.x1 z r.x0 z # .5
+q.A(x0: x1:B x2:) -> r.x1 x y q.x2 z q.x0 z # .5
+q.A(x0:A x1:A x2:A) -> x y q.x2 f z q.x0 z # .5
+q.A(x0: x1: x2:D) -> x y l.x2 f q.x1 g g g z q.x0 z # .5
+q.A(x0: x1: x2:) -> x y q.x2 f q.x1 g g z q.x0 z # .5
+q.A(x0: x1: x2:) -> x y q.x2 f q.x1 g g g g z q.x0 z # .5
+q.B -> k # .6
+q.B -> l # .2
+q.B -> m # .2
+r.B -> m # 1
+q.C(x0: x1:) -> f q.x1 q.x0 g # .4
+q.C(x0: x1:) -> q.x1 f q.x0 g # .3
+q.C(x0: x1:) -> *e* # .2
+q.C(x0: x1:) -> g # .1
+r.C(x0: x1:) -> *e* # .5
+r.C(x0: x1:) -> a b c # .5
+l.D -> g # .2
+l.D -> g g # .2
+l.D -> f # .2
+l.D -> f f # .3
+l.D -> *e* # .1
+q.E -> g # .6
+q.E -> g g # .2
+q.E -> f # .1
+q.E -> *e* # .1
+q.F -> *e* # .6
+q.F -> f # .2
+q.F -> f f # .1
+q.F -> z # .1

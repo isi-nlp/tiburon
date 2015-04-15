@@ -1,0 +1,9 @@
+%% file: ftst2 %%
+q
+q.S(x1: x2:VP) -> t.x1 q.x2
+t.We -> *e*
+q.VP(x1:VP x2:) -> q.x1 t.x2
+q.VP(x1: x2:) -> t.x1 t.x2
+t.medicine -> medicina
+t.sell -> vendemos
+t.don't -> no

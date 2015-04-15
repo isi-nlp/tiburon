@@ -1,0 +1,7 @@
+%% Filename: wrtg1 %%
+q
+q -> NP(dt nn) # 0.6
+q -> NP(nn) # 0.4
+dt -> the # 1
+nn -> boy # 0.8
+nn -> girl # 0.2

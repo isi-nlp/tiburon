@@ -1,0 +1,11 @@
+%% Filename: rtg8 %%
+q
+q -> S(subj was prednom)
+subj -> John
+subj -> Bill
+prednom -> pp
+prednom -> jj
+pp -> PP(for the birds)
+pp -> PP(with Mary)
+jj -> happy
+jj -> scared

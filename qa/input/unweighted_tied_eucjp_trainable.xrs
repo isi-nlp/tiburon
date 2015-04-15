@@ -1,0 +1,731 @@
+qTOP
+r.DT(x0:"the") -> t.x0
+r.PRP(x0:"he") -> t.x0
+r.PRP(x0:"i") -> t.x0
+r.VB(x0:"is") -> t.x0
+r.IN(x0:"above") -> t.x0
+r.VB(x0:"abominate") -> t.x0
+r.TO(x0:"to") -> t.x0
+r.VB(x0:"has") -> t.x0
+r.VB(x0:"lives") -> t.x0
+r.NN(x0:"peak") -> t.x0
+r.NN(x0:"clouds") -> t.x0
+r.IN(x0:"in") -> t.x0
+r.CD(x0:"five") -> t.x0
+r.JJ(x0:"unusual") -> t.x0
+r.IN(x0:"with") -> t.x0
+r.NN(x0:"ability") -> t.x0
+r.VB(x0:"dancing") -> t.x0
+r.DT(x0:"a") -> t.x0
+r.NN(x0:"english") -> t.x0
+r.RB(x0:"abroad") -> t.x0
+r.NN(x0:"news") -> t.x0
+r.NN(x0:"trust") -> t.x0
+r.NN(x0:"snakes") -> t.x0
+r.PRP(x0:"him") -> t.x0
+r.VB(x0:"call") -> t.x0
+r.NN(x0:"doors") -> t.x0
+r.JJ(x0:"abhorrent") -> t.x0
+r.VB(x0:"got") -> t.x0
+r.VB(x0:"rises") -> t.x0
+r.MD(x0:"cannot") -> t.x0
+r.NN(x0:"fanatic") -> t.x0
+r.NN(x0:"school") -> t.x0
+r.PRP(x0:"it") -> t.x0
+r.NN(x0:"anger") -> t.x0
+r.VB(x0:"abuse") -> t.x0
+r.PRP(x0:"their") -> t.x0
+r.JJ(x0:"absurd") -> t.x0
+r.JJ(x0:"ablaze") -> t.x0
+r.VB(x0:"was") -> t.x0
+r.PRP(x0:"them") -> t.x0
+r.NN(x0:"hypocrisy") -> t.x0
+r.VB(x0:PRP x1:VB x2:JJ) -> qVB.x2 qVB.x1 qVB.x0
+r.PRP(x0:PRP x1:NN) -> qPRP.x1 qPRP.x0 @ 1
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x3 qVB.x2 qVB.x0 qVB.x1
+r.VB(x0:NN x1:VB x2:RB) -> qVB.x0 qVB.x2 qVB.x1
+r.TOP(x0:VB) -> qTOP.x0
+r.MD(x0:PRP x1:MD x2:VB) -> qMD.x0 qMD.x2 qMD.x1
+r.VB(x0:NN x1:VB x2:JJ) -> qVB.x1 qVB.x2 qVB.x0
+r.VB(x0:PRP x1:VB x2:JJ) -> qVB.x1 qVB.x0 qVB.x2
+r.NN(x0:DT x1:NN) -> qNN.x1 qNN.x0
+r.MD(x0:PRP x1:MD x2:VB) -> qMD.x0 qMD.x1 qMD.x2
+r.NN(x0:DT x1:NN) -> qNN.x0 qNN.x1
+r.NN(x0:CD x1:NN) -> qNN.x0 qNN.x1
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x1 qVB.x0 qVB.x2 qVB.x3
+r.VB(x0:NN x1:VB x2:JJ) -> qVB.x0 qVB.x1 qVB.x2
+r.VB(x0:NN x1:VB x2:RB) -> qVB.x2 qVB.x0 qVB.x1
+r.VB(x0:PRP x1:VB x2:NN) -> qVB.x0 qVB.x2 qVB.x1
+r.VB(x0:PRP x1:VB x2:IN) -> qVB.x2 qVB.x1 qVB.x0
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x2 qVB.x3 qVB.x1 qVB.x0
+r.VB(x0:PRP x1:VB x2:NN) -> qVB.x1 qVB.x0 qVB.x2
+r.VB(x0:PRP x1:VB x2:NN) -> qVB.x2 qVB.x0 qVB.x1
+r.VB(x0:NN x1:VB x2:RB) -> qVB.x1 qVB.x0 qVB.x2
+r.NN(x0:PRP x1:NN) -> qNN.x0 qNN.x1 @ 2
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x2 qVB.x1 qVB.x3 qVB.x0
+r.VB(x0:PRP x1:VB x2:VB) -> qVB.x2 qVB.x1 qVB.x0
+r.JJ(x0:JJ x1:IN) -> qJJ.x1 qJJ.x0
+r.VB(x0:PRP x1:VB x2:JJ) -> qVB.x0 qVB.x2 qVB.x1
+r.VB(x0:PRP x1:VB x2:VB) -> qVB.x0 qVB.x2 qVB.x1
+r.VB(x0:NN x1:VB x2:JJ) -> qVB.x0 qVB.x2 qVB.x1
+r.VB(x0:NN x1:VB x2:IN) -> qVB.x2 qVB.x0 qVB.x1
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x0 qVB.x1 qVB.x3 qVB.x2
+r.VB(x0:NN x1:VB x2:RB) -> qVB.x0 qVB.x1 qVB.x2
+r.VB(x0:NN x1:VB x2:RB) -> qVB.x1 qVB.x2 qVB.x0
+r.MD(x0:PRP x1:MD x2:VB) -> qMD.x1 qMD.x0 qMD.x2
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x2 qVB.x0 qVB.x3 qVB.x1
+r.VB(x0:VB x1:NN) -> qVB.x0 qVB.x1
+r.NN(x0:CD x1:NN) -> qNN.x1 qNN.x0
+r.VB(x0:NN x1:VB x2:IN) -> qVB.x2 qVB.x1 qVB.x0
+r.VB(x0:PRP x1:VB x2:VB) -> qVB.x0 qVB.x1 qVB.x2
+r.MD(x0:PRP x1:MD x2:VB) -> qMD.x2 qMD.x0 qMD.x1
+r.VB(x0:NN x1:VB x2:JJ) -> qVB.x2 qVB.x0 qVB.x1
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x1 qVB.x3 qVB.x2 qVB.x0
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x0 qVB.x2 qVB.x3 qVB.x1
+r.VB(x0:NN x1:VB x2:IN) -> qVB.x1 qVB.x2 qVB.x0
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x2 qVB.x3 qVB.x0 qVB.x1
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x3 qVB.x1 qVB.x0 qVB.x2
+r.IN(x0:NN x1:IN x2:NN) -> qIN.x2 qIN.x0 qIN.x1
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x0 qVB.x1 qVB.x2 qVB.x3
+r.VB(x0:PRP x1:VB x2:IN) -> qVB.x0 qVB.x1 qVB.x2
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x0 qVB.x2 qVB.x1 qVB.x3
+r.IN(x0:IN x1:NN) -> qIN.x0 qIN.x1
+r.VB(x0:PRP x1:VB x2:IN) -> qVB.x2 qVB.x0 qVB.x1
+r.IN(x0:NN x1:IN x2:NN) -> qIN.x0 qIN.x2 qIN.x1
+r.VB(x0:NN x1:VB x2:IN) -> qVB.x0 qVB.x2 qVB.x1
+r.NN(x0:JJ x1:NN) -> qNN.x0 qNN.x1
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x1 qVB.x2 qVB.x3 qVB.x0
+r.VB(x0:PRP x1:VB x2:IN) -> qVB.x1 qVB.x0 qVB.x2
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x3 qVB.x0 qVB.x2 qVB.x1
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x2 qVB.x0 qVB.x1 qVB.x3
+r.VB(x0:PRP x1:VB x2:NN) -> qVB.x0 qVB.x1 qVB.x2
+r.VB(x0:VB x1:PRP) -> qVB.x0 qVB.x1
+r.MD(x0:PRP x1:MD x2:VB) -> qMD.x1 qMD.x2 qMD.x0
+r.NN(x0:PRP x1:NN) -> qNN.x1 qNN.x0 @ 1
+r.VB(x0:NN x1:VB x2:RB) -> qVB.x2 qVB.x1 qVB.x0
+r.VB(x0:PRP x1:VB x2:JJ) -> qVB.x1 qVB.x2 qVB.x0
+r.JJ(x0:JJ x1:IN) -> qJJ.x0 qJJ.x1
+r.IN(x0:NN x1:IN x2:NN) -> qIN.x1 qIN.x2 qIN.x0
+r.IN(x0:NN x1:IN x2:NN) -> qIN.x0 qIN.x1 qIN.x2
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x0 qVB.x3 qVB.x1 qVB.x2
+r.NN(x0:JJ x1:NN) -> qNN.x1 qNN.x0
+r.VB(x0:PRP x1:VB x2:JJ) -> qVB.x2 qVB.x0 qVB.x1
+r.TO(x0:TO x1:PRP) -> qTO.x1 qTO.x0
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x1 qVB.x3 qVB.x0 qVB.x2
+r.JJ(x0:JJ x1:TO) -> qJJ.x1 qJJ.x0
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x3 qVB.x1 qVB.x2 qVB.x0
+r.IN(x0:IN x1:NN) -> qIN.x1 qIN.x0
+r.VB(x0:VB x1:PRP) -> qVB.x1 qVB.x0
+r.IN(x0:NN x1:IN x2:NN) -> qIN.x1 qIN.x0 qIN.x2
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x3 qVB.x0 qVB.x1 qVB.x2
+r.VB(x0:PRP x1:VB x2:IN) -> qVB.x1 qVB.x2 qVB.x0
+r.VB(x0:PRP x1:VB x2:NN) -> qVB.x2 qVB.x1 qVB.x0
+r.PRP(x0:PRP x1:NN) -> qPRP.x0 qPRP.x1 @ 2
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x0 qVB.x3 qVB.x2 qVB.x1
+r.VB(x0:VB x1:NN) -> qVB.x1 qVB.x0
+r.VB(x0:PRP x1:VB x2:VB) -> qVB.x1 qVB.x2 qVB.x0
+r.JJ(x0:JJ x1:TO) -> qJJ.x0 qJJ.x1
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x3 qVB.x2 qVB.x1 qVB.x0
+r.IN(x0:NN x1:IN x2:NN) -> qIN.x2 qIN.x1 qIN.x0
+r.TO(x0:TO x1:PRP) -> qTO.x0 qTO.x1
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x1 qVB.x2 qVB.x0 qVB.x3
+r.MD(x0:PRP x1:MD x2:VB) -> qMD.x2 qMD.x1 qMD.x0
+r.VB(x0:NN x1:VB x2:IN) -> qVB.x1 qVB.x0 qVB.x2
+r.VB(x0:PRP x1:VB x2:JJ) -> qVB.x0 qVB.x1 qVB.x2
+r.TOP(x0:MD) -> qTOP.x0
+r.VB(x0:NN x1:VB x2:JJ) -> qVB.x1 qVB.x0 qVB.x2
+r.VB(x0:NN x1:VB x2:IN) -> qVB.x0 qVB.x1 qVB.x2
+r.VB(x0:PRP x1:VB x2:VB) -> qVB.x1 qVB.x0 qVB.x2
+r.VB(x0:PRP x1:VB x2:VB) -> qVB.x2 qVB.x0 qVB.x1
+r.TO(x0:TO x1:VB) -> qTO.x0 qTO.x1
+r.VB(x0:NN x1:VB x2:JJ) -> qVB.x2 qVB.x1 qVB.x0
+r.VB(x0:PRP x1:VB x2:NN) -> qVB.x1 qVB.x2 qVB.x0
+r.VB(x0:PRP x1:VB x2:IN) -> qVB.x0 qVB.x2 qVB.x1
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x2 qVB.x1 qVB.x0 qVB.x3
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x1 qVB.x0 qVB.x3 qVB.x2
+r.TO(x0:TO x1:VB) -> qTO.x1 qTO.x0
+qTOP.x0:VB -> i.x0 r.x0
+qTOP.x0:VB -> r.x0 i.x0
+qTOP.x0:VB -> r.x0
+qTOP.x0:MD -> i.x0 r.x0
+qTOP.x0:MD -> r.x0 i.x0
+qTOP.x0:MD -> r.x0
+qIN.x0:NN -> i.x0 r.x0
+qIN.x0:NN -> r.x0 i.x0
+qIN.x0:NN -> r.x0
+qIN.x0:IN -> i.x0 r.x0
+qIN.x0:IN -> r.x0 i.x0
+qIN.x0:IN -> r.x0
+qVB.x0:RB -> i.x0 r.x0
+qVB.x0:RB -> r.x0 i.x0
+qVB.x0:RB -> r.x0
+qVB.x0:VB -> i.x0 r.x0
+qVB.x0:VB -> r.x0 i.x0
+qVB.x0:VB -> r.x0
+qVB.x0:JJ -> i.x0 r.x0
+qVB.x0:JJ -> r.x0 i.x0
+qVB.x0:JJ -> r.x0
+qVB.x0:NN -> i.x0 r.x0
+qVB.x0:NN -> r.x0 i.x0
+qVB.x0:NN -> r.x0
+qVB.x0:PRP -> i.x0 r.x0
+qVB.x0:PRP -> r.x0 i.x0
+qVB.x0:PRP -> r.x0
+qVB.x0:IN -> i.x0 r.x0
+qVB.x0:IN -> r.x0 i.x0
+qVB.x0:IN -> r.x0
+qJJ.x0:JJ -> i.x0 r.x0
+qJJ.x0:JJ -> r.x0 i.x0
+qJJ.x0:JJ -> r.x0
+qJJ.x0:IN -> i.x0 r.x0
+qJJ.x0:IN -> r.x0 i.x0
+qJJ.x0:IN -> r.x0
+qJJ.x0:TO -> i.x0 r.x0
+qJJ.x0:TO -> r.x0 i.x0
+qJJ.x0:TO -> r.x0
+qMD.x0:VB -> i.x0 r.x0
+qMD.x0:VB -> r.x0 i.x0
+qMD.x0:VB -> r.x0
+qMD.x0:MD -> i.x0 r.x0
+qMD.x0:MD -> r.x0 i.x0
+qMD.x0:MD -> r.x0
+qMD.x0:PRP -> i.x0 r.x0
+qMD.x0:PRP -> r.x0 i.x0
+qMD.x0:PRP -> r.x0
+qNN.x0:CD -> i.x0 r.x0
+qNN.x0:CD -> r.x0 i.x0
+qNN.x0:CD -> r.x0
+qNN.x0:JJ -> i.x0 r.x0
+qNN.x0:JJ -> r.x0 i.x0
+qNN.x0:JJ -> r.x0
+qNN.x0:PRP -> i.x0 r.x0
+qNN.x0:PRP -> r.x0 i.x0
+qNN.x0:PRP -> r.x0
+qNN.x0:NN -> i.x0 r.x0
+qNN.x0:NN -> r.x0 i.x0
+qNN.x0:NN -> r.x0
+qNN.x0:DT -> i.x0 r.x0
+qNN.x0:DT -> r.x0 i.x0
+qNN.x0:DT -> r.x0
+qPRP.x0:NN -> i.x0 r.x0
+qPRP.x0:NN -> r.x0 i.x0
+qPRP.x0:NN -> r.x0
+qPRP.x0:PRP -> i.x0 r.x0
+qPRP.x0:PRP -> r.x0 i.x0
+qPRP.x0:PRP -> r.x0
+qTO.x0:VB -> i.x0 r.x0
+qTO.x0:VB -> r.x0 i.x0
+qTO.x0:VB -> r.x0
+qTO.x0:PRP -> i.x0 r.x0
+qTO.x0:PRP -> r.x0 i.x0
+qTO.x0:PRP -> r.x0
+qTO.x0:TO -> i.x0 r.x0
+qTO.x0:TO -> r.x0 i.x0
+qTO.x0:TO -> r.x0
+i.x0: -> "住ん"
+t."school" -> "住ん"
+t."five" -> "住ん"
+t."the" -> "住ん"
+t."above" -> "住ん"
+t."doors" -> "住ん"
+t."lives" -> "住ん"
+t."he" -> "住ん"
+i.x0: -> "持っ"
+t."unusual" -> "持っ"
+t."ability" -> "持っ"
+t."english" -> "持っ"
+t."in" -> "持っ"
+t."has" -> "持っ"
+t."he" -> "持っ"
+i.x0: -> "５"
+t."school" -> "５"
+t."five" -> "５"
+t."the" -> "５"
+t."above" -> "５"
+t."doors" -> "５"
+t."lives" -> "５"
+t."he" -> "５"
+i.x0: -> "彼ら"
+t."is" -> "彼ら"
+t."abuse" -> "彼ら"
+t."to" -> "彼ら"
+t."cannot" -> "彼ら"
+t."hypocrisy" -> "彼ら"
+t."abhorrent" -> "彼ら"
+t."them" -> "彼ら"
+t."i" -> "彼ら"
+t."their" -> "彼ら"
+t."trust" -> "彼ら"
+i.x0: -> "信頼"
+t."abuse" -> "信頼"
+t."their" -> "信頼"
+t."cannot" -> "信頼"
+t."i" -> "信頼"
+t."trust" -> "信頼"
+i.x0: -> "英語"
+t."unusual" -> "英語"
+t."ability" -> "英語"
+t."english" -> "英語"
+t."in" -> "英語"
+t."has" -> "英語"
+t."he" -> "英語"
+i.x0: -> "学校"
+t."school" -> "学校"
+t."five" -> "学校"
+t."the" -> "学校"
+t."above" -> "学校"
+t."doors" -> "学校"
+t."lives" -> "学校"
+t."he" -> "学校"
+i.x0: -> "の"
+t."is" -> "の"
+t."abuse" -> "の"
+t."to" -> "の"
+t."cannot" -> "の"
+t."him" -> "の"
+t."call" -> "の"
+t."a" -> "の"
+t."it" -> "の"
+t."absurd" -> "の"
+t."their" -> "の"
+t."i" -> "の"
+t."trust" -> "の"
+t."fanatic" -> "の"
+i.x0: -> "呼ぶ"
+t."is" -> "呼ぶ"
+t."to" -> "呼ぶ"
+t."him" -> "呼ぶ"
+t."call" -> "呼ぶ"
+t."a" -> "呼ぶ"
+t."it" -> "呼ぶ"
+t."absurd" -> "呼ぶ"
+t."fanatic" -> "呼ぶ"
+i.x0: -> "ない"
+t."abuse" -> "ない"
+t."their" -> "ない"
+t."cannot" -> "ない"
+t."i" -> "ない"
+t."trust" -> "ない"
+i.x0: -> "才能"
+t."unusual" -> "才能"
+t."ability" -> "才能"
+t."english" -> "才能"
+t."in" -> "才能"
+t."has" -> "才能"
+t."he" -> "才能"
+i.x0: -> "赤"
+t."anger" -> "赤"
+t."ablaze" -> "赤"
+t."with" -> "赤"
+t."was" -> "赤"
+t."he" -> "赤"
+i.x0: -> "裏切る"
+t."abuse" -> "裏切る"
+t."their" -> "裏切る"
+t."cannot" -> "裏切る"
+t."i" -> "裏切る"
+t."trust" -> "裏切る"
+i.x0: -> "は"
+t."rises" -> "は"
+t."above" -> "は"
+t."cannot" -> "は"
+t."in" -> "は"
+t."peak" -> "は"
+t."was" -> "は"
+t."has" -> "は"
+t."ability" -> "は"
+t."got" -> "は"
+t."abominate" -> "は"
+t."unusual" -> "は"
+t."anger" -> "は"
+t."abroad" -> "は"
+t."to" -> "は"
+t."him" -> "は"
+t."with" -> "は"
+t."call" -> "は"
+t."a" -> "は"
+t."he" -> "は"
+t."it" -> "は"
+t."five" -> "は"
+t."their" -> "は"
+t."ablaze" -> "は"
+t."i" -> "は"
+t."doors" -> "は"
+t."english" -> "は"
+t."clouds" -> "は"
+t."lives" -> "は"
+t."is" -> "は"
+t."abuse" -> "は"
+t."dancing" -> "は"
+t."hypocrisy" -> "は"
+t."abhorrent" -> "は"
+t."school" -> "は"
+t."them" -> "は"
+t."the" -> "は"
+t."absurd" -> "は"
+t."trust" -> "は"
+t."fanatic" -> "は"
+t."news" -> "は"
+i.x0: -> "なっ"
+t."anger" -> "なっ"
+t."ablaze" -> "なっ"
+t."with" -> "なっ"
+t."was" -> "なっ"
+t."he" -> "なっ"
+i.x0: -> "だ"
+t."is" -> "だ"
+t."dancing" -> "だ"
+t."to" -> "だ"
+t."hypocrisy" -> "だ"
+t."abhorrent" -> "だ"
+t."snakes" -> "だ"
+t."them" -> "だ"
+t."i" -> "だ"
+t."abominate" -> "だ"
+i.x0: -> "いる"
+t."rises" -> "いる"
+t."unusual" -> "いる"
+t."to" -> "いる"
+t."above" -> "いる"
+t."him" -> "いる"
+t."call" -> "いる"
+t."a" -> "いる"
+t."in" -> "いる"
+t."he" -> "いる"
+t."it" -> "いる"
+t."five" -> "いる"
+t."doors" -> "いる"
+t."lives" -> "いる"
+t."clouds" -> "いる"
+t."english" -> "いる"
+t."is" -> "いる"
+t."peak" -> "いる"
+t."has" -> "いる"
+t."school" -> "いる"
+t."absurd" -> "いる"
+t."the" -> "いる"
+t."ability" -> "いる"
+t."fanatic" -> "いる"
+i.x0: -> "大嫌い"
+t."is" -> "大嫌い"
+t."dancing" -> "大嫌い"
+t."to" -> "大嫌い"
+t."hypocrisy" -> "大嫌い"
+t."abhorrent" -> "大嫌い"
+t."snakes" -> "大嫌い"
+t."them" -> "大嫌い"
+t."i" -> "大嫌い"
+t."abominate" -> "大嫌い"
+i.x0: -> "て"
+t."rises" -> "て"
+t."anger" -> "て"
+t."unusual" -> "て"
+t."to" -> "て"
+t."above" -> "て"
+t."him" -> "て"
+t."with" -> "て"
+t."call" -> "て"
+t."a" -> "て"
+t."in" -> "て"
+t."he" -> "て"
+t."it" -> "て"
+t."ablaze" -> "て"
+t."clouds" -> "て"
+t."english" -> "て"
+t."is" -> "て"
+t."peak" -> "て"
+t."was" -> "て"
+t."has" -> "て"
+t."absurd" -> "て"
+t."the" -> "て"
+t."ability" -> "て"
+t."fanatic" -> "て"
+i.x0: -> "情報"
+t."abroad" -> "情報"
+t."the" -> "情報"
+t."news" -> "情報"
+t."got" -> "情報"
+i.x0: -> "そびえ"
+t."rises" -> "そびえ"
+t."above" -> "そびえ"
+t."the" -> "そびえ"
+t."peak" -> "そびえ"
+t."clouds" -> "そびえ"
+i.x0: -> "ダンス"
+t."dancing" -> "ダンス"
+t."i" -> "ダンス"
+t."abominate" -> "ダンス"
+i.x0: -> "で"
+t."school" -> "で"
+t."five" -> "で"
+t."the" -> "で"
+t."above" -> "で"
+t."doors" -> "で"
+t."lives" -> "で"
+t."he" -> "で"
+i.x0: -> "峰"
+t."rises" -> "峰"
+t."above" -> "峰"
+t."the" -> "峰"
+t."peak" -> "峰"
+t."clouds" -> "峰"
+i.x0: -> "彼"
+t."anger" -> "彼"
+t."unusual" -> "彼"
+t."to" -> "彼"
+t."above" -> "彼"
+t."him" -> "彼"
+t."with" -> "彼"
+t."call" -> "彼"
+t."a" -> "彼"
+t."in" -> "彼"
+t."he" -> "彼"
+t."it" -> "彼"
+t."five" -> "彼"
+t."ablaze" -> "彼"
+t."doors" -> "彼"
+t."lives" -> "彼"
+t."english" -> "彼"
+t."is" -> "彼"
+t."was" -> "彼"
+t."has" -> "彼"
+t."school" -> "彼"
+t."absurd" -> "彼"
+t."the" -> "彼"
+t."ability" -> "彼"
+t."fanatic" -> "彼"
+i.x0: -> "でき"
+t."abuse" -> "でき"
+t."their" -> "でき"
+t."cannot" -> "でき"
+t."i" -> "でき"
+t."trust" -> "でき"
+i.x0: -> "ヘビ"
+t."snakes" -> "ヘビ"
+t."i" -> "ヘビ"
+t."abominate" -> "ヘビ"
+i.x0: -> "こと"
+t."abuse" -> "こと"
+t."their" -> "こと"
+t."cannot" -> "こと"
+t."i" -> "こと"
+t."trust" -> "こと"
+i.x0: -> "ずばぬけ"
+t."unusual" -> "ずばぬけ"
+t."ability" -> "ずばぬけ"
+t."english" -> "ずばぬけ"
+t."in" -> "ずばぬけ"
+t."has" -> "ずばぬけ"
+t."he" -> "ずばぬけ"
+i.x0: -> "に"
+t."rises" -> "に"
+t."anger" -> "に"
+t."unusual" -> "に"
+t."above" -> "に"
+t."cannot" -> "に"
+t."with" -> "に"
+t."in" -> "に"
+t."he" -> "に"
+t."five" -> "に"
+t."their" -> "に"
+t."i" -> "に"
+t."ablaze" -> "に"
+t."doors" -> "に"
+t."lives" -> "に"
+t."clouds" -> "に"
+t."english" -> "に"
+t."abuse" -> "に"
+t."peak" -> "に"
+t."was" -> "に"
+t."has" -> "に"
+t."school" -> "に"
+t."the" -> "に"
+t."ability" -> "に"
+t."trust" -> "に"
+i.x0: -> "広まっ"
+t."abroad" -> "広まっ"
+t."the" -> "広まっ"
+t."news" -> "広まっ"
+t."got" -> "広まっ"
+i.x0: -> "おこっ"
+t."anger" -> "おこっ"
+t."ablaze" -> "おこっ"
+t."with" -> "おこっ"
+t."was" -> "おこっ"
+t."he" -> "おこっ"
+i.x0: -> "まっ"
+t."anger" -> "まっ"
+t."ablaze" -> "まっ"
+t."with" -> "まっ"
+t."was" -> "まっ"
+t."he" -> "まっ"
+i.x0: -> "雲の上"
+t."rises" -> "雲の上"
+t."above" -> "雲の上"
+t."the" -> "雲の上"
+t."peak" -> "雲の上"
+t."clouds" -> "雲の上"
+i.x0: -> "私"
+t."abuse" -> "私"
+t."their" -> "私"
+t."cannot" -> "私"
+t."i" -> "私"
+t."trust" -> "私"
+i.x0: -> "者"
+t."is" -> "者"
+t."to" -> "者"
+t."him" -> "者"
+t."call" -> "者"
+t."a" -> "者"
+t."it" -> "者"
+t."absurd" -> "者"
+t."fanatic" -> "者"
+i.x0: -> "軒先"
+t."school" -> "軒先"
+t."five" -> "軒先"
+t."the" -> "軒先"
+t."above" -> "軒先"
+t."doors" -> "軒先"
+t."lives" -> "軒先"
+t."he" -> "軒先"
+i.x0: -> "い"
+t."anger" -> "い"
+t."ablaze" -> "い"
+t."with" -> "い"
+t."was" -> "い"
+t."he" -> "い"
+i.x0: -> "ばかげ"
+t."is" -> "ばかげ"
+t."to" -> "ばかげ"
+t."him" -> "ばかげ"
+t."call" -> "ばかげ"
+t."a" -> "ばかげ"
+t."it" -> "ばかげ"
+t."absurd" -> "ばかげ"
+t."fanatic" -> "ばかげ"
+i.x0: -> "から"
+t."school" -> "から"
+t."five" -> "から"
+t."the" -> "から"
+t."above" -> "から"
+t."doors" -> "から"
+t."lives" -> "から"
+t."he" -> "から"
+i.x0: -> "が"
+t."is" -> "が"
+t."snakes" -> "が"
+t."them" -> "が"
+t."to" -> "が"
+t."i" -> "が"
+t."hypocrisy" -> "が"
+t."abominate" -> "が"
+t."abhorrent" -> "が"
+i.x0: -> "その"
+t."rises" -> "その"
+t."abroad" -> "その"
+t."above" -> "その"
+t."the" -> "その"
+t."peak" -> "その"
+t."news" -> "その"
+t."clouds" -> "その"
+t."got" -> "その"
+i.x0: -> "を"
+t."unusual" -> "を"
+t."to" -> "を"
+t."cannot" -> "を"
+t."him" -> "を"
+t."call" -> "を"
+t."a" -> "を"
+t."in" -> "を"
+t."he" -> "を"
+t."it" -> "を"
+t."their" -> "を"
+t."i" -> "を"
+t."english" -> "を"
+t."is" -> "を"
+t."abuse" -> "を"
+t."has" -> "を"
+t."absurd" -> "を"
+t."ability" -> "を"
+t."trust" -> "を"
+t."fanatic" -> "を"
+i.x0: -> "偽善"
+t."is" -> "偽善"
+t."them" -> "偽善"
+t."to" -> "偽善"
+t."hypocrisy" -> "偽善"
+t."abhorrent" -> "偽善"
+i.x0: -> "と"
+t."is" -> "と"
+t."to" -> "と"
+t."him" -> "と"
+t."call" -> "と"
+t."a" -> "と"
+t."it" -> "と"
+t."absurd" -> "と"
+t."fanatic" -> "と"
+i.x0: -> "た"
+t."anger" -> "た"
+t."unusual" -> "た"
+t."abroad" -> "た"
+t."with" -> "た"
+t."was" -> "た"
+t."in" -> "た"
+t."has" -> "た"
+t."he" -> "た"
+t."the" -> "た"
+t."ability" -> "た"
+t."ablaze" -> "た"
+t."news" -> "た"
+t."english" -> "た"
+t."got" -> "た"
+i.x0: -> "狂信"
+t."is" -> "狂信"
+t."to" -> "狂信"
+t."him" -> "狂信"
+t."call" -> "狂信"
+t."a" -> "狂信"
+t."it" -> "狂信"
+t."absurd" -> "狂信"
+t."fanatic" -> "狂信"
+t."rises" -> *e*
+t."above" -> *e*
+t."cannot" -> *e*
+t."in" -> *e*
+t."snakes" -> *e*
+t."peak" -> *e*
+t."was" -> *e*
+t."has" -> *e*
+t."ability" -> *e*
+t."got" -> *e*
+t."abominate" -> *e*
+t."unusual" -> *e*
+t."anger" -> *e*
+t."abroad" -> *e*
+t."to" -> *e*
+t."him" -> *e*
+t."with" -> *e*
+t."call" -> *e*
+t."a" -> *e*
+t."he" -> *e*
+t."it" -> *e*
+t."five" -> *e*
+t."their" -> *e*
+t."ablaze" -> *e*
+t."i" -> *e*
+t."doors" -> *e*
+t."english" -> *e*
+t."clouds" -> *e*
+t."lives" -> *e*
+t."is" -> *e*
+t."abuse" -> *e*
+t."dancing" -> *e*
+t."hypocrisy" -> *e*
+t."abhorrent" -> *e*
+t."school" -> *e*
+t."them" -> *e*
+t."the" -> *e*
+t."absurd" -> *e*
+t."trust" -> *e*
+t."fanatic" -> *e*
+t."news" -> *e*

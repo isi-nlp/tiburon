@@ -1,0 +1,210 @@
+01/01/08, updated 01/08/08, updated 04/09/08
+
+This is an update on a summary of tiburon functionality, since I
+went into re-development mode, around late October 2007.
+
+
+            *           already implemented in tiburon
+            **          known algorithms, not yet implemented in tiburon
+            ***        unknown algorithms
+
+
+=== AUTOMATA
+
+* xR
+* xRs
+* RTG
+* CFG (New! r0_4_8)
+** FSA
+* tree
+* string
+
+=== OPERATIONS
+
+* domain(xR) -> RTG (New! r0_4_9)
+** range(xR) -> RTG			% only if xR is linear, otherwise say sorry!
+* domain(xRs) -> RTG (New! r0_4_9)
+** range(xRs) -> CFG			% only if xR is linear, otherwise say sorry!
+
+* train(xR, tree/tree pairs) -> xR
+* train(xRs, tree/string pairs) -> xRs
+* train(RTG, trees) -> RTG (Newish... r0_4_2)
+* train(CFG, strings) -> CFG (New! r0_4_9)
+** train(FSA, strings) -> FSA
+
+* k-best(k, RTG) -> list of trees
+** k-best(k, xR) -> list of tree/tree pairs
+** k-best(k, xRs) -> list of tree/string pairs
+* k-best(k, CFG) -> list of strings (New! r0_4_8)
+** k-best(k, FSA) -> list of strings
+
+* k-stochastic(k, RTG) -> list of trees
+** k-stochastic(k, xR) -> list of tree/tree pairs
+** k-stochastic(k, xRs) -> list of tree/string pairs
+* k-stochastic(k, CFG) -> list of strings (New! r0_4_8)
+** k-stochastic(k, FSA) -> list of strings
+
+* coerce(CFG, to-rtg) -> RTG (new! r0_4_9)
+* coerce(RTG, to-cfg) -> CFG (new! r0_4_9)     % captures yield strings of RTG; 
+                                                internal trees may differ
+** coerce(FSA, to-cfg) -> CFG		% states of FSA become non-terminals in CFG
+
+** coerce(string, to-cfg) -> CFG		% degenerate CFG that
+                                                   only includes this one string
+
+
+** coerce(string, to-fsa) -> FSA		% degenerate FSA that
+                                                  only includes this one string
+* coerce(tree, to-rtg) -> RTG		% degenerate RTG that only
+                                          includes this one string
+
+* coerce(RTG, to-identity-xR) -> xR	% identity transducer
+                                          transforms every tree in RTG to itself
+* coerce(RTG, to-identity-xRs) -> xRs	% resulting transducer
+                                          converts each tree into its yield
+
+** coerce(CFG, to-fsa) -> FSA		% only if possible, see [pereira & wright]
+*** coerce(xR, to-linear) -> xRL		% only if possible; can this be detected?
+*** coerce(xRs, to-linear) -> xRLs		% only if possible: can this be detected?
+
+* intersect(RTG, RTG) -> RTG
+** intersect(CFG, FSA) -> CFG
+*** intersect(CFG, CFG) -> CFG		% only if possible; can this
+                                          be detected?  see literature.
+
+* f-apply(tree, xR) -> RTG
+* f-apply(tree, xRs) -> CFG (New! r0_4_9)
+* f-apply(RTG, xR) -> RTG (r0_5_0)		% only if xR is linear, otherwise say sorry!
+* f-apply(RTG, xRs) -> CFG (r0_5_0)		% only if xR is linear, otherwise say sorry!
+
+* b-apply(tree, xR) -> RTG (r0_5_0)
+* b-apply(string, xRs) -> RTG (r0_5_3)
+* b-apply(RTG, xR) -> RTG (r0_5_0)
+* b-apply(CFG, xRs) -> RTG (r0_5_2)
+
+* compose(R, RLN) -> R (working in r0_4_9)			% no x-power, no
+                                          input-epsilons, otherwise  say sorry!
+*** compose(xR, xR) -> xR		% only if possible: can this be detected?
+*** compose(xR, xRs) -> xRs		% only if possible: can this be detected?
+
+*** integrated-f-apply-k-best(k, tree, xR, ..., xR) -> list of trees
+*** integrated-f-apply-k-best(k, tree, xR, ..., xRs) -> list of strings
+*** integrated-b-apply-k-best(k, tree, xR, ..., xR) -> list of trees
+*** integrated-b-apply-k-best(k, string, xR, ..., xRs) -> list of trees
+
+** minimize(FSA) -> FSA
+** minimize(RTG) -> RTG
+*** minimize(xR) -> xR
+*** minimize(xRs) -> xRs
+
+* determinize(RTG) -> RTG
+*** determinize(xR) -> xR			% have to define what this means
+*** determinize(xRs) -> xRs		% have to define what this means
+
+* relatively-useless-prune(RTG, theta) -> RTG	% delete transitions such that 
+                                                  we keep all trees w/weight > theta
+** prune-weak-transitions(RTG, theta) -> RTG	% just delete all transitions 
+                                                  with weight < theta
+** prune-weak-transitions(xR, theta) -> RTG
+** prune-weak-transitions(xRs, theta) -> RTG
+
+=== VERIFICATION
+
+This isn't exactly in the same class as the above stuff, because end
+users shouldn't care about it, but I wanted to at least note that it
+didn't take 3 months to remove 5 asterisks from the above list. Also,
+it's helpful to track what we're verifying continues to work
+correctly and what we're not verifying, and should. The single star
+list is taken from the current verification script; I'm hoping to add
+some more things to this list that aren't on the above list and may
+not appear there (like error reporting):
+
+* default minimal usage statement (tib)
+* extended help (tib -h)
+* read in UFRTG (unweighted, finite) in real semiring and print (to stdout; 
+  unless otherwise noted, all printing is to stdout) (tib rtg)
+* read in WIRTG (weighted, infinite) in real semiring and print (tib rtg)
+* read in UFRTG in real semiring and print to a specified file (tib -o out rtg)
+* read in UFRTG in tropical semiring and print (tib -m tropical rtg)
+* show stats of UFRTG (tib -c rtg)
+* show stats of WIRTG (tib -c rtg)
+* print 5 best of UFRTG (tib -k 5 rtg)
+* print 26 best of UFRTG with 25 items (tib -k 26 rtg)
+* print 100 best of WIRTG  (tib -k 100 rtg)
+* print 5 random of UFRTG (tib -g 5 rtg)
+* print 5 random of WIRTG (tib -g 5 rtg)
+* determinize and show stats of UFRTG (tib -d 2 -c rtg)
+* determinize and print UFRTG (tib -d 2 rtg)
+* add random weights to UFRTG (tib --randomize rtg)
+* compose two WIRTG and print result (tib rtg1 rtg2)
+* compose two WIRTG and print 10 best (tib -k 10 rtg1 rtg2)
+* compose two WIRTG in the other direction and print 10 best (tib -k 10 rtg2 rtg1)
+* print 10 best yield of WRTG (tib -yk 10 rtg)
+* train WRTG 10 iterations given tree set and write to file 
+  (tib -t 10 -o out trees rtg)
+* calculate cross-entropy of tree set on WRTG (tib -b trees
+  rtg)
+** other desired batch mode stuff
+* read in UXR (unweighted extended tree-to-tree transducer) and print
+  (tib xr)
+* read in JUXRS (unweighted japanese extended tree-to-string
+  transducer) and print (tib xrs)
+* show stats of UXR (tib -c xr)
+* show stats of JUXRS (tib -c xrs)
+* apply tree to UXR and print RTG (tib -l:tree xr)
+* apply tree to UXR and print 5 best trees (tib -k 5 -l:tree xr)
+* apply tree to JUXRS to get CFG (tib -l:tree xrs)
+* apply tree to JUXRS to get CFG to separate file (tib -o out -l:tree xrs) 
+* apply tree to JWXRS and get 5 best strings (tib -k 5 -l:tree xrs)
+* apply tree to UXR, determinize, normalize weights, get top 2 
+  (tib -k 2 -n -d 1 -l:tree xr)
+* apply tree to front and back of UXR, get derivation RTG 
+  (tib -l:tree -r:tree xr)
+* apply tree to front and back of UXR, get and check derivation RTG 
+  (tib -c -l:tree -r:tree xr)
+* apply tree to front and back of JUXRS, get derivation RTG 
+  (tib -l:tree -r:string xrx)
+* apply tree to front and back of JUXRS, get and check derivation RTG 
+  (tib -c -l:tree -r:string xrs)
+* train xr 5 iterations, save derivations
+  (tib -t 5 --training-deriv-location loc ttp xr)
+* train xr 5 iterations, no normalization, read in saved derivations
+  (tib -t 5 --training-deriv-location loc --no-normalize --no-deriv ttp xr)
+* train xr 5 iterations, read in saved derivations
+  (tib -t 5 --training-deriv-location loc --no-normalize ttp xr)
+* train xrs 5 iterations, save derivations
+  (tib -t 5 --training-deriv-location loc tsp xrs)
+* train xrs 5 iterations, no normalization, read in saved derivations
+  (tib -t 5 --training-deriv-location loc --no-normalize --no-deriv tsp xrs)
+* train xrs 5 iterations, read in saved derivations
+  (tib -t 5 --training-deriv-location loc --no-deriv --no-normalize tsp xrs)
+* train xrs 5 iterations conditional norm, read in saved derivations
+  (tib -t 5 --training-deriv-location loc --no-deriv 
+            --conditional --no-normalize tsp xrs)
+* train xrs 5 iterations conditional norm, true real semiring, 
+  read in saved derivations
+  (tib -t 5 --training-deriv-location loc --no-deriv --conditional 
+       -m truereal --no-normalize tsp xrs)
+* train cfg 10 iterations, save derivations 
+  (tib -t 10 --training-deriv-location loc strings cfg)
+* train cfg 10 iterations, read in saved derivations
+  (tib -t 10 --training-deriv-location loc --no-deriv strings cfg)
+* read and write CFGs
+* compose xR with RLN
+* recognize classes of non-composable transducers
+* convert RTG to CFG
+* convert RTG to xR
+* convert RTG to xRs
+* convert CFG to RTG
+* convert CFG to xR
+* convert CFG to xRs
+* domain projection of R
+* domain projection of Rs
+* handle tricky xRs, xr
+* backward app of string through xRs
+* handle large tree, small tree
+* recognize type specification of ambiguous RTG, CFG
+* intersect CFG with string
+* batch application, complicated stuff of tree through xr
+* batch application of tree through xrs
+* two-sided batch application of tree pair with xr

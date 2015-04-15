@@ -1,0 +1,9 @@
+s
+s.B(x0: x1:) -> D(t.x1 s.x0)
+s.C(x0: x1:) -> H(s.x0 s.x1) # 0.6
+s.C(x0: x1:) -> H(s.x1 s.x0) # 0.4
+t.B(x0: x1:) -> D(s.x0 s.x1)
+s.F -> L
+t.F -> I
+s.G -> J # 0.7
+s.G -> K # 0.3

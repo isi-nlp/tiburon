@@ -1,0 +1,5 @@
+q
+q.S(x0:NP x1:VP) -> q.x0 q.x1
+q.NP(he) -> il
+q.VP(AUX(does) RB(not) x0:VB) -> ne q.x0 pas
+q.VB(go) -> va

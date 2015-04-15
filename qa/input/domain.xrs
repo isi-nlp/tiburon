@@ -1,0 +1,15 @@
+s
+s.B(x0: x1:) -> t.x0 t.x1 s.x0
+s.B(x0: x1: x2:) -> t.x0 t.x1 s.x0 r.x0
+s.C(x0: x1:) -> s.x0 s.x1
+t.C(x0: x1:) -> t.x0
+s.C(x0: x1:) -> s.x1 s.x0
+t.B(x0: x1:) -> t.x0 r.x1
+s.F -> L
+t.F -> I
+r.F -> K
+s.F -> J
+t.F -> E
+r.F -> G
+s.G -> J
+s.G -> K

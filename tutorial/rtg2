@@ -1,0 +1,8 @@
+%% Filename: rtg2 %%
+q
+q -> NP(x1 x2)
+q -> NP(x2 x1)
+x1 -> NN(a)
+x2 -> NN(b)
+a -> killer
+b -> clown

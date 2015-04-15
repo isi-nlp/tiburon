@@ -1,0 +1,127 @@
+qTOP
+qTOP.TOP(x0:) -> TOP(qS.x0) # 1.000000
+qCMA.CMA(word) -> CMA(word) # 1.000000
+qNP.NP(x0: x1:) -> NP(qNP.x0 qPP.x1) # 0.082192
+qNP.NP(x0: x1: x2:) -> NP(qNN.x0 qCC.x1 qNP.x2) # 0.006849
+qNP.NP(x0: x1:) -> NP(qNP.x0 qVP.x1) # 0.013699
+qNP.NP(x0:) -> NP(qNNP.x0) # 0.006849
+qNP.NP(x0: x1: x2: x3: x4: x5: x6:) -> NP(qNP.x0 qCMA.x1 qNP.x2 qCC.x3 NP(qNP.x4 qCMA.x5 qPP.x6)) # 0.006849
+qNP.NP(x0: x1: x2:) -> NP(qDT.x0 qJJ.x1 qNN.x2) # 0.041096
+qNP.NP(x0: x1: x2:) -> NP(qJJ.x0 qNN.x1 qNNS.x2) # 0.006849
+qNP.NP(x0:) -> NP(NP(qCD.x0)) # 0.006849
+qNP.NP(x0: x1:) -> NP(qCD.x0 qNNS.x1) # 0.013699
+qNP.NP(x0: x1:) -> NP(qNNP.x0 qNNS.x1) # 0.006849
+qNP.NP(x0: x1: x2: x3: x4: x5:) -> NP(qDT.x0 qNNP.x1 qNNP.x2 qNNP.x3 qNNP.x4 qNNP.x5) # 0.013699
+qNP.NP(x0: x1: x2:) -> NP(qDT.x0 qNN.x1 qNNS.x2) # 0.020548
+qNP.NP(x0: x1: x2:) -> NP(qNP.x0 qCMA.x1 qPP.x2) # 0.027397
+qNP.NP(x0: x1:) -> NP(qADJP.x0 qNNS.x1) # 0.013699
+qNP.NP(x0: x1: x2:) -> NP(qDT.x0 qNNP.x1 qPOS.x2) # 0.006849
+qNP.NP(x0: x1: x2:) -> NP(qDT.x0 qNN.x1 qNN.x2) # 0.047945
+qNP.NP(x0:) -> NP(qNP.x0) # 0.006849
+qNP.NP(x0: x1: PP(x2: x3: x4:) x5: x6: x7: x8: x9: x10:) -> NP(qNP.x0 qCMA.x1 PP(qJJ.x2 qIN.x3 NP(qNP.x4 qCMA.x5 qNP.x6 qCMA.x7 qNP.x8 qCC.x9 qNP.x10))) # 0.006849
+qNP.NP(x0: x1: x2: x3:) -> NP(qNP.x0 qCD.x1 qNN.x2 qNNS.x3) # 0.013699
+qNP.NP(x0:) -> NP(qCD.x0) # 0.006850
+qNP.NP(x0: x1: x2:) -> NP(qNP.x0 qNN.x1 qS.x2) # 0.006849
+qNP.NP(x0:) -> NP(qNN.x0) # 0.075342
+qNP.NP(x0: x1: x2: x3:) -> NP(qDT.x0 qNNP.x1 qNN.x2 qS.x3) # 0.006849
+qNP.NP(x0: x1: x2:) -> NP(QP(qDT.x0 qCD.x1) qNNS.x2) # 0.006849
+qNP.NP(x0: x1:) -> NP(qQP.x0 qNN.x1) # 0.013699
+qNP.NP(x0: x1:) -> NP(qJJ.x0 qNN.x1) # 0.034247
+qNP.NP(x0: x1:) -> NP(qQP.x0 qNNS.x1) # 0.006849
+qNP.NP(x0: x1: x2:) -> NP(qNP.x0 qPP.x1 qPP.x2) # 0.006849
+qNP.NP(NNS(word)) -> NNS(word) # 0.006849
+qNP.NP(x0: x1:) -> NP(qNNP.x0 qCD.x1) # 0.006849
+qNP.NP(x0: x1:) -> NP(qNN.x0 qNNS.x1) # 0.027397
+qNP.NP(x0: x1: x2:) -> NP(qNP.x0 qNNP.x1 qNNP.x2) # 0.006849
+qNP.NP(x0: x1:) -> NP(qNP.x0 qS.x1) # 0.006849
+qNP.NP(x0: x1: x2:) -> NP(qNNP.x0 qNNP.x1 qPOS.x2) # 0.006849
+qNP.NP(x0: x1: x2: x3:) -> NP(qNNS.x0 qCC.x1 qNNS.x2 qNNS.x3) # 0.013699
+qNP.NP(x0: x1:) -> NP(qDT.x0 qNN.x1) # 0.075342
+qNP.NP(x0:) -> NP(qNNS.x0) # 0.047945
+qNP.NP(x0: x1:) -> NP(qNNP.x0 qNNP.x1) # 0.047945
+qNP.NP(x0: x1:) -> NP(qJJ.x0 qNNS.x1) # 0.075342
+qNP.NP(x0: x1: x2:) -> NP(qNP.x0 qCC.x1 qNP.x2) # 0.020548
+qNP.NP(x0: x1: x2: x3:) -> NP(qDT.x0 qNNP.x1 qNN.x2 qSBAR.x3) # 0.006849
+qNP.NP(x0: x1: x2:) -> NP(qNNS.x0 qVBG.x1 qNNS.x2) # 0.013699
+qNP.NP(x0: x1:) -> NP(qDT.x0 qNNP.x1) # 0.013699
+qNP.NP(x0: x1: x2: x3: x4:) -> NP(qNP.x0 qCMA.x1 qNP.x2 qCC.x3 qNP.x4) # 0.013699
+qNP.NP(x0: x1:) -> NP(qCD.x0 qNN.x1) # 0.013699
+qNP.NP(x0: x1: x2:) -> NP(qNNS.x0 qCC.x1 qNP.x2) # 0.006849
+qNP.NP(x0: x1:) -> NP(qDT.x0 qNNS.x1) # 0.020548
+qNP.NP(x0: x1: x2: x3:) -> NP(qDT.x0 qNN.x1 qNN.x2 qNN.x3) # 0.013699
+qNP.NP(x0: x1: x2:) -> NP(qDT.x0 qNN.x1 qPOS.x2) # 0.013699
+qNP.NP(x0: x1: x2: x3: x4: x5: x6:) -> NP(qNP.x0 qCMA.x1 qNP.x2 qCMA.x3 qNP.x4 qCC.x5 qNP.x6) # 0.006849
+qNP.NP(x0: x1: x2: x3:) -> NP(qNP.x0 qCMA.x1 qPP.x2 qCMA.x3) # 0.006849
+qNP.NP(x0: x1: x2:) -> NP(qNN.x0 qCC.x1 qNN.x2) # 0.013699
+qCC.CC(word) -> CC(word) # 1.000000
+qS.S(x0: x1: x2:) -> S(qNP.x0 qVP.x1 qDOT.x2) # 0.352941
+qS.S(x0: x1: x2:) -> S(qNP.x0 qNP.x1 qVP.x2) # 0.029412
+qS.S(x0: x1: x2: x3:) -> S(qADVP.x0 qNP.x1 qVP.x2 qDOT.x3) # 0.029412
+qS.S(x0: x1: x2: x3: x4:) -> S(qS.x0 qCMA.x1 qNP.x2 qVP.x3 qDOT.x4) # 0.088235
+qS.S(x0:) -> S(qVP.x0) # 0.147059
+qS.S(x0: VP(x1: VP(x2: NP(x3: x4:) PP(x5: NP(x6: x7: x8: x9: NP(x10: x11: SBAR(S(x12: x13:))))))) x14:) -> S(S(qNP.x0 VP(qMD.x1 VP(qVB.x2 NP(qNP.x3 qPP.x4 PP(qIN.x5 qNP.x6))))) qCMA.x7 NP(qNP.x8 qCC.x9 NP(qJJ.x10 qNN.x11 qNP.x12)) qVP.x13 qDOT.x14) # 0.029412
+qS.S(x0: x1: x2: x3:) -> S(qNP.x0 qADVP.x1 qVP.x2 qDOT.x3) # 0.088235
+qS.S(NP(x0: x1:) x2:) -> S(qNP.x0 qNP.x1 qVP.x2) # 0.029412
+qS.S(x0: x1:) -> S(qNP.x0 qVP.x1) # 0.147059
+qS.S(x0: x1: x2: x3: x4:) -> S(qPP.x0 qCMA.x1 qNP.x2 qVP.x3 qDOT.x4) # 0.058824
+qVBG.VBG(word) -> VBG(word) # 1.000000
+qVBD.VBD(word) -> VBD(word) # 1.000000
+qNNS.NNS(word) -> NNS(word) # 0.979592
+qNNS.NNS(word) -> NP(NNS(word)) # 0.020408
+qDOT.DOT(word) -> DOT(word) # 1.000000
+qNNP.NNP(word) -> NNP(word) # 1.000000
+qVBN.VBN(word) -> VBN(word) # 1.000000
+qADJP.ADJP(x0: x1:) -> ADJP(qJJ.x0 qPP.x1) # 0.400000
+qADJP.ADJP(x0: x1: x2:) -> ADJP(qJJ.x0 qCC.x1 qJJ.x2) # 0.400000
+qADJP.ADJP(x0: x1:) -> ADJP(qJJ.x0 qNP.x1) # 0.200000
+qQP.QP(x0: x1:) -> QP(qDT.x0 qCD.x1) # 0.333333
+qQP.QP(x0: x1: x2: x3:) -> QP(qRB.x0 qJJ.x1 qIN.x2 qCD.x3) # 0.666667
+qVBZ.VBZ(word) -> VBZ(word) # 1.000000
+qTO.TO(word) -> TO(word) # 1.000000
+qPP.PP(x0: x1:) -> PP(qIN.x0 qNP.x1) # 0.738095
+qPP.PP(x0: x1:) -> PP(qVBG.x0 qNP.x1) # 0.071429
+qPP.PP(x0: x1:) -> PP(qTO.x0 qNP.x1) # 0.071429
+qPP.PP(x0: x1: x2:) -> PP(qJJ.x0 qIN.x1 qNP.x2) # 0.071429
+qPP.PP(x0: x1:) -> PP(qIN.x0 qS.x1) # 0.047619
+qJJ.JJ(word) -> JJ(word) # 1.000000
+qADVP.ADVP(x0:) -> ADVP(qRB.x0) # 0.800000
+qADVP.ADVP(x0:) -> ADVP(qNNP.x0) # 0.200000
+qVP.VP(x0: x1:) -> VP(qVB.x0 qPP.x1) # 0.050847
+qVP.VP(x0: PP(x1: NP(x2: x3:))) -> VP(qVBP.x0 PP(qIN.x1 qNP.x2) qVP.x3) # 0.016949
+qVP.VP(x0: x1:) -> VP(qMD.x0 qVP.x1) # 0.186441
+qVP.VP(x0:) -> VP(qVB.x0) # 0.016949
+qVP.VP(x0: x1: x2:) -> VP(qVBP.x0 qPP.x1 qS.x2) # 0.016949
+qVP.VP(x0: x1:) -> VP(qVBP.x0 qNP.x1) # 0.033898
+qVP.VP(x0: x1:) -> VP(qVBN.x0 qPP.x1) # 0.050847
+qVP.VP(x0: x1: x2: x3:) -> VP(qVBN.x0 qPP.x1 qCMA.x2 qPP.x3) # 0.033898
+qVP.VP(x0: x1: x2: NP(x3: x4: x5:)) -> VP(qVB.x0 qCC.x1 qVB.x2 qNP.x3 qCMA.x4 qADJP.x5) # 0.016949
+qVP.VP(x0: x1:) -> VP(qVBP.x0 qVP.x1) # 0.033898
+qVP.VP(x0:) -> VP(qVBP.x0) # 0.033898
+qVP.VP(x0: x1:) -> VP(qVB.x0 qVP.x1) # 0.033898
+qVP.VP(x0: x1: x2:) -> VP(qADVP.x0 qVBD.x1 qNP.x2) # 0.016949
+qVP.VP(x0: x1: x2: x3: x4: x5:) -> VP(qVB.x0 qCC.x1 qVB.x2 qNP.x3 qCMA.x4 qADJP.x5) # 0.016949
+qVP.VP(x0: x1:) -> VP(qVBZ.x0 qNP.x1) # 0.033898
+qVP.VP(x0: x1: x2:) -> VP(qVBZ.x0 qRB.x1 qVP.x2) # 0.016949
+qVP.VP(x0: x1: x2:) -> VP(qVBD.x0 qNP.x1 qPP.x2) # 0.033898
+qVP.VP(x0: x1:) -> VP(qVB.x0 qADJP.x1) # 0.016949
+qVP.VP(x0: x1:) -> VP(qVBG.x0 qPP.x1) # 0.050847
+qVP.VP(x0: x1:) -> VP(qVBG.x0 qNP.x1) # 0.016949
+qVP.VP(x0:) -> VP(qVBN.x0) # 0.016949
+qVP.VP(x0:) -> VP(qVBD.x0) # 0.033898
+qVP.VP(x0: x1:) -> VP(qVB.x0 qNP.x1) # 0.101695
+qVP.VP(x0: x1:) -> VP(qVBN.x0 qVP.x1) # 0.016949
+qVP.VP(x0: x1: x2:) -> VP(qVBG.x0 qNP.x1 qS.x2) # 0.016949
+qVP.VP(x0: x1:) -> S(VP(qVBG.x0 qPP.x1)) # 0.016949
+qVP.VP(x0: x1:) -> VP(qTO.x0 qVP.x1) # 0.067797
+qRB.RB(word) -> RB(word) # 1.000000
+qMD.MD(word) -> MD(word) # 1.000000
+qNN.NN(word) -> NP(NN(word)) # 0.012821
+qNN.NN(word) -> NN(word) # 0.987179
+qVBP.VBP(word) -> VBP(word) # 1.000000
+qVB.VB(word) -> VB(word) # 1.000000
+qIN.IN(word) -> IN(word) # 1.000000
+qCD.CD(word) -> NP(CD(word)) # 0.000005
+qCD.CD(word) -> CD(word) # 0.999995
+qDT.DT(word) -> DT(word) # 1.000000
+qPOS.POS(word) -> POS(word) # 1.000000
+qSBAR.SBAR(S(x0:)) -> S(qVP.x0) # 1.000000

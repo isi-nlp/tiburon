@@ -1,0 +1,8 @@
+q_qe
+q_qe.qe(x0: x1:) -> q_qe.x0 q_qo.x1 # 0.100000
+q_qe.qe(x0: x1:) -> q_qo.x0 q_qe.x1 # 0.800000
+q_qe.qe(x0:) -> q_qo.x0 # 0.100000
+q_qo.qo(x0: x1:) -> q_qo.x0 q_qo.x1 # 0.600000
+q_qo.qo(x0: x1:) -> q_qe.x0 q_qe.x1 # 0.200000
+q_qo.qo(x0:) -> q_qe.x0 # 0.100000
+q_qo.qo(C) -> C # 0.100000

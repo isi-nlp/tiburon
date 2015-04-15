@@ -1,0 +1,9 @@
+%% Filename: rtg1 %%
+q
+q -> NP(dt nn)
+q -> NP(nn)
+dt -> DT(dtword)
+nn -> NN(nnword)
+dtword -> the
+nnword -> boy
+nnword -> girl

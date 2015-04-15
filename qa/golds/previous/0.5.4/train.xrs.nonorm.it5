@@ -1,0 +1,723 @@
+qTOP
+qTOP.x0:VB -> i.x0 r.x0 # 0.000353
+qTOP.x0:VB -> r.x0 i.x0 # 0.368249
+qTOP.x0:VB -> r.x0 # 0.631398
+qTOP.x0:MD -> i.x0 r.x0 # 0.968896
+qTOP.x0:MD -> r.x0 i.x0 # 0.031086
+qTOP.x0:MD -> r.x0 # 0.000018
+qTO.x0:VB -> i.x0 r.x0 # 0.000003
+qTO.x0:VB -> r.x0 i.x0 # 0.209954
+qTO.x0:VB -> r.x0 # 0.790043
+qTO.x0:PRP -> i.x0 r.x0 # 0.010540
+qTO.x0:PRP -> r.x0 i.x0 # 0.000016
+qTO.x0:PRP -> r.x0 # 0.989444
+qTO.x0:TO -> i.x0 r.x0 # 0.037003
+qTO.x0:TO -> r.x0 i.x0 # 0.000107
+qTO.x0:TO -> r.x0 # 0.962891
+qVB.x0:RB -> i.x0 r.x0 # 0.000064
+qVB.x0:RB -> r.x0 i.x0 # 0.000545
+qVB.x0:RB -> r.x0 # 0.999390
+qVB.x0:VB -> i.x0 r.x0 # 0.142488
+qVB.x0:VB -> r.x0 i.x0 # 0.183628
+qVB.x0:VB -> r.x0 # 0.673885
+qVB.x0:JJ -> i.x0 r.x0 # 0.575509
+qVB.x0:JJ -> r.x0 i.x0 # 0.177071
+qVB.x0:JJ -> r.x0 # 0.247420
+qVB.x0:NN -> i.x0 r.x0 # 0.032572
+qVB.x0:NN -> r.x0 i.x0 # 0.341640
+qVB.x0:NN -> r.x0 # 0.625788
+qVB.x0:PRP -> i.x0 r.x0 # 0.021281
+qVB.x0:PRP -> r.x0 i.x0 # 0.358700
+qVB.x0:PRP -> r.x0 # 0.620019
+qVB.x0:IN -> i.x0 r.x0 # 0.205147
+qVB.x0:IN -> r.x0 i.x0 # 0.231761
+qVB.x0:IN -> r.x0 # 0.563092
+qIN.x0:NN -> i.x0 r.x0 # 0.305876
+qIN.x0:NN -> r.x0 i.x0 # 0.282341
+qIN.x0:NN -> r.x0 # 0.411784
+qIN.x0:IN -> i.x0 r.x0 # 0.466279
+qIN.x0:IN -> r.x0 i.x0 # 0.302551
+qIN.x0:IN -> r.x0 # 0.231170
+i.x0: -> "住ん" # 0.000049
+i.x0: -> "持っ" # 0.000001
+i.x0: -> "５" # 0.000242
+i.x0: -> "彼ら" # 0.030535
+i.x0: -> "信頼" # 0.009543
+i.x0: -> "英語" # 1.356669E-8
+i.x0: -> "学校" # 0.000229
+i.x0: -> "の" # 0.020813
+i.x0: -> "呼ぶ" # 1.208343E-8
+i.x0: -> "ない" # 0.030383
+i.x0: -> "才能" # 0.000002
+i.x0: -> "赤" # 0.003471
+i.x0: -> "裏切る" # 0.000154
+i.x0: -> "は" # 0.296213
+i.x0: -> "なっ" # 8.612366E-9
+i.x0: -> "だ" # 0.024129
+i.x0: -> "いる" # 0.079908
+i.x0: -> "大嫌い" # 0.001275
+i.x0: -> "て" # 0.132821
+i.x0: -> "情報" # 8.727296E-8
+i.x0: -> "そびえ" # 5.964691E-7
+i.x0: -> "ダンス" # 1.360522E-10
+i.x0: -> "で" # 7.102781E-8
+i.x0: -> "峰" # 2.335334E-7
+i.x0: -> "彼" # 0.000130
+i.x0: -> "でき" # 5.149193E-7
+i.x0: -> "ヘビ" # 0.000121
+i.x0: -> "こと" # 7.022622E-7
+i.x0: -> "ずばぬけ" # 1.714407E-8
+i.x0: -> "に" # 0.146788
+i.x0: -> "広まっ" # 3.924377E-7
+i.x0: -> "おこっ" # 0.000105
+i.x0: -> "まっ" # 0.026810
+i.x0: -> "雲の上" # 0.000011
+i.x0: -> "私" # 8.861409E-7
+i.x0: -> "者" # 6.770003E-7
+i.x0: -> "軒先" # 0.000242
+i.x0: -> "い" # 2.004527E-10
+i.x0: -> "ばかげ" # 5.828319E-7
+i.x0: -> "から" # 0.005787
+i.x0: -> "が" # 0.009033
+i.x0: -> "その" # 0.000189
+i.x0: -> "を" # 0.090867
+i.x0: -> "偽善" # 1.282301E-7
+i.x0: -> "と" # 5.903308E-8
+i.x0: -> "た" # 0.090141
+i.x0: -> "狂信" # 0.000006
+qPRP.x0:NN -> i.x0 r.x0 # 3.494324E-8
+qPRP.x0:NN -> r.x0 i.x0 # 0.021137
+qPRP.x0:NN -> r.x0 # 0.978863
+qPRP.x0:PRP -> i.x0 r.x0 # 3.256851E-7
+qPRP.x0:PRP -> r.x0 i.x0 # 0.016450
+qPRP.x0:PRP -> r.x0 # 0.983550
+t."school" -> "住ん" # 0.000657
+t."five" -> "住ん" # 0.000001
+t."the" -> "住ん" # 0.000008
+t."above" -> "住ん" # 0.498852
+t."doors" -> "住ん" # 4.936062E-7
+t."lives" -> "住ん" # 1.236597E-8
+t."he" -> "住ん" # 7.196186E-10
+t."unusual" -> "持っ" # 0.306356
+t."ability" -> "持っ" # 0.159585
+t."english" -> "持っ" # 0.295144
+t."in" -> "持っ" # 0.238514
+t."has" -> "持っ" # 0.000360
+t."he" -> "持っ" # 2.291209E-11
+t."school" -> "５" # 0.000126
+t."five" -> "５" # 0.623414
+t."the" -> "５" # 0.000435
+t."above" -> "５" # 1.48689E-7
+t."doors" -> "５" # 0.366754
+t."lives" -> "５" # 1.443715E-36
+t."he" -> "５" # 2.713012E-40
+t."is" -> "彼ら" # 0.038093
+t."abuse" -> "彼ら" # 1.089893E-23
+t."to" -> "彼ら" # 3.516916E-10
+t."cannot" -> "彼ら" # 0.000108
+t."hypocrisy" -> "彼ら" # 0.918476
+t."abhorrent" -> "彼ら" # 0.000001
+t."them" -> "彼ら" # 1.44512E-9
+t."i" -> "彼ら" # 0.000077
+t."their" -> "彼ら" # 2.564152E-32
+t."trust" -> "彼ら" # 1.133677E-32
+t."abuse" -> "信頼" # 0.001858
+t."their" -> "信頼" # 6.606641E-7
+t."cannot" -> "信頼" # 0.107216
+t."i" -> "信頼" # 0.192284
+t."trust" -> "信頼" # 3.467489E-7
+t."unusual" -> "英語" # 0.233138
+t."ability" -> "英語" # 0.300686
+t."english" -> "英語" # 0.197162
+t."in" -> "英語" # 0.268938
+t."has" -> "英語" # 0.000076
+t."he" -> "英語" # 9.094117E-11
+t."school" -> "学校" # 0.936395
+t."five" -> "学校" # 0.001640
+t."the" -> "学校" # 0.012917
+t."above" -> "学校" # 0.000392
+t."doors" -> "学校" # 0.001989
+t."lives" -> "学校" # 9.670686E-13
+t."he" -> "学校" # 2.346191E-10
+t."is" -> "の" # 6.162909E-24
+t."abuse" -> "の" # 1.227401E-12
+t."to" -> "の" # 0.000004
+t."cannot" -> "の" # 0.071866
+t."him" -> "の" # 0.463422
+t."call" -> "の" # 0.002206
+t."a" -> "の" # 0.183770
+t."it" -> "の" # 1.240406E-23
+t."absurd" -> "の" # 3.613802E-12
+t."their" -> "の" # 2.558052E-19
+t."i" -> "の" # 0.081190
+t."trust" -> "の" # 1.096847E-19
+t."fanatic" -> "の" # 0.350142
+t."to" -> "呼ぶ" # 3.882438E-16
+t."him" -> "呼ぶ" # 4.95166E-7
+t."call" -> "呼ぶ" # 2.113633E-11
+t."a" -> "呼ぶ" # 0.567674
+t."absurd" -> "呼ぶ" # 2.987891E-22
+t."fanatic" -> "呼ぶ" # 0.432325
+t."abuse" -> "ない" # 5.563956E-24
+t."their" -> "ない" # 1.441896E-42
+t."cannot" -> "ない" # 0.000011
+t."i" -> "ない" # 0.000001
+t."trust" -> "ない" # 7.391704E-42
+t."unusual" -> "才能" # 0.159725
+t."ability" -> "才能" # 0.305469
+t."english" -> "才能" # 0.238375
+t."in" -> "才能" # 0.295127
+t."has" -> "才能" # 0.001246
+t."he" -> "才能" # 2.864115E-12
+t."anger" -> "赤" # 0.130129
+t."ablaze" -> "赤" # 0.583743
+t."with" -> "赤" # 0.171891
+t."was" -> "赤" # 3.547293E-11
+t."he" -> "赤" # 8.902332E-18
+t."abuse" -> "裏切る" # 0.993309
+t."their" -> "裏切る" # 0.000824
+t."cannot" -> "裏切る" # 1.327901E-17
+t."i" -> "裏切る" # 3.05976E-18
+t."trust" -> "裏切る" # 0.000812
+t."rises" -> "は" # 8.016612E-7
+t."above" -> "は" # 0.000007
+t."cannot" -> "は" # 2.276688E-11
+t."in" -> "は" # 3.067397E-8
+t."peak" -> "は" # 0.000007
+t."was" -> "は" # 1.662063E-11
+t."has" -> "は" # 0.000030
+t."ability" -> "は" # 7.065573E-8
+t."got" -> "は" # 9.270738E-7
+t."abominate" -> "は" # 0.000387
+t."unusual" -> "は" # 4.238231E-9
+t."anger" -> "は" # 6.624317E-16
+t."abroad" -> "は" # 0.000007
+t."to" -> "は" # 0.000057
+t."him" -> "は" # 0.000006
+t."with" -> "は" # 9.169574E-16
+t."call" -> "は" # 0.000002
+t."a" -> "は" # 0.000001
+t."he" -> "は" # 0.000055
+t."it" -> "は" # 1.631782E-18
+t."five" -> "は" # 1.968996E-9
+t."their" -> "は" # 4.468853E-8
+t."ablaze" -> "は" # 4.962318E-8
+t."i" -> "は" # 0.001131
+t."doors" -> "は" # 1.374569E-9
+t."english" -> "は" # 3.281845E-8
+t."clouds" -> "は" # 5.799111E-7
+t."lives" -> "は" # 4.546692E-14
+t."is" -> "は" # 0.000036
+t."abuse" -> "は" # 4.164548E-8
+t."dancing" -> "は" # 9.161487E-9
+t."hypocrisy" -> "は" # 0.000031
+t."abhorrent" -> "は" # 0.000021
+t."school" -> "は" # 6.800977E-7
+t."them" -> "は" # 0.000004
+t."the" -> "は" # 0.061533
+t."absurd" -> "は" # 3.601519E-9
+t."trust" -> "は" # 4.118493E-8
+t."fanatic" -> "は" # 6.370838E-7
+t."news" -> "は" # 0.000041
+t."anger" -> "なっ" # 0.467903
+t."ablaze" -> "なっ" # 2.109235E-10
+t."with" -> "なっ" # 0.532097
+t."is" -> "だ" # 0.401761
+t."dancing" -> "だ" # 4.121514E-8
+t."to" -> "だ" # 1.385413E-9
+t."hypocrisy" -> "だ" # 0.079807
+t."abhorrent" -> "だ" # 0.000014
+t."snakes" -> "だ" # 2.787725E-7
+t."them" -> "だ" # 2.357597E-9
+t."i" -> "だ" # 0.208760
+t."abominate" -> "だ" # 0.348120
+t."rises" -> "いる" # 0.089384
+t."unusual" -> "いる" # 0.000007
+t."to" -> "いる" # 1.596544E-12
+t."above" -> "いる" # 0.001282
+t."him" -> "いる" # 3.639905E-28
+t."call" -> "いる" # 2.576755E-18
+t."a" -> "いる" # 4.738951E-33
+t."in" -> "いる" # 0.000011
+t."he" -> "いる" # 0.000001
+t."it" -> "いる" # 0.001228
+t."five" -> "いる" # 2.616084E-26
+t."doors" -> "いる" # 1.959643E-26
+t."lives" -> "いる" # 0.000002
+t."clouds" -> "いる" # 0.000021
+t."english" -> "いる" # 0.000013
+t."is" -> "いる" # 0.330827
+t."peak" -> "いる" # 2.779455E-7
+t."has" -> "いる" # 0.613123
+t."school" -> "いる" # 8.198104E-22
+t."absurd" -> "いる" # 6.658921E-8
+t."the" -> "いる" # 0.000501
+t."ability" -> "いる" # 0.000008
+t."fanatic" -> "いる" # 4.341088E-33
+t."is" -> "大嫌い" # 0.000104
+t."dancing" -> "大嫌い" # 1.786177E-7
+t."to" -> "大嫌い" # 0.003043
+t."hypocrisy" -> "大嫌い" # 0.000030
+t."abhorrent" -> "大嫌い" # 0.987217
+t."snakes" -> "大嫌い" # 0.000053
+t."them" -> "大嫌い" # 0.005969
+t."i" -> "大嫌い" # 0.342130
+t."abominate" -> "大嫌い" # 0.466036
+t."rises" -> "て" # 0.004698
+t."anger" -> "て" # 0.000026
+t."unusual" -> "て" # 0.000025
+t."to" -> "て" # 3.35099E-9
+t."above" -> "て" # 0.000617
+t."him" -> "て" # 4.482567E-20
+t."with" -> "て" # 0.000013
+t."call" -> "て" # 1.833722E-13
+t."a" -> "て" # 7.01214E-24
+t."in" -> "て" # 0.000043
+t."he" -> "て" # 1.257247E-7
+t."it" -> "て" # 0.000642
+t."ablaze" -> "て" # 0.000023
+t."clouds" -> "て" # 0.003166
+t."english" -> "て" # 0.000091
+t."is" -> "て" # 0.089338
+t."peak" -> "て" # 0.000001
+t."was" -> "て" # 5.050349E-10
+t."has" -> "て" # 0.362812
+t."absurd" -> "て" # 0.000016
+t."the" -> "て" # 0.019228
+t."ability" -> "て" # 0.000123
+t."fanatic" -> "て" # 2.141775E-24
+t."abroad" -> "情報" # 0.005461
+t."the" -> "情報" # 0.000200
+t."news" -> "情報" # 0.487491
+t."got" -> "情報" # 0.506245
+t."rises" -> "そびえ" # 0.000003
+t."above" -> "そびえ" # 0.015561
+t."the" -> "そびえ" # 0.001567
+t."peak" -> "そびえ" # 0.000009
+t."clouds" -> "そびえ" # 0.962579
+t."dancing" -> "ダンス" # 1.000000
+t."i" -> "ダンス" # 8.672162E-8
+t."abominate" -> "ダンス" # 6.518374E-8
+t."school" -> "で" # 4.196592E-11
+t."five" -> "で" # 3.60967E-15
+t."the" -> "で" # 5.120641E-11
+t."above" -> "で" # 9.854661E-9
+t."doors" -> "で" # 2.893226E-15
+t."lives" -> "で" # 0.999998
+t."he" -> "で" # 3.302046E-11
+t."rises" -> "峰" # 0.000022
+t."above" -> "峰" # 0.000004
+t."the" -> "峰" # 0.000108
+t."peak" -> "峰" # 0.999525
+t."clouds" -> "峰" # 0.000007
+t."anger" -> "彼" # 7.888695E-23
+t."unusual" -> "彼" # 4.443695E-11
+t."to" -> "彼" # 2.698515E-11
+t."above" -> "彼" # 2.863072E-12
+t."him" -> "彼" # 4.340404E-29
+t."with" -> "彼" # 7.429555E-23
+t."call" -> "彼" # 3.372252E-18
+t."a" -> "彼" # 1.022021E-31
+t."in" -> "彼" # 2.854128E-11
+t."he" -> "彼" # 0.999900
+t."it" -> "彼" # 0.993963
+t."five" -> "彼" # 7.752018E-15
+t."ablaze" -> "彼" # 8.062914E-13
+t."doors" -> "彼" # 1.306353E-14
+t."lives" -> "彼" # 2.322201E-11
+t."english" -> "彼" # 2.443148E-11
+t."is" -> "彼" # 0.001033
+t."was" -> "彼" # 1.297307E-8
+t."has" -> "彼" # 0.000002
+t."school" -> "彼" # 2.423513E-11
+t."absurd" -> "彼" # 2.72882E-9
+t."the" -> "彼" # 8.955863E-12
+t."ability" -> "彼" # 5.960249E-11
+t."fanatic" -> "彼" # 1.843239E-31
+t."abuse" -> "でき" # 1.111152E-11
+t."their" -> "でき" # 3.583935E-16
+t."cannot" -> "でき" # 0.820799
+t."i" -> "でき" # 0.059728
+t."trust" -> "でき" # 6.583403E-16
+t."snakes" -> "ヘビ" # 0.982455
+t."i" -> "ヘビ" # 0.002181
+t."abominate" -> "ヘビ" # 0.003512
+t."abuse" -> "こと" # 2.514283E-13
+t."their" -> "こと" # 0.826367
+t."trust" -> "こと" # 0.173610
+t."unusual" -> "ずばぬけ" # 0.300699
+t."ability" -> "ずばぬけ" # 0.233146
+t."english" -> "ずばぬけ" # 0.268960
+t."in" -> "ずばぬけ" # 0.197193
+t."has" -> "ずばぬけ" # 0.000002
+t."he" -> "ずばぬけ" # 1.324667E-13
+t."rises" -> "に" # 7.464769E-11
+t."anger" -> "に" # 0.000008
+t."unusual" -> "に" # 1.537889E-7
+t."above" -> "に" # 0.000587
+t."cannot" -> "に" # 2.528727E-16
+t."with" -> "に" # 0.000016
+t."in" -> "に" # 0.000002
+t."he" -> "に" # 1.724756E-15
+t."five" -> "に" # 0.000023
+t."their" -> "に" # 7.763074E-9
+t."i" -> "に" # 2.061962E-15
+t."ablaze" -> "に" # 1.780393E-7
+t."doors" -> "に" # 0.000018
+t."lives" -> "に" # 1.113279E-19
+t."clouds" -> "に" # 0.001367
+t."english" -> "に" # 0.000004
+t."abuse" -> "に" # 3.503291E-7
+t."peak" -> "に" # 6.223918E-10
+t."was" -> "に" # 1.274529E-24
+t."has" -> "に" # 7.986294E-16
+t."school" -> "に" # 9.379759E-7
+t."the" -> "に" # 0.041548
+t."ability" -> "に" # 0.000003
+t."trust" -> "に" # 2.843883E-8
+t."abroad" -> "広まっ" # 0.006819
+t."the" -> "広まっ" # 0.000386
+t."news" -> "広まっ" # 0.512360
+t."got" -> "広まっ" # 0.479266
+t."anger" -> "おこっ" # 0.401537
+t."ablaze" -> "おこっ" # 0.299399
+t."with" -> "おこっ" # 0.295604
+t."was" -> "おこっ" # 2.253104E-12
+t."he" -> "おこっ" # 1.784812E-8
+t."anger" -> "まっ" # 0.000398
+t."ablaze" -> "まっ" # 0.116834
+t."with" -> "まっ" # 0.000378
+t."was" -> "まっ" # 5.82524E-9
+t."he" -> "まっ" # 2.418743E-7
+t."rises" -> "雲の上" # 0.000118
+t."above" -> "雲の上" # 0.476020
+t."the" -> "雲の上" # 0.003925
+t."peak" -> "雲の上" # 0.000011
+t."clouds" -> "雲の上" # 0.031784
+t."abuse" -> "私" # 0.001586
+t."their" -> "私" # 0.172807
+t."cannot" -> "私" # 1.922506E-15
+t."i" -> "私" # 9.491881E-15
+t."trust" -> "私" # 0.825578
+t."is" -> "者" # 7.9621E-19
+t."to" -> "者" # 0.000026
+t."him" -> "者" # 0.002336
+t."call" -> "者" # 0.997589
+t."a" -> "者" # 1.068723E-7
+t."it" -> "者" # 4.461766E-21
+t."absurd" -> "者" # 5.557907E-11
+t."fanatic" -> "者" # 1.093536E-7
+t."school" -> "軒先" # 0.004945
+t."five" -> "軒先" # 0.364962
+t."the" -> "軒先" # 0.000032
+t."above" -> "軒先" # 0.000054
+t."doors" -> "軒先" # 0.621903
+t."lives" -> "軒先" # 2.992892E-24
+t."he" -> "軒先" # 4.712518E-21
+t."anger" -> "い" # 2.058568E-16
+t."ablaze" -> "い" # 4.717862E-9
+t."with" -> "い" # 1.518593E-16
+t."was" -> "い" # 1.000000
+t."he" -> "い" # 4.342747E-9
+t."is" -> "ばかげ" # 0.000011
+t."to" -> "ばかげ" # 0.004168
+t."him" -> "ばかげ" # 2.914297E-8
+t."call" -> "ばかげ" # 0.000055
+t."a" -> "ばかげ" # 1.322799E-9
+t."it" -> "ばかげ" # 2.018609E-7
+t."absurd" -> "ばかげ" # 0.991568
+t."fanatic" -> "ばかげ" # 8.002318E-10
+t."school" -> "から" # 0.057775
+t."five" -> "から" # 0.009914
+t."the" -> "から" # 0.183134
+t."above" -> "から" # 0.000005
+t."doors" -> "から" # 0.009295
+t."lives" -> "から" # 1.083802E-19
+t."he" -> "から" # 9.586027E-29
+t."is" -> "が" # 3.350588E-12
+t."snakes" -> "が" # 0.017489
+t."them" -> "が" # 0.377657
+t."to" -> "が" # 0.310209
+t."i" -> "が" # 0.109486
+t."hypocrisy" -> "が" # 1.170205E-12
+t."abominate" -> "が" # 0.179288
+t."abhorrent" -> "が" # 0.000089
+t."rises" -> "その" # 0.896205
+t."abroad" -> "その" # 0.974208
+t."above" -> "その" # 2.939825E-12
+t."the" -> "その" # 0.027760
+t."peak" -> "その" # 0.000202
+t."news" -> "その" # 0.000022
+t."clouds" -> "その" # 3.885945E-11
+t."got" -> "その" # 0.012095
+t."unusual" -> "を" # 0.000021
+t."to" -> "を" # 0.000027
+t."cannot" -> "を" # 2.463199E-16
+t."him" -> "を" # 3.611561E-19
+t."call" -> "を" # 7.333987E-11
+t."a" -> "を" # 7.010524E-23
+t."in" -> "を" # 0.000141
+t."he" -> "を" # 1.496428E-18
+t."it" -> "を" # 0.003791
+t."their" -> "を" # 0.000001
+t."i" -> "を" # 4.552782E-17
+t."english" -> "を" # 0.000216
+t."is" -> "を" # 0.000449
+t."abuse" -> "を" # 0.003245
+t."has" -> "を" # 9.776021E-13
+t."absurd" -> "を" # 0.000023
+t."ability" -> "を" # 0.000937
+t."trust" -> "を" # 7.083773E-7
+t."fanatic" -> "を" # 1.280396E-22
+t."is" -> "偽善" # 3.934456E-7
+t."them" -> "偽善" # 0.616296
+t."to" -> "偽善" # 0.185753
+t."hypocrisy" -> "偽善" # 4.470089E-8
+t."abhorrent" -> "偽善" # 0.012192
+t."is" -> "と" # 5.766271E-35
+t."to" -> "と" # 5.628759E-15
+t."him" -> "と" # 0.534063
+t."call" -> "と" # 1.539155E-9
+t."a" -> "と" # 0.248477
+t."it" -> "と" # 1.189797E-36
+t."absurd" -> "と" # 4.552284E-22
+t."fanatic" -> "と" # 0.217458
+t."anger" -> "た" # 6.013695E-28
+t."unusual" -> "た" # 2.575693E-7
+t."abroad" -> "た" # 0.012787
+t."with" -> "た" # 6.465991E-28
+t."was" -> "た" # 4.975769E-9
+t."in" -> "た" # 0.000002
+t."has" -> "た" # 0.013730
+t."he" -> "た" # 9.854565E-9
+t."the" -> "た" # 0.001106
+t."ability" -> "た" # 0.000008
+t."ablaze" -> "た" # 8.632538E-19
+t."news" -> "た" # 0.000030
+t."english" -> "た" # 0.000003
+t."got" -> "た" # 0.002220
+t."is" -> "狂信" # 1.526306E-7
+t."to" -> "狂信" # 0.495660
+t."him" -> "狂信" # 1.227146E-10
+t."call" -> "狂信" # 0.000105
+t."a" -> "狂信" # 9.486909E-15
+t."it" -> "狂信" # 1.452761E-8
+t."absurd" -> "狂信" # 0.008386
+t."fanatic" -> "狂信" # 1.694855E-14
+t."rises" -> *e* # 0.009569
+t."above" -> *e* # 0.006620
+t."cannot" -> *e* # 1.497599E-9
+t."in" -> *e* # 0.000030
+t."snakes" -> *e* # 0.000002
+t."peak" -> *e* # 0.000244
+t."was" -> *e* # 1.008526E-11
+t."has" -> *e* # 0.008619
+t."ability" -> *e* # 0.000034
+t."got" -> *e* # 0.000173
+t."abominate" -> *e* # 0.002658
+t."unusual" -> *e* # 0.000028
+t."anger" -> *e* # 2.524723E-8
+t."abroad" -> *e* # 0.000719
+t."to" -> *e* # 0.001053
+t."him" -> *e* # 0.000174
+t."with" -> *e* # 2.568519E-8
+t."call" -> *e* # 0.000043
+t."a" -> *e* # 0.000077
+t."he" -> *e* # 0.000043
+t."it" -> *e* # 0.000376
+t."five" -> *e* # 0.000045
+t."their" -> *e* # 2.044522E-10
+t."ablaze" -> *e* # 8.895323E-8
+t."i" -> *e* # 0.003032
+t."doors" -> *e* # 0.000040
+t."english" -> *e* # 0.000031
+t."clouds" -> *e* # 0.001076
+t."lives" -> *e* # 3.96574E-8
+t."is" -> *e* # 0.138347
+t."abuse" -> *e* # 1.540366E-8
+t."dancing" -> *e* # 1.660158E-7
+t."hypocrisy" -> *e* # 0.001655
+t."abhorrent" -> *e* # 0.000465
+t."school" -> *e* # 0.000101
+t."them" -> *e* # 0.000074
+t."the" -> *e* # 0.645612
+t."absurd" -> *e* # 0.000007
+t."trust" -> *e* # 1.764918E-10
+t."fanatic" -> *e* # 0.000074
+t."news" -> *e* # 0.000055
+qJJ.x0:JJ -> i.x0 r.x0 # 0.216822
+qJJ.x0:JJ -> r.x0 i.x0 # 0.185998
+qJJ.x0:JJ -> r.x0 # 0.597180
+qJJ.x0:IN -> i.x0 r.x0 # 0.603384
+qJJ.x0:IN -> r.x0 i.x0 # 0.393013
+qJJ.x0:IN -> r.x0 # 0.003602
+qJJ.x0:TO -> i.x0 r.x0 # 0.057685
+qJJ.x0:TO -> r.x0 i.x0 # 0.026007
+qJJ.x0:TO -> r.x0 # 0.916308
+qNN.x0:CD -> i.x0 r.x0 # 0.004734
+qNN.x0:CD -> r.x0 i.x0 # 0.011800
+qNN.x0:CD -> r.x0 # 0.983466
+qNN.x0:JJ -> i.x0 r.x0 # 0.541117
+qNN.x0:JJ -> r.x0 i.x0 # 0.430818
+qNN.x0:JJ -> r.x0 # 0.028065
+qNN.x0:PRP -> i.x0 r.x0 # 0.040818
+qNN.x0:PRP -> r.x0 i.x0 # 0.958751
+qNN.x0:PRP -> r.x0 # 0.000431
+qNN.x0:NN -> i.x0 r.x0 # 0.056814
+qNN.x0:NN -> r.x0 i.x0 # 0.223505
+qNN.x0:NN -> r.x0 # 0.719681
+qNN.x0:DT -> i.x0 r.x0 # 0.022083
+qNN.x0:DT -> r.x0 i.x0 # 0.029243
+qNN.x0:DT -> r.x0 # 0.948675
+r.DT(x0:"the") -> t.x0 # 0.800000
+r.PRP(x0:"he") -> t.x0 # 0.280645
+r.PRP(x0:"i") -> t.x0 # 0.280645
+r.VB(x0:"is") -> t.x0 # 0.086957
+r.IN(x0:"above") -> t.x0 # 0.250000
+r.VB(x0:"abominate") -> t.x0 # 0.086957
+r.TO(x0:"to") -> t.x0 # 0.500000
+r.VB(x0:"has") -> t.x0 # 0.043478
+r.VB(x0:"lives") -> t.x0 # 0.043478
+r.NN(x0:"peak") -> t.x0 # 0.049236
+r.NN(x0:"clouds") -> t.x0 # 0.049236
+r.IN(x0:"in") -> t.x0 # 0.125000
+r.CD(x0:"five") -> t.x0 # 1.000000
+r.JJ(x0:"unusual") -> t.x0 # 0.142857
+r.IN(x0:"with") -> t.x0 # 0.125000
+r.NN(x0:"ability") -> t.x0 # 0.049236
+r.VB(x0:"dancing") -> t.x0 # 0.043478
+r.DT(x0:"a") -> t.x0 # 0.200000
+r.NN(x0:"english") -> t.x0 # 0.049236
+r.RB(x0:"abroad") -> t.x0 # 1.000000
+r.NN(x0:"news") -> t.x0 # 0.049236
+r.NN(x0:"trust") -> t.x0 # 0.049236
+r.NN(x0:"snakes") -> t.x0 # 0.049236
+r.PRP(x0:"him") -> t.x0 # 0.093548
+r.VB(x0:"call") -> t.x0 # 0.043478
+r.NN(x0:"doors") -> t.x0 # 0.049236
+r.JJ(x0:"abhorrent") -> t.x0 # 0.142857
+r.VB(x0:"got") -> t.x0 # 0.043478
+r.VB(x0:"rises") -> t.x0 # 0.043478
+r.MD(x0:"cannot") -> t.x0 # 0.500000
+r.NN(x0:"fanatic") -> t.x0 # 0.049236
+r.NN(x0:"school") -> t.x0 # 0.049236
+r.PRP(x0:"it") -> t.x0 # 0.093548
+r.NN(x0:"anger") -> t.x0 # 0.049236
+r.VB(x0:"abuse") -> t.x0 # 0.043478
+r.PRP(x0:"their") -> t.x0 # 0.093548
+r.JJ(x0:"absurd") -> t.x0 # 0.142857
+r.JJ(x0:"ablaze") -> t.x0 # 0.142857
+r.VB(x0:"was") -> t.x0 # 0.043478
+r.PRP(x0:"them") -> t.x0 # 0.093548
+r.NN(x0:"hypocrisy") -> t.x0 # 0.049236
+r.VB(x0:PRP x1:VB x2:JJ) -> qVB.x2 qVB.x1 qVB.x0 # 3.625779E-7
+r.PRP(x0:PRP x1:NN) -> qPRP.x1 qPRP.x0 # 0.020552 @ 1
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x3 qVB.x2 qVB.x0 qVB.x1 # 8.894619E-11
+r.VB(x0:NN x1:VB x2:RB) -> qVB.x0 qVB.x2 qVB.x1 # 0.000022
+r.MD(x0:PRP x1:MD x2:VB) -> qMD.x0 qMD.x2 qMD.x1 # 0.410405
+r.VB(x0:NN x1:VB x2:JJ) -> qVB.x1 qVB.x2 qVB.x0 # 0.003498
+r.VB(x0:PRP x1:VB x2:JJ) -> qVB.x1 qVB.x0 qVB.x2 # 0.000039
+r.NN(x0:DT x1:NN) -> qNN.x1 qNN.x0 # 0.129986
+r.MD(x0:PRP x1:MD x2:VB) -> qMD.x0 qMD.x1 qMD.x2 # 1.266989E-8
+r.NN(x0:DT x1:NN) -> qNN.x0 qNN.x1 # 0.116194
+r.NN(x0:CD x1:NN) -> qNN.x0 qNN.x1 # 0.030970
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x1 qVB.x0 qVB.x2 qVB.x3 # 6.619503E-8
+r.VB(x0:NN x1:VB x2:JJ) -> qVB.x0 qVB.x1 qVB.x2 # 0.000578
+r.VB(x0:NN x1:VB x2:RB) -> qVB.x2 qVB.x0 qVB.x1 # 0.020381
+r.VB(x0:PRP x1:VB x2:NN) -> qVB.x0 qVB.x2 qVB.x1 # 0.000290
+r.VB(x0:PRP x1:VB x2:IN) -> qVB.x2 qVB.x1 qVB.x0 # 1.332399E-7
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x2 qVB.x3 qVB.x1 qVB.x0 # 2.633778E-10
+r.VB(x0:PRP x1:VB x2:NN) -> qVB.x1 qVB.x0 qVB.x2 # 4.887574E-8
+r.VB(x0:PRP x1:VB x2:NN) -> qVB.x2 qVB.x0 qVB.x1 # 0.020763
+r.VB(x0:NN x1:VB x2:RB) -> qVB.x1 qVB.x0 qVB.x2 # 0.000303
+r.NN(x0:PRP x1:NN) -> qNN.x0 qNN.x1 # 0.043964 @ 2
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x2 qVB.x1 qVB.x3 qVB.x0 # 8.649732E-11
+r.VB(x0:PRP x1:VB x2:VB) -> qVB.x2 qVB.x1 qVB.x0 # 0.020415
+r.JJ(x0:JJ x1:IN) -> qJJ.x1 qJJ.x0 # 0.042775
+r.VB(x0:PRP x1:VB x2:JJ) -> qVB.x0 qVB.x2 qVB.x1 # 0.086703
+r.VB(x0:PRP x1:VB x2:VB) -> qVB.x0 qVB.x2 qVB.x1 # 7.123666E-7
+r.VB(x0:NN x1:VB x2:JJ) -> qVB.x0 qVB.x2 qVB.x1 # 0.039206
+r.VB(x0:NN x1:VB x2:IN) -> qVB.x2 qVB.x0 qVB.x1 # 1.35691E-8
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x0 qVB.x1 qVB.x3 qVB.x2 # 0.000007
+r.VB(x0:NN x1:VB x2:RB) -> qVB.x0 qVB.x1 qVB.x2 # 0.000536
+r.VB(x0:NN x1:VB x2:RB) -> qVB.x1 qVB.x2 qVB.x0 # 0.000237
+r.MD(x0:PRP x1:MD x2:VB) -> qMD.x1 qMD.x0 qMD.x2 # 7.605646E-9
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x2 qVB.x0 qVB.x3 qVB.x1 # 5.517944E-11
+r.VB(x0:VB x1:NN) -> qVB.x0 qVB.x1 # 0.043409
+r.NN(x0:CD x1:NN) -> qNN.x1 qNN.x0 # 0.018266
+r.VB(x0:NN x1:VB x2:IN) -> qVB.x2 qVB.x1 qVB.x0 # 2.512632E-11
+r.VB(x0:PRP x1:VB x2:VB) -> qVB.x0 qVB.x1 qVB.x2 # 1.158762E-9
+r.MD(x0:PRP x1:MD x2:VB) -> qMD.x2 qMD.x0 qMD.x1 # 2.867918E-10
+r.VB(x0:NN x1:VB x2:JJ) -> qVB.x2 qVB.x0 qVB.x1 # 9.042973E-7
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x1 qVB.x3 qVB.x2 qVB.x0 # 3.898644E-8
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x0 qVB.x2 qVB.x3 qVB.x1 # 0.022997
+r.VB(x0:NN x1:VB x2:IN) -> qVB.x1 qVB.x2 qVB.x0 # 4.976226E-7
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x2 qVB.x3 qVB.x0 qVB.x1 # 2.893765E-11
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x3 qVB.x1 qVB.x0 qVB.x2 # 7.365228E-13
+r.IN(x0:NN x1:IN x2:NN) -> qIN.x2 qIN.x0 qIN.x1 # 0.124282
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x0 qVB.x1 qVB.x2 qVB.x3 # 0.000005
+r.VB(x0:PRP x1:VB x2:IN) -> qVB.x0 qVB.x1 qVB.x2 # 1.440588E-13
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x0 qVB.x2 qVB.x1 qVB.x3 # 0.000208
+r.IN(x0:IN x1:NN) -> qIN.x0 qIN.x1 # 0.262076
+r.VB(x0:PRP x1:VB x2:IN) -> qVB.x2 qVB.x0 qVB.x1 # 2.809222E-9
+r.IN(x0:NN x1:IN x2:NN) -> qIN.x0 qIN.x2 qIN.x1 # 0.000617
+r.VB(x0:NN x1:VB x2:IN) -> qVB.x0 qVB.x2 qVB.x1 # 0.004261
+r.NN(x0:JJ x1:NN) -> qNN.x0 qNN.x1 # 0.019351
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x1 qVB.x2 qVB.x3 qVB.x0 # 3.741232E-8
+r.VB(x0:PRP x1:VB x2:IN) -> qVB.x1 qVB.x0 qVB.x2 # 2.107717E-15
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x3 qVB.x0 qVB.x2 qVB.x1 # 6.188355E-10
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x2 qVB.x0 qVB.x1 qVB.x3 # 1.139726E-13
+r.VB(x0:PRP x1:VB x2:NN) -> qVB.x0 qVB.x1 qVB.x2 # 5.255541E-8
+r.VB(x0:VB x1:PRP) -> qVB.x0 qVB.x1 # 0.043380
+r.MD(x0:PRP x1:MD x2:VB) -> qMD.x1 qMD.x2 qMD.x0 # 0.089595
+r.NN(x0:PRP x1:NN) -> qNN.x1 qNN.x0 # 0.020552 @ 1
+r.VB(x0:NN x1:VB x2:RB) -> qVB.x2 qVB.x1 qVB.x0 # 0.021999
+r.VB(x0:PRP x1:VB x2:JJ) -> qVB.x1 qVB.x2 qVB.x0 # 0.000084
+r.JJ(x0:JJ x1:IN) -> qJJ.x0 qJJ.x1 # 0.100082
+r.IN(x0:NN x1:IN x2:NN) -> qIN.x1 qIN.x2 qIN.x0 # 0.000002
+r.IN(x0:NN x1:IN x2:NN) -> qIN.x0 qIN.x1 qIN.x2 # 3.565265E-7
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x0 qVB.x3 qVB.x1 qVB.x2 # 0.000483
+r.NN(x0:JJ x1:NN) -> qNN.x1 qNN.x0 # 0.029885
+r.VB(x0:PRP x1:VB x2:JJ) -> qVB.x2 qVB.x0 qVB.x1 # 3.706529E-7
+r.TO(x0:TO x1:PRP) -> qTO.x1 qTO.x0 # 0.155411
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x1 qVB.x3 qVB.x0 qVB.x2 # 4.428909E-10
+r.JJ(x0:JJ x1:TO) -> qJJ.x1 qJJ.x0 # 0.282753
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x3 qVB.x1 qVB.x2 qVB.x0 # 1.225295E-9
+r.IN(x0:IN x1:NN) -> qIN.x1 qIN.x0 # 0.112925
+r.VB(x0:VB x1:PRP) -> qVB.x1 qVB.x0 # 0.000099
+r.IN(x0:NN x1:IN x2:NN) -> qIN.x1 qIN.x0 qIN.x2 # 0.000099
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x3 qVB.x0 qVB.x1 qVB.x2 # 2.44925E-12
+r.VB(x0:PRP x1:VB x2:IN) -> qVB.x1 qVB.x2 qVB.x0 # 1.020528E-12
+r.VB(x0:PRP x1:VB x2:NN) -> qVB.x2 qVB.x1 qVB.x0 # 0.022117
+r.PRP(x0:PRP x1:NN) -> qPRP.x0 qPRP.x1 # 0.043964 @ 2
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x0 qVB.x3 qVB.x2 qVB.x1 # 0.019777
+r.VB(x0:VB x1:NN) -> qVB.x1 qVB.x0 # 0.000069
+r.VB(x0:PRP x1:VB x2:VB) -> qVB.x1 qVB.x2 qVB.x0 # 3.000031E-7
+r.JJ(x0:JJ x1:TO) -> qJJ.x0 qJJ.x1 # 0.002961
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x3 qVB.x2 qVB.x1 qVB.x0 # 8.021863E-10
+r.IN(x0:NN x1:IN x2:NN) -> qIN.x2 qIN.x1 qIN.x0 # 4.03191E-7
+r.TO(x0:TO x1:PRP) -> qTO.x0 qTO.x1 # 0.094589
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x1 qVB.x2 qVB.x0 qVB.x3 # 1.818261E-10
+r.MD(x0:PRP x1:MD x2:VB) -> qMD.x2 qMD.x1 qMD.x0 # 3.248337E-11
+r.VB(x0:NN x1:VB x2:IN) -> qVB.x1 qVB.x0 qVB.x2 # 0.039193
+r.VB(x0:PRP x1:VB x2:JJ) -> qVB.x0 qVB.x1 qVB.x2 # 0.000130
+r.VB(x0:NN x1:VB x2:JJ) -> qVB.x1 qVB.x0 qVB.x2 # 0.000196
+r.VB(x0:NN x1:VB x2:IN) -> qVB.x0 qVB.x1 qVB.x2 # 0.000024
+r.VB(x0:PRP x1:VB x2:VB) -> qVB.x1 qVB.x0 qVB.x2 # 6.862248E-10
+r.VB(x0:PRP x1:VB x2:VB) -> qVB.x2 qVB.x0 qVB.x1 # 0.023062
+r.TO(x0:TO x1:VB) -> qTO.x0 qTO.x1 # 0.247897
+r.VB(x0:NN x1:VB x2:JJ) -> qVB.x2 qVB.x1 qVB.x0 # 8.504383E-7
+r.VB(x0:PRP x1:VB x2:NN) -> qVB.x1 qVB.x2 qVB.x0 # 0.000309
+r.VB(x0:PRP x1:VB x2:IN) -> qVB.x0 qVB.x2 qVB.x1 # 0.043478
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x2 qVB.x1 qVB.x0 qVB.x3 # 3.548785E-14
+r.VB(x0:PRP x1:VB x2:NN x3:IN) -> qVB.x1 qVB.x0 qVB.x3 qVB.x2 # 7.426407E-8
+r.TO(x0:TO x1:VB) -> qTO.x1 qTO.x0 # 0.002103
+qMD.x0:VB -> i.x0 r.x0 # 0.261281
+qMD.x0:VB -> r.x0 i.x0 # 0.738330
+qMD.x0:VB -> r.x0 # 0.000389
+qMD.x0:MD -> i.x0 r.x0 # 0.138198
+qMD.x0:MD -> r.x0 i.x0 # 0.861785
+qMD.x0:MD -> r.x0 # 0.000017
+qMD.x0:PRP -> i.x0 r.x0 # 0.607813
+qMD.x0:PRP -> r.x0 i.x0 # 0.392157
+qMD.x0:PRP -> r.x0 # 0.000030

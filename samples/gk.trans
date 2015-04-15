@@ -1,0 +1,12 @@
+% this is a comment line
+q
+q.A(x0: x1:) -> A(R(q.x1 q.x0) S(X)) # 1
+% q.A(B(x0:D x2:E) x1:) -> A(R(q.x0 q.x1) S(X)) # 1
+q.B(x0: x1:) -> U # 1
+q.C(x0: x1:) -> T(q.x0 q.x1) # 0.6
+% this is a comment line
+q.C(x0: x1:) -> T(q.x1 q.x0) # 0.4
+q.F -> V # 0.9
+q.F -> W # 0.1
+q.G -> V # 0.5
+q.G -> W # 0.5

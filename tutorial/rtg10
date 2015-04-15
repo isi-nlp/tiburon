@@ -1,0 +1,7 @@
+%% filename: rtg10 %%
+qa
+qa -> A(qb qc)
+qa -> A(qc qc)
+qa -> A(qc qb)
+qb -> B(qc)
+qc -> C

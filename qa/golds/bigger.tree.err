@@ -1,0 +1,2 @@
+NR==1 && $0 !~ /^This is Tiburon, version [0-9.]+\s*$/ {print NR}
+NR==2 && $0 != "Problem processing input file: Unable to determine type -- first line has more than 10480 bytes" {print NR}

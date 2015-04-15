@@ -1,0 +1,9 @@
+%% Filename wrtg2 %%
+q
+q -> S(subj vb obj) # 0.8
+q -> S(subj likes obj) # 0.2
+subj -> John # 0.7
+subj -> Stacy # 0.4
+obj -> candy
+vb -> likes # 0.4
+vb -> hates # 0.6

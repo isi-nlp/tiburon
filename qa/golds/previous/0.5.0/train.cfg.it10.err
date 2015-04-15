@@ -1,0 +1,16 @@
+# this is an awk script to verify the lines of a file. If a line is
+#  incorrect its number is printed, and if the wrong number of lines
+# is found this too is printed
+NR==1 && $0 !~ /^This is Tiburon, version [0-9.]+/ {print NR}
+NR==2 && $0 !~ "Cross entropy with normalized initial weights is 2.192047600293[0-9]+; corpus prob is e\\^-615.96537568253[0-9]+" {print NR}
+NR==3 && $0 !~ "Cross entropy after 1 iterations is 1.753440178964[0-9]+; corpus prob is e\\^-492.7166902890[0-9]+" {print NR}
+NR==4 && $0 !~ "Cross entropy after 2 iterations is 1.745090649387[0-9]+; corpus prob is e\\^-490.3704724777[0-9]+" {print NR}
+NR==5 && $0 !~ "Cross entropy after 3 iterations is 1.743380652462[0-9]+; corpus prob is e\\^-489.8899633418[0-9]+" {print NR}
+NR==6 && $0 !~ "Cross entropy after 4 iterations is 1.743045755940[0-9]+; corpus prob is e\\^-489.7958574192[0-9]+" {print NR}
+NR==7 && $0 !~ "Cross entropy after 5 iterations is 1.742945756879[0-9]+; corpus prob is e\\^-489.7677576830[0-9]+" {print NR}
+NR==8 && $0 !~ "Cross entropy after 6 iterations is 1.742907539062[0-9]+; corpus prob is e\\^-489.7570184765[0-9]+" {print NR}
+NR==9 && $0 !~ "Cross entropy after 7 iterations is 1.7428916[0-9]+; corpus prob is e\\^-489.75254[0-9]+" {print NR}
+NR==10 && $0 !~ "Cross entropy after 8 iterations is 1.742884690385[0-9]+; corpus prob is e\\^-489.7505979984[0-9]+" {print NR}
+NR==11 && $0 !~ "Cross entropy after 9 iterations is 1.742881571186[0-9]+; corpus prob is e\\^-489.7497215033[0-9]+" {print NR}
+{records++}
+END{if (records != 11) {printf("%s lines\n", records)}}

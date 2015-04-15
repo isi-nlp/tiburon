@@ -1,0 +1,22 @@
+% this is an example tree pair training file. The format is 
+% count_1
+% intree_1
+% outstring_1
+% ....
+% count_n
+% intree_n
+% outstring_n
+% an additional acceptable form is
+%
+% intree_1
+% outstring_1
+% ....
+% intree_n
+% outstring_n
+% this assumes the count of each tree is 1. Use this file with xrs.trans
+9
+A(B C)
+D E
+2
+A(G B)
+H E

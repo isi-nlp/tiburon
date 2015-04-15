@@ -1,0 +1,27 @@
+TOP(S(NP(NNP(word) NNP(word)) VP(VBZ(word) NNP(word)) DOT(word))) # 0.027778
+TOP(S(NP(ADVP(NNP(word)) ADVP(NNP(word))) VP(VBZ(word) NNP(word)) DOT(word))) # 0.027778
+TOP(S(NP(ADVP(NNP(word)) NP(NNP(word))) VP(VBZ(word) NNP(word)) DOT(word))) # 0.027778
+TOP(S(NP(NP(NNP(word)) ADVP(NNP(word))) VP(VBZ(word) NNP(word)) DOT(word))) # 0.027778
+TOP(S(NP(ADVP(NNP(word)) NNP(word)) VP(VBZ(word) NNP(word)) DOT(word))) # 0.027778
+TOP(S(NP(NNP(word) ADVP(NNP(word))) VP(VBZ(word) NNP(word)) DOT(word))) # 0.027778
+TOP(S(NP(NP(NNP(word)) NP(NNP(word))) VP(VBZ(word) NNP(word)) DOT(word))) # 0.027778
+TOP(S(NP(NNP(word) NP(NNP(word))) VP(VBZ(word) NNP(word)) DOT(word))) # 0.027778
+TOP(S(NP(NP(NNP(word)) NNP(word)) VP(VBZ(word) NNP(word)) DOT(word))) # 0.027778
+TOP(S(NP(DT(word) VP(NN(word)) VP(NN(word)) VP(NN(word))) NP(ADJP(JJ(word)) VP(NN(word))) VP(VBD(word) NP(CD(word) NNS(word)) SBAR(PP(IN(word)) NP(DT(word) NP(NNP(word))))))) # 5.02347E-7
+TOP(NP(NP(NP(DT(word) VP(NN(word)) VP(NN(word)) VP(NN(word))) NP(ADJP(JJ(word)) VP(NN(word)))) VP(VBD(word) NP(CD(word) NNS(word)) SBAR(PP(IN(word)) NP(DT(word) NP(NNP(word))))))) # 5.02347E-7
+TOP(S(NP(NP(DT(word) VP(NN(word)) VP(NN(word)) VP(NN(word))) NP(ADJP(JJ(word)) VP(NN(word)))) VP(VBD(word) NP(CD(word) NNS(word)) SBAR(PP(IN(word)) NP(DT(word) NP(NNP(word))))))) # 5.02347E-7
+TOP(NP(NP(NP(DT(word) VP(NN(word)) VP(NN(word)) VP(NN(word))) NP(ADJP(JJ(word)) VP(NN(word)))) VP(VBD(word) NP(CD(word) NNS(word)) PP(PP(IN(word)) NP(DT(word) NP(NNP(word))))))) # 5.02347E-7
+TOP(S(NP(NP(DT(word) VP(NN(word)) VP(NN(word)) VP(NN(word))) NP(ADJP(JJ(word)) VP(NN(word)))) VP(VBD(word) NP(CD(word) NNS(word)) PP(PP(IN(word)) NP(DT(word) NP(NNP(word))))))) # 5.02347E-7
+TOP(NP(NP(NP(DT(word) VP(NN(word)) VP(NN(word)) VP(NN(word))) S(NP(ADJP(JJ(word)) VP(NN(word))))) VP(VBD(word) NP(CD(word) NNS(word)) PP(PP(IN(word)) NP(DT(word) NP(NNP(word))))))) # 5.02347E-7
+TOP(NP(NP(NP(DT(word) VP(NN(word)) VP(NN(word)) VP(NN(word))) NP(ADJP(JJ(word)) VP(NN(word)))) VP(VBD(word) NP(CD(word) NNS(word)) S(PP(PP(IN(word)) NP(DT(word) NP(NNP(word)))))))) # 5.02347E-7
+TOP(NP(NP(NP(DT(word) VP(NN(word)) VP(NN(word)) VP(NN(word))) S(NP(ADJP(JJ(word)) VP(NN(word))))) VP(VBD(word) NP(CD(word) NNS(word)) S(PP(PP(IN(word)) NP(DT(word) NP(NNP(word)))))))) # 5.02347E-7
+TOP(NP(NP(NP(DT(word) VP(NN(word)) VP(NN(word)) VP(NN(word))) NP(ADJP(JJ(word)) VP(NN(word)))) VP(VBD(word) NP(CD(word) NNS(word)) PP(NP(IN(word)) NP(DT(word) NP(NNP(word))))))) # 5.02347E-7
+TOP(S(NP(DT(word) VP(NN(word)) VP(NN(word)) VP(NN(word))) NP(ADJP(JJ(word)) VP(NN(word))) VP(VBD(word) NP(CD(word) NNS(word)) SBAR(PP(IN(word)) NP(DT(word) NP(NNP(word))))))) # 0.000002
+TOP(S(NP(DT(word) VP(NN(word)) VP(NN(word)) VP(NN(word))) S(NP(ADJP(JJ(word)) VP(NN(word)))) VP(VBD(word) NP(CD(word) NNS(word)) SBAR(PP(IN(word)) NP(DT(word) NP(NNP(word))))))) # 0.000002
+TOP(S(NP(DT(word) VP(NN(word)) VP(NN(word)) VP(NN(word))) NP(ADJP(JJ(word)) VP(NN(word))) VP(VBD(word) NP(CD(word) NNS(word)) PP(PP(IN(word)) NP(DT(word) NP(NNP(word))))))) # 0.000002
+TOP(S(NP(DT(word) VP(NN(word)) VP(NN(word)) VP(NN(word))) S(NP(ADJP(JJ(word)) VP(NN(word)))) VP(VBD(word) NP(CD(word) NNS(word)) PP(PP(IN(word)) NP(DT(word) NP(NNP(word))))))) # 0.000002
+TOP(S(NP(DT(word) VP(NN(word)) VP(NN(word)) VP(NN(word))) NP(ADJP(JJ(word)) VP(NN(word))) VP(VBD(word) NP(CD(word) NNS(word)) S(PP(PP(IN(word)) NP(DT(word) NP(NNP(word)))))))) # 0.000002
+TOP(S(NP(DT(word) VP(NN(word)) VP(NN(word)) VP(NN(word))) S(NP(ADJP(JJ(word)) VP(NN(word)))) VP(VBD(word) NP(CD(word) NNS(word)) S(PP(PP(IN(word)) NP(DT(word) NP(NNP(word)))))))) # 0.000002
+TOP(S(NP(DT(word) VP(NN(word)) VP(NN(word)) VP(NN(word))) NP(ADJP(JJ(word)) VP(NN(word))) VP(VBD(word) NP(CD(word) NNS(word)) PP(NP(IN(word)) NP(DT(word) NP(NNP(word))))))) # 0.000002
+TOP(S(NP(DT(word) VP(NN(word)) VP(NN(word)) VP(NN(word))) S(NP(ADJP(JJ(word)) VP(NN(word)))) VP(VBD(word) NP(CD(word) NNS(word)) PP(NP(IN(word)) NP(DT(word) NP(NNP(word))))))) # 0.000002
+TOP(S(NP(DT(word) VP(NN(word)) VP(NN(word)) VP(NN(word))) NP(ADJP(JJ(word)) VP(NN(word))) VP(VBD(word) NP(CD(word) NNS(word)) VP(PP(PP(IN(word)) NP(DT(word) NP(NNP(word)))))))) # 0.000002

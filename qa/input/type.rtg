@@ -1,0 +1,6 @@
+% TYPE RTG
+q
+q -> r
+q -> a
+r -> q
+r -> b

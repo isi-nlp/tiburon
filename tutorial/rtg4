@@ -1,0 +1,15 @@
+%% filename: rtg4
+q
+q -> S(np vp)
+np -> NP(dt nn)
+np -> NP(dt nn pp)
+pp -> PP(prep np)
+vp -> VP(vb do)
+vb -> ran
+do -> home
+prep -> with
+prep -> on
+dt -> the
+nn -> boy
+nn -> monkey
+nn -> clown

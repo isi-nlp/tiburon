@@ -1,0 +1,9 @@
+%% file: fttt2 %%
+q
+q.NP(x1:JJ x2:) -> NP(q.x2 q.x1)
+q.JJ(x1:) -> PP(with NN(adj.x1))
+q.NN(x1:) -> NN(n.x1)
+n.dogs -> dogs
+n.cats -> cats
+adj.blue -> blueness
+adj.yellow -> yellowness

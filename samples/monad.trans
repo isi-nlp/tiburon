@@ -1,0 +1,6 @@
+q
+q.A(x0:) -> A(r.x0)
+r.B(x0:) -> s.x0
+s.C(x0:) -> t.x0
+t.D(x0:) -> D(u.x0)
+u.TIBEND -> TIBEND

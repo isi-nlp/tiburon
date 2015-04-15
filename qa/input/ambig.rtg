@@ -1,0 +1,10 @@
+% TYPE RTG
+q
+q -> r
+q -> s
+r -> t
+r -> u
+s -> a
+s -> b
+t -> a
+u -> b

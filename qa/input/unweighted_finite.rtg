@@ -1,0 +1,9 @@
+a
+a -> A(b b)
+b -> B(c)
+c -> j
+c -> C(d d)
+d -> E
+j -> C(k k)
+k -> E
+k -> Y

@@ -1,0 +1,2 @@
+TOP(S(NP(NNP(word) NNP(word)) VP(VBZ(word) NP(NNP(word))) DOT(word)))
+TOP(S(NP(NNP(word) NNP(word)) VP(VBZ(word) NP(NNP(word))) DOT(word)))

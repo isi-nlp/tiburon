@@ -1,0 +1,19 @@
+Tree info for input tree xr_applicable.tree:
+	15 nodes
+	5 yield length
+Transducer info for input tree transducer unweighted_trainable.xr:
+	30 states
+	1792 rules
+Tree info for input tree xr_applicable.tree:
+	15 nodes
+	5 yield length
+RTG info for backward application of tree:
+	9 states
+	12 rules
+	1 unique terminal symbols
+	6 derivations
+RTG info for intersected RTG:
+	15 states
+	15 rules
+	1 unique terminal symbols
+	1 derivations

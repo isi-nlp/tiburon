@@ -1,0 +1,9 @@
+%% filename: rtg9 %%
+qe
+qe -> A(qe qo)
+qe -> A(qo qe)
+qe -> B(qo)
+qo -> A(qo qo)
+qo -> A(qe qe)
+qo -> B(qe)
+qo -> C

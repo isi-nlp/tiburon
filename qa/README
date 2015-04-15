@@ -1,0 +1,83 @@
+11/26/07
+testbed for tiburon. A battery of tests that should hold up in
+subsequent versions.
+
+test with no files:
+tiburon : should print version, request a file, show usage
+tiburon -h : should print version, show extended usage
+
+tests on unweighted_finite.rtg: short file with no weights
+tiburon -c unweighted_finite.rtg : should show statistics for file (6
+states, 8 rules, 2 terminals, 25 derivations)
+tiburon -k 5 unweighted_finite.rtg : should print the first 5
+sentences with weight of 1.000000
+tiburon -k 26 unweighted_finite.rtg : should print the 25 sentences
+and a 0, with a warning
+tiburon -g 5 unweighted_finite.rtg : should print 5 random sentences.
+tiburon -d 1 -c unweighted_finite.rtg : should show progressive
+statistics for file, most notable the reduction from 25 derivations to
+16.
+tiburon --randomize unweighted_finite.rtg : should add numbers from
+0.2 to 0.8 to each rule
+tiburon -randomize -n unweighted_finite.rtg : should add numbers as
+above but force weights for each lhs symbol to sum to 1.
+
+tests on weighted_infinite_even.rtg : short file with weights, can be composed
+tiburon -c weighted_infinite_even.rtg : should show statistics for file (2
+states, 7 rules, 1 terminals, infinite derivations)
+tiburon -k 5 weighted_infinite_even.rtg : should print the first 5
+sentences with their appropriate weights
+tiburon -g 5 weighted_infinite_even.rtg : should print 5 random
+sentences fairly quickly.
+
+tiburon weighted_infinite_even.rtg weighted_infinite_three.rtg :
+should compose properly
+
+tiburon -k 10 weighted_infinite_even.rtg weighted_infinite_three.rtg :
+should print top 10 of composed appropriately.
+
+TODO: foreign version of RTG tests
+
+tiburon -e euc-jp foreign.rtg :
+should spit out same rtg
+
+TODO: yield
+
+TODO: topk on tropical semiring!!
+
+TODO: rtg training
+TODO: rtg batch mode
+TODO: rtg union(?) mode
+
+TODO (maybe later): proper error reporting
+
+
+tiburon transducer : should spit transducer back (xr and xrs variants)
+tiburon -e euc-jp transducer : should spit transducer with jp chars
+back
+repeat the above with -o so we can assure the output file format works
+too.
+
+tiburon -c transducer : should give stats about transducers
+
+tiburon -l:tree transducer : should make an rtg or cfg-like structure
+(later: an actual cfg)
+cat tree | tiburon -ls transducer : same thing but take stdin
+
+complicated expression:
+tib -k 2 -n -d 1 -l:sent xr
+apply sent to xr, determinize and normalize the result, get top 2 sentences
+
+tiburon -l:tree -r:string transducer : get derivation forest as rtg
+tiburon -l:tree -r:tree : the above but with xr
+
+tiburon -t 5 trainset transducer : set weights
+add: training-deriv-location
+add: no-deriv
+add: randomize (check performance first)
+add: conditional training (for kenji stuff only?)
+add: repeat experiments with counters for multiply-occurring pairs
+add: repeat experiments for other semirings?   
+
+TODO: elementary tests with transducer: application, check, encoding
+

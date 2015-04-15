@@ -1,0 +1,8 @@
+%% filename wrtg3 %%
+q
+q -> S(subj fought obj) # 0.8
+q -> S(obj fought subj) # 0.2
+subj -> Joe # 0.6
+subj -> Steve # 0.4
+obj -> NP(the volcano) # 0.7
+obj -> subj # 0.3

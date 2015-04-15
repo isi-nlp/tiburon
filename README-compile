@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+# this should probably be done as a make, but I've been to lazy to
+# figure out how to do it. In lieu of that, following these instructions
+# should suffice:
+JAVAC=$JAVA_HOME/bin/javac
+pushd jmp
+$JAVAC -classpath .. *.java
+popd
+pushd gnu/trove
+pushd decorator
+$JAVAC -classpath ../../.. *.java
+popd
+$JAVAC -classpath ../.. *.java
+popd
+pushd mjr/treegraphics
+$JAVAC -classpath ../.. *.java
+popd
+pushd mjr/heap
+$JAVAC -classpath ../.. *.java
+popd
+pushd edu/isi/tiburon
+$JAVAC -classpath ../../.. *.java
+popd

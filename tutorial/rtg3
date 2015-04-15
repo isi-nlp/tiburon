@@ -1,0 +1,9 @@
+%% filename: rtg3 %%
+q 
+q -> NP(jj nn nn)
+jj -> silly
+jj -> wild
+jj -> green
+nn -> monkey
+nn -> police
+nn -> car

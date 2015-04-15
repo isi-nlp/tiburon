@@ -1,0 +1,8 @@
+q
+q.START(x0:) -> he she it blah "ljl ".x0 blah blah # 1.000000
+q.men -> many irregular spaces here aren't there? # 1.000000
+q."shirley jackson" -> 6 7 8 939094 10 10 10 12,22 # 0.400000 @ 3
+q.10(x0:"shirley jackson") -> "()" "{" "{}" q.x0 "'" ' blah "   " q.x0 "a" "b" # 0.600000
+q.START("ji ro":) -> did we get through q."ji ro" comments okay? q."ji ro" yes # 1.000000
+"ljl ".she(".": """:) -> the 6 men q."." and "shirley jackson" q.""" # 1.000000 @ 3
+"ljl ".10(f5:) -> comments at q.f5 the end # 4.000000

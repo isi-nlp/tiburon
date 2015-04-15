@@ -1,0 +1,8 @@
+q3
+q3 -> he(q0 it(blah blah) blah) # 1.000000
+q3 -> did(we get(through comments okay?) yes) # 1.000000
+q4 -> 6(7(8(9.39094 q1 q1 q1) 12.22)) # 0.400000 @ 3
+q2 -> many(irregular(spaces here) aren't there?) # 1.000000
+q1 -> comments(at the end) # 4.000000
+q1 -> "()"("{"("{}" "'" ') blah("   " "a" "b")) # 0.600000
+q0 -> the(6(q2 and q4)) # 1.000000 @ 3

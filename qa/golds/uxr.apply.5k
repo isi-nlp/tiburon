@@ -1,0 +1,5 @@
+TOP(S(NP(ADVP(NNP(word)) ADVP(NNP(word))) VP(VBZ(word) NNP(word)) DOT(word))) # 1.000000
+TOP(S(NP(NP(NNP(word)) ADVP(NNP(word))) VP(VBZ(word) NNP(word)) DOT(word))) # 1.000000
+TOP(S(NP(ADVP(NNP(word)) ADVP(NNP(word))) VP(VBZ(word) ADVP(ADVP(NNP(word)))) DOT(word))) # 1.000000
+TOP(S(NP(NP(NNP(word)) ADVP(NNP(word))) VP(VBZ(word) ADVP(ADVP(NNP(word)))) DOT(word))) # 1.000000
+TOP(S(NP(ADVP(NNP(word)) ADVP(NNP(word))) VP(VBZ(word) NP(NP(ADVP(NNP(word))))) DOT(word))) # 1.000000

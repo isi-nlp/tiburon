@@ -1,0 +1,16 @@
+Transducer info for input tree transducer unweighted_trainable.xr:
+	30 states
+	1792 rules
+Transducer info for backward application with tree transducer:
+	30 states
+	1792 rules
+RTG info for backward application:
+	24 states
+	27 rules
+	1 unique terminal symbols
+	6 derivations
+RTG info for intersected RTG:
+	15 states
+	15 rules
+	1 unique terminal symbols
+	1 derivations

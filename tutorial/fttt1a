@@ -1,0 +1,6 @@
+%% file: fttt1a %%
+q
+q.NP(x0: x1:) -> NP(q.x0 q.x1)
+q.blue -> green
+q.dog -> cat
+q.frog -> bat

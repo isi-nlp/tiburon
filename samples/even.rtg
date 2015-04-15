@@ -1,0 +1,8 @@
+qe
+qe -> A(qe qo) # .1
+qe -> A(qo qe) # .8
+qe -> B(qo) # .1
+qo -> A(qo qo) # .6
+qo -> A(qe qe) # .2
+qo -> B(qe) # .1
+qo -> C # .1

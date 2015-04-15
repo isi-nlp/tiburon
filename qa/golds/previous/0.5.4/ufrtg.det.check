@@ -1,0 +1,15 @@
+RTG info for input rtg unweighted_finite.rtg:
+	6 states
+	8 rules
+	2 unique terminal symbols
+	25 derivations
+RTG info for after normal form:
+	6 states
+	8 rules
+	2 unique terminal symbols
+	25 derivations
+RTG info for after determinization:
+	5 states
+	8 rules
+	2 unique terminal symbols
+	16 derivations

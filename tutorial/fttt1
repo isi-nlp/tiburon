@@ -1,0 +1,4 @@
+%% file: fttt1 %%
+q
+q.NP(blue dog) ->  NP(green cat)
+q.NP(blue frog) -> NP(green bat)
