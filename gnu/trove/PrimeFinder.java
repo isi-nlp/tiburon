@@ -1,4 +1,4 @@
-//   Copyright © 1999 CERN - European Organization for Nuclear Research.
+//   Copyright Â© 1999 CERN - European Organization for Nuclear Research.
 
 //   Permission to use, copy, modify, distribute and sell this software
 //   and its documentation for any purpose is hereby granted without fee,
