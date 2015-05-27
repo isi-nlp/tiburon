@@ -1,3 +1,23 @@
 Attempt to git-ize Tiburon.
 
-This probably doesn't work yet; use at your own risk.
+This is a very light brush over my thesis code and many things are 2007-ish or worse and have yet to be updated/upgraded.
+
+To build, source README-compile, then follow the jar instructions in README-build to make a jar.
+
+Credit (please let me know if I haven't credited your code properly):
+
+The following code/compiled classes are part of tiburon but were not written by me. AFAIK they are all allowed to be used via various licenses or explicit permission. If this is not the case please notify me and I will make it right.
+Usage of third party code does not imply any endorsement from these parties.
+
+
+Gnu Trove: http://trove.starlight-systems.com/license (gnu/trove) (LGPL)
+
+Rounding code by Grant William Braught of Dickinson College is part of this software (edu/dickinson/braught) (personal permission)
+
+Some utilities from Stanford Core NLP http://nlp.stanford.edu/software/corenlp.shtml (edu/stanford) (GPL)
+
+Some data structures from Michael J. Radwin http://www.radwin.org/michael/ (mjr) (Custom; in header of source)
+
+Some code from the Java Memory Profiler http://www.khelekore.org/jmp/ (jmp) (GPL)
+
+Argument parser is JSAP, by martian software http://www.martiansoftware.com/jsap/ (com/martiansoftware) (LGPL)
