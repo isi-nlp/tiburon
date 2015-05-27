@@ -3,7 +3,7 @@
 # this should probably be done as a make, but I've been to lazy to
 # figure out how to do it. In lieu of that, following these instructions
 # should suffice:
-JAVAC=$JAVA_HOME/bin/javac
+JAVAC=javac
 pushd jmp
 $JAVAC -classpath .. *.java
 popd
