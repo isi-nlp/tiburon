@@ -23,6 +23,7 @@ import com.martiansoftware.jsap.stringparsers.DoubleStringParser;
 import com.martiansoftware.jsap.stringparsers.EnumeratedStringParser;
 import com.martiansoftware.jsap.stringparsers.FileStringParser;
 import com.martiansoftware.jsap.stringparsers.IntegerStringParser;
+import com.martiansoftware.jsap.stringparsers.LongStringParser;
 import com.martiansoftware.jsap.stringparsers.StringStringParser;
 
 // command line options, etc.
@@ -377,7 +378,17 @@ public class Tiburon {
 				"generate <krandom> trees from an RTG or strings from a CFG stochastically. Subject to --glimit (see below). This option cannot be "+
 		"used with -k or -c or -t");
 		jsap.registerParameter(gopt);
-		
+
+		// seed for krandom
+		FlaggedOption gseedopt = new FlaggedOption("krandomseed",
+				LongStringParser.getParser(),
+				null,
+				false,
+				's',
+				"krandomseed",
+				"when --generate is used, seed the RNG with this number (long)");
+		jsap.registerParameter(gseedopt);
+
 		FlaggedOption glimitopt = new FlaggedOption("randomlimit",
 				IntegerStringParser.getParser(),
 				"20",
@@ -2433,13 +2444,14 @@ public class Tiburon {
 			hadContent = true;
 			int num = config.getInt("krandom", 1);
 			KBest k = null;
+			Long seed = config.contains("krandomseed") ? config.getLong("krandomseed") : null;
 			if (finalType == FileType.TYPE.RTG) {
 				RTGRuleSet rtgrs = (RTGRuleSet)rs;
 				rtgrs.makeNormal();
-				k = new KBest(rtgrs);
+				k = new KBest(rtgrs, seed);
 			}
 			else {
-				k = new KBest(rs);
+				k = new KBest(rs, seed);
 			}
 			Date postKCreateTime = new Date();
 			Debug.dbtime(timeLevel, 2, preKCreateTime, postKCreateTime, "Create the kbest object");
