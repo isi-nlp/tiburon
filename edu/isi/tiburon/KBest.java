@@ -268,6 +268,10 @@ public class KBest {
 	private boolean isTree;
 
 	public KBest(RuleSet ruleSet) throws UnusualConditionException {
+		this(ruleSet, null);
+	}
+
+	public KBest(RuleSet ruleSet, Long seed) throws UnusualConditionException {
 		rs = ruleSet;
 		boolean debug = false;
 		try {
@@ -316,7 +320,10 @@ public class KBest {
 			rulekids.add(nextint++, kids);
 		}
 		
-		rand = new Random();
+		if (seed == null)
+			rand = new Random();
+		else
+			rand = new Random(seed);
 		oneBests = new HashMap<Symbol, Double>();
 		oneBestDepths = new HashMap<Symbol, Integer>();
 		bestRules = new Hashtable<Symbol, Rule>();
