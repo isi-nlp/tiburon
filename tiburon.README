@@ -122,6 +122,10 @@ Usage: tiburon
         be equivalent to a probability between 0.2 and 0.8. This is mostly
         useful for EM training.
 
+  [--precise-output]
+        Print weights with full precision instead of rounded. Only applies to -g
+        and -k.
+
   [--timedebug <time>]
         Print timing information to stderr at a variety of levels: 0+ for total
         operation, 1+ for each processing stage, 2+ for small info
