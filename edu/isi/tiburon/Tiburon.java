@@ -336,6 +336,13 @@ public class Tiburon {
 
 		// OPTIONS REGARDING THE DATA THAT IS OUTPUT
 
+		Switch precisionsw = new Switch("precise-output",
+				JSAP.NO_SHORTFLAG,
+				"precise-output",
+				"Print weights with full precision instead of rounded. "
+				+ "Only applies to -g and -k.");
+		jsap.registerParameter(precisionsw);
+
 		// print timing information to stderr. number determines level of information
 		FlaggedOption timeopt = new FlaggedOption("time",
 				IntegerStringParser.getParser(),
@@ -2415,6 +2422,9 @@ public class Tiburon {
 		boolean hadContent = false;
 		Semiring ts = rs.getSemiring();
 
+		boolean swprecise = config.getBoolean("precise-output");
+		boolean swyield   = config.getBoolean("yield");
+
 		if (config.contains("kbest")) {
 			Date preKCreateTime = new Date();
 			hadContent = true;
@@ -2429,14 +2439,10 @@ public class Tiburon {
 			Date postKBestTime = new Date();
 			Debug.dbtime(timeLevel, 2, preKBestTime, postKBestTime, "Obtain the kbest items");
 			for (int i = 0; i < topItems.length; i++) {
-				String output = null;
 				if (topItems[i] == null)
-					output = "0\n";
-				else if (config.getBoolean("yield"))
-					output = topItems[i].toYield()+" # "+Rounding.round(ts.internalToPrint(topItems[i].weight), 6)+"\n";
+					w.write("0\n");
 				else
-					output = topItems[i].toString()+" # "+Rounding.round(ts.internalToPrint(topItems[i].weight), 6)+"\n";
-				w.write(output);
+					writeItem(topItems[i], w, ts, swprecise, swyield);
 			}
 		}
 		else if (config.contains("krandom")) {
@@ -2456,15 +2462,8 @@ public class Tiburon {
 			Date postKCreateTime = new Date();
 			Debug.dbtime(timeLevel, 2, preKCreateTime, postKCreateTime, "Create the kbest object");
 			Date preKBestTime = new Date();
-			for (int i = 0; i < num; i++) {
-				Item t = k.getRandomItem(config.getInt("randomlimit"));
-				String output = null;
-				if (config.getBoolean("yield"))
-					output = t.toYield()+" # "+Rounding.round(ts.internalToPrint(t.weight), 6)+"\n";
-				else
-					output = t.toString()+" # "+Rounding.round(ts.internalToPrint(t.weight), 6)+"\n";
-				w.write(output);
-			}
+			for (int i = 0; i < num; i++)
+				writeItem(k.getRandomItem(config.getInt("randomlimit")), w, ts, swprecise, swyield);
 			Date postKBestTime = new Date();
 			Debug.dbtime(timeLevel, 2, preKBestTime, postKBestTime, "Obtain the k random items");
 		}
@@ -2482,6 +2481,20 @@ public class Tiburon {
 			Date postPrintTime = new Date();
 			Debug.dbtime(timeLevel, 2, prePrintTime, postPrintTime, "print grammar");
 		}
+	}
+
+	// helper for generateOutput
+	private static void writeItem(Item i, OutputStreamWriter w, Semiring ts, boolean swprecise, boolean swyield) throws IOException {
+		if (swyield)
+			w.write(i.toYield());
+		else
+			w.write(i.toString());
+		w.write(" # ");
+		if (swprecise)
+			w.write(String.valueOf(ts.internalToPrint(i.weight)));
+		else
+			w.write(Rounding.round(ts.internalToPrint(i.weight), 6));
+		w.write("\n");
 	}
 
 	// do some operation on a transducer to generate output to a specified handle
